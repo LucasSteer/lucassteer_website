@@ -13,8 +13,8 @@ export default {
         // TODO: what does this do?
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -39,7 +39,7 @@ export default {
       // <meta name="msapplication-TileColor" content="#FFFFFF">
       // <meta name="msapplication-TileImage" content="/assets/favicon/favicon-144.png">
       // <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
-    ]
+    ],
   },
   // TODO: see if I can remove unused config options
   /*
@@ -63,13 +63,13 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
   ],
   tailwindcss: {
     configPath: '~/tailwind.config.js',
     cssPath: '~/assets/app.css',
     purgeCSSInDev: true,
-    exposeConfig: false
+    exposeConfig: false,
   },
   /*
    ** Nuxt.js modules
@@ -82,6 +82,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) { }
-  }
-}
+    // extend(config, ctx) {},
+  },
+};

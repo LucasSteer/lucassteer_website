@@ -1,5 +1,5 @@
 /* purgecss start ignore */
-@import 'tailwindcss/base';
+@tailwind base;
 
 * {
   /* font-size: 10px; */
@@ -7,7 +7,7 @@
   @apply font-sans;
 }
 
-@import 'tailwindcss/components';
+@tailwind components;
 /* purgecss end ignore */
 
-@import 'tailwindcss/utilities';
+@tailwind utilities;
