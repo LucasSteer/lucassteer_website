@@ -1,0 +1,13 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+
+* {
+  /* font-size: 10px; */
+  font-size: 16px;
+  @apply font-sans;
+}
+
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+
+@import 'tailwindcss/utilities';
