@@ -1,36 +1,41 @@
 <template>
-  <div class="container">
-    <header>
-      <h1 class="text-4xl text-indigo-600">lucassteer</h1>
-      <!-- TODO: do this accessibly -->
-      <nav>
-        <ul>
+  <div>
+    <header
+      class="h-16 bg-gray-100 border-b-4 border-green-500 flex flex-row items-center justify-between pr-2 pl-2 mb-2 tablet:pr-8 py-2"
+    >
+      <img
+        src="favicon/favicon-310.png"
+        alt="Lucas Steer's Logo"
+        class="h-12 w-12 hidden tablet:block"
+      />
+      <nav class="w-full">
+        <ul class="flex flex-row justify-around">
           <li>
-            <a class="current-page" href="/">Home</a>
-          </li>
-          <!-- TODO: do this accessibly -->
-          <li>
-            <!-- TODO: Work terms should likely be a link to a separate page (perhaps that line-map of my experiences or something?) -->
-            <button class="dropbtn">Work Terms</button>
-            <div class="dropdown-content">
-              <a href="s16f16.html">eSentire</a>
-              <a href="s17.html">Confederation Freezers</a>
-              <a href="w18.html">Jibestream</a>
-              <a href="s18.html">CGI</a>
-            </div>
+            <NavLink url="/" text="About Me" />
           </li>
           <li>
-            <a class="current-page" href="aboutme">About Me</a>
+            <NavLink url="myexperience" text="My Experience" />
+          </li>
+          <li>
+            <NavLink url="myprojects" text="My Projects" />
           </li>
         </ul>
       </nav>
     </header>
-    <nuxt />
-    <!-- TODO: do we need a footer? -->
-    <!-- <footer></footer> -->
+    <div class="container flex flex-col justify-around">
+      <nuxt />
+    </div>
   </div>
 </template>
 
 <script>
+import NavLink from '~/components/NavLink.vue';
+
 require('@/assets/app.css'); // import all CSS
+
+export default {
+  components: {
+    NavLink,
+  },
+};
 </script>

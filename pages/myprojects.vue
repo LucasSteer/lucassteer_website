@@ -12,4 +12,11 @@
 //     Logo
 //   }
 // }
+export default {
+  head() {
+    return {
+      title: 'My Projects | Lucas Steer',
+    };
+  },
+};
 </script>
