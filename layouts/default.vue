@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex flex-col justify-between h-screen">
     <header
-      class="h-16 bg-gray-100 border-b-4 border-green-500 flex flex-row items-center justify-between pr-2 pl-2 mb-2 tablet:pr-8 py-2"
+      class="h-16 border-b-2 border-gray-900 flex flex-row items-center justify-between pr-2 pl-2 mb-2 tablet:pr-8 py-2"
     >
       <img
         src="favicon/favicon-310.png"
@@ -14,7 +14,7 @@
             <NavLink url="/" text="About Me" />
           </li>
           <li>
-            <NavLink url="myexperience" text="My Experience" />
+            <NavLink url="myexperiences" text="My Experiences" />
           </li>
           <li>
             <NavLink url="myprojects" text="My Projects" />
@@ -22,20 +22,37 @@
         </ul>
       </nav>
     </header>
-    <div class="container flex flex-col justify-around">
+    <div class="container mx-auto mb-4">
       <nuxt />
     </div>
+    <footer
+      class="h-16 border-t-2 border-gray-900 px-4 pt-2 tablet:flex tablet:flex-row tablet:justify-between tablet:items-center tablet:pt-0"
+    >
+      <p class="text-xs text-gray-700 mb-1">
+        © 2020 Lucas Steer. All Rights Reserved.
+      </p>
+      <p class="text-xs text-gray-700 relative">
+        Contact:
+        <ExternalLink
+          url="mailto:lucassteer@gmail.com"
+          text="lucassteer@gmail.com"
+          class="text-xs"
+        />
+      </p>
+    </footer>
   </div>
 </template>
 
 <script>
 import NavLink from '~/components/NavLink.vue';
+import ExternalLink from '~/components/ExternalLink.vue';
 
 require('@/assets/app.css'); // import all CSS
 
 export default {
   components: {
     NavLink,
+    ExternalLink,
   },
 };
 </script>

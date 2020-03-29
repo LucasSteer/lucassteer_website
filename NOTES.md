@@ -31,7 +31,7 @@ The best I could do was this, but this had issues because selecting text within 
             <a class="" href="/">About Me</a>
           </li>
           <li>
-            <a class="" href="myexperience">My Experience</a>
+            <a class="" href="myexperiences">My Experiences</a>
           </li>
           <li>
             <a class="" href="myprojects">My Projects</a>

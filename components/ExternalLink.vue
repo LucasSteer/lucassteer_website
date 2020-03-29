@@ -1,15 +1,16 @@
 <template>
   <a
-    class="text-grey-700 hover:text-green-400 font-semibold tablet:text-xl tablet:tracking-widest"
     :href="url"
+    target="_blank"
+    rel="noreferrer noopener"
+    class="text-blue-800 font-semibold hover:text-blue-400 hover:underline"
+    >{{ text }}</a
   >
-    {{ text }}
-  </a>
 </template>
 
 <script>
 export default {
-  name: 'NavLink',
+  name: 'ExternalLink',
   props: {
     url: {
       type: String,
