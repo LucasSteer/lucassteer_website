@@ -195,6 +195,8 @@ module.exports = {
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
+      card:
+        '0px 0px 10px 0px rgba(0, 0, 0, 0.1), 0 0 6px -2px rgba(0, 0, 0, 0.05)',
       none: 'none',
     },
     container: {},
@@ -425,6 +427,7 @@ module.exports = {
     }),
     zIndex: {
       auto: 'auto',
+      '-10': '-10',
       '0': '0',
       '10': '10',
       '20': '20',

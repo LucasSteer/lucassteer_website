@@ -1,16 +1,21 @@
 <template>
-  <div class="px-4">
+  <div class="p-4">
     <section class="flex flex-col items-center">
       <img
         src="headshot.jpg"
         alt="A picture of me, Lucas Steer, smiling in a field while wearing a navy-blue suit"
-        class="rounded-full h-32 w-32 m-2 tablet:h-40 tablet:w-40 tablet:m-4"
+        class="rounded-full h-32 w-32 m-2 tablet:h-40 tablet:w-40 tablet:m-4 desktop:h-64 desktop:w-64"
       />
       <h2
-        class="text-2xl text-green-500 tracking-widest font-semibold mb-4 tablet:mb-8"
+        class="text-2xl text-green-500 tracking-widest font-semibold tablet:text-3xl desktop:text-4xl"
       >
         Lucas Steer
       </h2>
+      <h3
+        class="text-lg text-green-700 tracking-widest mb-4 tablet:mb-8 tablet:text-2xl desktop:text-3xl"
+      >
+        He/Him
+      </h3>
     </section>
     <section>
       <p class="mb-4">

@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col justify-between h-screen">
     <header
-      class="h-16 border-b-2 border-gray-900 flex flex-row items-center justify-between pr-2 pl-2 mb-2 tablet:pr-8 py-2"
+      class="h-16 border-b-2 border-gray-900 flex flex-row items-center justify-between pr-2 pl-2 tablet:pr-8 py-2"
     >
       <img
-        src="favicon/favicon-310.png"
+        src="/favicon/favicon-310.png"
         alt="Lucas Steer's Logo"
         class="h-12 w-12 hidden tablet:block"
       />
@@ -14,10 +14,10 @@
             <NavLink url="/" text="About Me" />
           </li>
           <li>
-            <NavLink url="myexperiences" text="My Experiences" />
+            <NavLink url="/myexperiences" text="My Experiences" />
           </li>
           <li>
-            <NavLink url="myprojects" text="My Projects" />
+            <NavLink url="/myprojects" text="My Projects" />
           </li>
         </ul>
       </nav>
