@@ -3,10 +3,11 @@
     <ExperienceCard
       link="https://www.avanade.com"
       heading="Avanade"
-      img-src="/myexperiences/AvanadeLogo.png"
+      img-src="logos/AvanadeLogo.png"
       img-alt="Avanade Logo"
       ec-role="Analyst, Full-Stack Developer"
       timeline="January 2020"
+      is-odd
     >
       <p>
         I'm currently employed as a full-stack developer at the analyst level.
@@ -18,11 +19,11 @@
     <ExperienceCard
       link="https://www.caatpension.on.ca"
       heading="CAAT Pension Plan"
-      img-src="/myexperiences/CAATPensionPlanLogo.png"
+      img-src="logos/CAATPensionPlanLogo.png"
       img-alt="CAAT Pension Plan Logo"
       ec-role="Software Developer (Summer Student)"
       timeline="May 19 - August 2019"
-      class="desktop:ml-auto"
+      :is-odd="false"
     >
       <p>
         At CAAT Pension Plan, myself and another summer student created the
@@ -37,10 +38,11 @@
     <ExperienceCard
       link="https://www.cgi.com"
       heading="CGI"
-      img-src="/myexperiences/CGILogo.png"
+      img-src="logos/CGILogo.png"
       img-alt="CGI Logo"
       ec-role="Software Engineer (Co-op)"
       timeline="May 2018 - August 2018"
+      is-odd
     >
       <p>
         As a software engineer at CGI I performed technical analyses, code
@@ -53,11 +55,11 @@
     <ExperienceCard
       link="https://www.jibestream.com"
       heading="Jibestream"
-      img-src="/myexperiences/JibestreamLogo.png"
+      img-src="logos/JibestreamLogo.png"
       img-alt="Jibestream Logo"
       ec-role="Developer (Co-op)"
       timeline="January 2018 - March 2018"
-      class="desktop:ml-auto"
+      :is-odd="false"
     >
       <p>
         Jibestream exposed me to modern front-end web development as a co-op
@@ -72,10 +74,11 @@
     <ExperienceCard
       link="https://www.gocold.ca"
       heading="Confederation Freezers"
-      img-src="/myexperiences/ConfederationFreezersLogo.png"
+      img-src="logos/ConfederationFreezersLogo.png"
       img-alt="Confederation Freezers Logo"
       ec-role="Application Developer (Co-op)"
       timeline="May 2017 - August 2017"
+      is-odd
     >
       <p>
         Confederation Freezers employed me as an application developer to help
@@ -90,11 +93,11 @@
     <ExperienceCard
       link="https://www.esentire.com"
       heading="eSentire"
-      img-src="/myexperiences/eSentireLogo.png"
+      img-src="logos/eSentireLogo.png"
       img-alt="eSentire Logo"
       ec-role="Technical Writer (Co-op)"
       timeline="May 2016 - December 2016"
-      class="desktop:ml-auto"
+      :is-odd="false"
     >
       <p>
         As a technical writer at eSentire I was responsible for translating the

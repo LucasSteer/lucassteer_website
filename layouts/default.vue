@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-between h-screen">
     <header
-      class="h-16 border-b-2 border-gray-900 flex flex-row items-center justify-between pr-2 pl-2 tablet:pr-8 py-2"
+      class="min-h-16 border-b-2 border-gray-900 flex flex-row items-center justify-between px-2 tablet:pr-8 py-2"
     >
       <img
         src="/favicon/favicon-310.png"
@@ -26,7 +26,7 @@
       <nuxt />
     </div>
     <footer
-      class="h-16 border-t-2 border-gray-900 px-4 pt-2 tablet:flex tablet:flex-row tablet:justify-between tablet:items-center tablet:pt-0"
+      class="min-h-16 border-t-2 border-gray-900 px-4 pt-2 tablet:flex tablet:flex-row tablet:justify-between tablet:items-center tablet:pt-0"
     >
       <p class="text-xs text-gray-700 mb-1">
         © 2020 Lucas Steer. All Rights Reserved.

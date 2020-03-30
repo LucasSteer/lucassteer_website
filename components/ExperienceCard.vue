@@ -1,5 +1,8 @@
 <template>
-  <section class="w-full py-2 px-4 shadow-card rounded-lg desktop:w-7/12">
+  <section
+    class="w-full pt-2 pb-4 px-4 shadow-card rounded-lg desktop:w-7/12"
+    :class="{ 'desktop:ml-auto': !isOdd }"
+  >
     <h2>
       <ExternalLink
         :url="link"
@@ -8,14 +11,14 @@
       />
     </h2>
     <div
-      class="flex flex-row border-b-2 border-gray-400 py-2 mb-2 tablet:py-4 tablet:mb-4"
+      class="flex flex-row border-b-2 border-gray-400 pt-2 pb-4 mb-2 tablet:py-4 tablet:mb-4"
     >
       <img
         :src="imgSrc"
         :alt="imgAlt"
-        class="h-16 w-16 object-scale-down rounded-full border-gray-700 border-2 mr-2 tablet:mr-8"
+        class="min-h-16 min-w-16 h-16 w-16 object-scale-down rounded-full border-gray-700 border-2 mx-2 tablet:mx-8"
       />
-      <div>
+      <div class="ml-2 tablet:ml-0">
         <p class="text-sm text-gray-700 tablet:text-lg">
           {{ ecRole }}
         </p>
@@ -60,6 +63,10 @@ export default {
     timeline: {
       type: String,
       default: '',
+    },
+    isOdd: {
+      type: Boolean,
+      default: false,
     },
   },
 };

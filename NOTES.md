@@ -1,3 +1,10 @@
+# Nuxt config with static resources
+
+If you have a vue named `example.vue`, it makes a page at route `yoursite.com/example`
+If you have a folder in static named `example`, then references to any static files, even root relative ones (with a leading `/`) will be from that folder when you're on that route
+This means that if you're at any route that doesn't have a matching folder in static, e.g. `yoursite.com/other`, then accessing a favicon with `/favicons/favicon.ico` results in a request to `yoursite.com/favicons/favicon.ico` (as expected)
+However, if you are on `yoursite.com/example` then a request is made to `yoursite.com/example/favicons/favicon.ico` (unexpected behaviour)
+
 # Accessible Nav Menu
 
 ## Expandable Nav Without JavaScript
