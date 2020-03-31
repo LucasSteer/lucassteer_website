@@ -49,12 +49,12 @@
         A note about this site
       </h2>
       <p class="mb-2 text-sm">
-        My website was designed mobile and accessible first. It should be
-        accessible using assistive technologies and intends to support the most
-        recent versions of modern browsers (such as Firefox, Chrome, and Edge)
-        on both low and high resolution devices. This site should be usable in
-        older browsers (such as IE11), but no special care has been made to
-        support them.
+        My website was designed mobile and accessible first and does not require
+        JavaScript to be enabled. It should be accessible using assistive
+        technologies and intends to support the most recent versions of modern
+        browsers (such as Firefox, Chrome, and Edge) on both low and high
+        resolution devices. This site should be usable in older browsers (such
+        as IE11), but no special care has been made to support them.
       </p>
       <p class="text-sm">
         If you notice any accessiblity issues or have other concerns regarding

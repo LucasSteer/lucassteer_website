@@ -3,7 +3,7 @@
     <ExperienceCard
       link="https://www.avanade.com"
       heading="Avanade"
-      img-src="logos/AvanadeLogo.png"
+      img-src="/logos/AvanadeLogo.png"
       img-alt="Avanade Logo"
       ec-role="Analyst, Full-Stack Developer"
       timeline="January 2020"
@@ -19,7 +19,7 @@
     <ExperienceCard
       link="https://www.caatpension.on.ca"
       heading="CAAT Pension Plan"
-      img-src="logos/CAATPensionPlanLogo.png"
+      img-src="/logos/CAATPensionPlanLogo.png"
       img-alt="CAAT Pension Plan Logo"
       ec-role="Software Developer (Summer Student)"
       timeline="May 19 - August 2019"
@@ -38,7 +38,7 @@
     <ExperienceCard
       link="https://www.cgi.com"
       heading="CGI"
-      img-src="logos/CGILogo.png"
+      img-src="/logos/CGILogo.png"
       img-alt="CGI Logo"
       ec-role="Software Engineer (Co-op)"
       timeline="May 2018 - August 2018"
@@ -55,7 +55,7 @@
     <ExperienceCard
       link="https://www.jibestream.com"
       heading="Jibestream"
-      img-src="logos/JibestreamLogo.png"
+      img-src="/logos/JibestreamLogo.png"
       img-alt="Jibestream Logo"
       ec-role="Developer (Co-op)"
       timeline="January 2018 - March 2018"
@@ -74,7 +74,7 @@
     <ExperienceCard
       link="https://www.gocold.ca"
       heading="Confederation Freezers"
-      img-src="logos/ConfederationFreezersLogo.png"
+      img-src="/logos/ConfederationFreezersLogo.png"
       img-alt="Confederation Freezers Logo"
       ec-role="Application Developer (Co-op)"
       timeline="May 2017 - August 2017"
@@ -93,7 +93,7 @@
     <ExperienceCard
       link="https://www.esentire.com"
       heading="eSentire"
-      img-src="logos/eSentireLogo.png"
+      img-src="/logos/eSentireLogo.png"
       img-alt="eSentire Logo"
       ec-role="Technical Writer (Co-op)"
       timeline="May 2016 - December 2016"
