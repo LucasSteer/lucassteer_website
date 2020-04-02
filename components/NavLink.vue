@@ -1,6 +1,6 @@
 <template>
   <a
-    class="text-grey-700 hover:text-green-400 font-semibold tablet:text-xl tablet:tracking-widest"
+    class="transition duration-200 ease-in-out hover:text-green-400 font-semibold tablet:text-xl tablet:tracking-widest"
     :href="url"
   >
     {{ text }}

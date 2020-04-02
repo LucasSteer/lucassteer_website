@@ -1,14 +1,5 @@
 # lucassteer
 
-## TODO
-
-* Fix favicon not displaying on myexperiences
-
-### My experiences
-
-* Look into accessible options for displaying content in a more compact way (maybe have a slide transition on click to show content in same place, or to expand the card to show content below)
-
-
 ## Build Setup
 
 ```bash
@@ -25,3 +16,7 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+## TODO
+
+When adding more projects, change the `desktop:w-1/2` class to `desktop:w-7/12`

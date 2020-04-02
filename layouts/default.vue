@@ -22,7 +22,7 @@
         </ul>
       </nav>
     </header>
-    <div class="container mx-auto mb-4">
+    <div class="container mx-auto my-4">
       <nuxt />
     </div>
     <footer
@@ -33,11 +33,9 @@
       </p>
       <p class="text-xs text-gray-700 relative">
         Contact:
-        <ExternalLink
-          url="mailto:lucassteer@gmail.com"
-          text="lucassteer@gmail.com"
-          class="text-xs"
-        />
+        <ExternalLink url="mailto:lucassteer@gmail.com" class="text-xs"
+          >lucassteer@gmail.com</ExternalLink
+        >
       </p>
     </footer>
   </div>

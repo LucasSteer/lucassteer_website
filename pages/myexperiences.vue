@@ -10,9 +10,9 @@
       is-odd
     >
       <p>
-        I'm currently employed as a full-stack developer at the analyst level.
-        In my role, I'll work with clients across industries and contribute to
-        the success of their projects throughout the software stack
+        I'm currently employed as an analyst-level full-stack developer at
+        Avanade. I work with clients across industries and contribute to the
+        success of their projects throughout the software stack.
       </p>
     </ExperienceCard>
     <ExperienceCardConnecter />

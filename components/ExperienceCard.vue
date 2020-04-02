@@ -4,11 +4,9 @@
     :class="{ 'desktop:ml-auto': !isOdd }"
   >
     <h2>
-      <ExternalLink
-        :url="link"
-        :text="heading"
-        class="text-2xl tracking-widest text-orange-500"
-      />
+      <ExternalLink :url="link" class="text-2xl tracking-widest">{{
+        heading
+      }}</ExternalLink>
     </h2>
     <div
       class="flex flex-row border-b-2 border-gray-400 pt-2 pb-4 mb-2 tablet:py-4 tablet:mb-4"
@@ -54,7 +52,7 @@ export default {
     },
     link: {
       type: String,
-      default: '',
+      default: '/',
     },
     ecRole: {
       type: String,
