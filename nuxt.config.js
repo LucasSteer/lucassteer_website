@@ -114,4 +114,8 @@ export default {
     purgeCSSInDev: false,
     exposeConfig: false,
   },
+  generate: {
+    subFolders: false,
+    dir: 'docs', // for GitHub pages
+  },
 };
