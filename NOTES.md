@@ -22,7 +22,7 @@ The best I could do was this, but this had issues because selecting text within 
 <template>
   <div class="container">
     <header
-      class="h-16 bg-gray-400 flex flex-row justify-between static pr-8 pl-2 py-2"
+      class="h-16 bg-grey-400 flex flex-row justify-between static pr-8 pl-2 py-2"
     >
       <img
         src="favicon/favicon-310.png"
@@ -60,11 +60,11 @@ require('@/assets/app.css'); // import all CSS
   @apply hidden;
 } */
 .__ham:focus + nav {
-  @apply not-sr-only absolute w-full top-0 right-0 bg-gray-700 mt-16;
+  @apply not-sr-only absolute w-full top-0 right-0 bg-grey-700 mt-16;
 }
 
 nav a:focus {
-  @apply not-sr-only absolute w-full top-0 right-0 bg-gray-700 mt-16;
+  @apply not-sr-only absolute w-full top-0 right-0 bg-grey-700 mt-16;
 }
 </style>
 

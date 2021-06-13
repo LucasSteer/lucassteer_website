@@ -4,23 +4,25 @@
     :class="{ 'desktop:ml-auto': !isOdd }"
   >
     <h2>
-      <ExternalLink :url="link" class="text-2xl tracking-widest">{{
-        heading
-      }}</ExternalLink>
+      <ExternalLink
+        :url="link"
+        class="text-2xl tracking-widest text-blue-baseLarge hover:text-blue-highlightLarge"
+        >{{ heading }}
+      </ExternalLink>
     </h2>
     <div
-      class="flex flex-row border-b-2 border-gray-400 pt-2 pb-4 mb-2 tablet:py-4 tablet:mb-4"
+      class="flex flex-row items-center border-b-2 border-grey-400 pt-2 pb-4 mb-2 tablet:py-4 tablet:mb-4"
     >
       <img
         :src="imgSrc"
         :alt="imgAlt"
-        class="min-h-16 min-w-16 h-16 w-16 object-scale-down rounded-full border-gray-700 border-2 mx-2 tablet:mx-8"
+        class="min-h-16 min-w-16 h-16 w-16 object-scale-down rounded-full border-grey-700 border-2 mx-2 tablet:mx-8"
       />
       <div class="ml-2 tablet:ml-0">
-        <p class="text-sm text-gray-700 tablet:text-lg">
+        <p class="text-base tablet:text-lg">
           {{ ecRole }}
         </p>
-        <p class="text-xs text-gray-700 tablet:text-base">
+        <p class="text-sm tablet:text-base">
           {{ timeline }}
         </p>
       </div>

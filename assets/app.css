@@ -4,7 +4,7 @@
 * {
   /* font-size: 10px; */
   font-size: 16px;
-  @apply font-sans text-gray-800;
+  @apply font-sans text-grey;
 }
 
 @tailwind components;

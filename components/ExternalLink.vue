@@ -3,7 +3,7 @@
     :href="url"
     target="_blank"
     rel="noreferrer noopener"
-    class="text-blue-800 font-semibold hover:text-blue-400 hover:underline"
+    class="text-blue-base font-semibold hover:text-blue-highlight hover:underline"
   >
     <slot />
   </a>

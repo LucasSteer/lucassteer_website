@@ -8,7 +8,7 @@
         class="w-full absolute bottom-0 p-2 bg-white flex flex-col justify-center min-h-1/6 tablet:py-4 tablet:px-8 desktop:min-h-1/6"
       >
         <h2
-          class="text-xl text-green-600 tracking-widest tablet:text-2xl desktop:text-4xl"
+          class="text-xl text-green-baseLarge tracking-widest tablet:text-2xl desktop:text-4xl"
         >
           {{ title }}
         </h2>

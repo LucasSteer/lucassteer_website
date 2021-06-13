@@ -1,7 +1,10 @@
 <template>
   <a
     class="transition duration-200 ease-in-out font-semibold tablet:text-xl tablet:tracking-widest"
-    :class="{ 'text-green-800': !url, 'hover:text-green-600': url }"
+    :class="{
+      'text-green-baseLarge': !url,
+      'hover:text-green-highlightLarge': url,
+    }"
     :href="url"
   >
     {{ text }}

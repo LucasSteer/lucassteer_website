@@ -21,5 +21,5 @@ $ npm run generate
 
 * When adding more projects, change the `desktop:w-1/2` class to `desktop:w-7/12`
 * Setup some sort of CI to automatically run builds based off of this repository
-  * Investigate removing \_nuxt folder and scripts on generate (since these shouldn't be used)
 * Custom 404 page
+* Improve visuals of navbar at the mobile breakpoint

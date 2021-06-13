@@ -13,7 +13,7 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
-      gray: {
+      grey: {
         100: '#f7fafc',
         200: '#edf2f7',
         300: '#e2e8f0',
@@ -164,7 +164,7 @@ module.exports = {
     },
     borderColor: (theme) => ({
       ...theme('colors'),
-      default: theme('colors.gray.300', 'currentColor'),
+      default: theme('colors.grey.300', 'currentColor'),
     }),
     borderRadius: {
       none: '0',
@@ -446,7 +446,23 @@ module.exports = {
       '1': '1',
       '2': '2',
     },
-    textColor: (theme) => theme('colors'),
+    textColor: {
+      grey: {
+        default: '#2D3748',
+      },
+      green: {
+        base: '#19522E',
+        baseLarge: '#206F3E',
+        highlight: '#268249',
+        highlightLarge: '#30A65D',
+      },
+      blue: {
+        base: '#144A76',
+        baseLarge: '#1965A3',
+        highlight: '#1E78C2',
+        highlightLarge: '#4299E1',
+      },
+    },
     width: (theme) => ({
       auto: 'auto',
       ...theme('spacing'),
