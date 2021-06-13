@@ -4,8 +4,10 @@
       class="min-h-16 border-b-2 border-grey-900 flex flex-row items-center justify-between px-2 tablet:pr-8 py-2"
     >
       <img
-        src="/favicon/favicon-310.png"
+        src="/favicon/favicon-57.png"
         alt="Lucas Steer's Logo"
+        height="48"
+        width="48"
         class="h-12 w-12 hidden tablet:block"
       />
       <nav class="w-full">

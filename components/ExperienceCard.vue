@@ -16,6 +16,8 @@
       <img
         :src="imgSrc"
         :alt="imgAlt"
+        height="64"
+        width="64"
         class="min-h-16 min-w-16 h-16 w-16 object-scale-down rounded-full border-grey-700 border-2 mx-2 tablet:mx-8"
       />
       <div class="ml-2 tablet:ml-0">

@@ -3,7 +3,13 @@
     class="w-full shadow-card rounded-lg m-4 relative overflow-hidden transition duration-200 ease-in-out transform hover:scale-103 focus:scale-103 desktop:w-1/2"
   >
     <ExternalLink :url="link">
-      <img :src="imgSrc" :alt="imgAlt" class="mx-auto w-full h-full" />
+      <img
+        :src="imgSrc"
+        :alt="imgAlt"
+        height="703"
+        width="703"
+        class="mx-auto w-full h-full"
+      />
       <div
         class="w-full absolute bottom-0 p-2 bg-white flex flex-col justify-center min-h-1/6 tablet:py-4 tablet:px-8 desktop:min-h-1/6"
       >

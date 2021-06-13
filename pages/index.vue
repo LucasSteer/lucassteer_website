@@ -4,6 +4,8 @@
       <img
         src="headshot.jpg"
         alt="A picture of me, Lucas Steer, smiling in a field while wearing a navy-blue suit"
+        height="128"
+        width="128"
         class="rounded-full h-32 w-32 m-2 tablet:h-40 tablet:w-40 tablet:m-4 desktop:h-64 desktop:w-64"
       />
       <h2
