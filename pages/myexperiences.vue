@@ -6,7 +6,7 @@
       img-src="/logos/AvanadeLogo.png"
       img-alt="Avanade Logo"
       ec-role="Analyst, Full-Stack Developer"
-      timeline="January 2020"
+      timeline="January 2020 - Present"
       is-odd
     >
       <p>
@@ -22,7 +22,7 @@
       img-src="/logos/CAATPensionPlanLogo.png"
       img-alt="CAAT Pension Plan Logo"
       ec-role="Software Developer (Summer Student)"
-      timeline="May 19 - August 2019"
+      timeline="May 2019 - August 2019"
       :is-odd="false"
     >
       <p>

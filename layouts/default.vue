@@ -29,7 +29,7 @@
       class="min-h-16 border-t-2 border-gray-900 px-4 pt-2 tablet:flex tablet:flex-row tablet:justify-between tablet:items-center tablet:pt-0"
     >
       <p class="text-xs text-gray-700 mb-1">
-        © 2020 Lucas Steer. All Rights Reserved.
+        © 2021 Lucas Steer. All Rights Reserved.
       </p>
       <p class="text-xs text-gray-700 relative">
         Contact:
