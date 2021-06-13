@@ -6,7 +6,7 @@
     <h2>
       <ExternalLink
         :url="link"
-        class="text-2xl tracking-widest text-blue-baseLarge hover:text-blue-highlightLarge"
+        class="text-2xl tracking-widest text-blue-baseLarge hover:text-blue-highlightLarge focus:text-blue-highlightLarge"
         >{{ heading }}
       </ExternalLink>
     </h2>

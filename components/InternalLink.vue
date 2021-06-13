@@ -1,7 +1,7 @@
 <template>
   <a
     :href="url"
-    class="text-green-base font-semibold hover:text-green-highlight hover:underline"
+    class="text-green-base font-semibold hover:text-green-highlight hover:underline focus:text-green-highlight focus:underline"
     >{{ text }}</a
   >
 </template>

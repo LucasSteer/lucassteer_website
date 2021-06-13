@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full shadow-card rounded-lg m-4 relative overflow-hidden transition duration-200 ease-in-out transform hover:scale-103 desktop:w-1/2"
+    class="w-full shadow-card rounded-lg m-4 relative overflow-hidden transition duration-200 ease-in-out transform hover:scale-103 focus:scale-103 desktop:w-1/2"
   >
     <ExternalLink :url="link">
       <img :src="imgSrc" :alt="imgAlt" class="mx-auto w-full h-full" />

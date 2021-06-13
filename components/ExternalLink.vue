@@ -3,9 +3,9 @@
     :href="url"
     target="_blank"
     rel="noreferrer noopener"
-    class="text-blue-base font-semibold hover:text-blue-highlight hover:underline"
+    class="text-blue-base font-semibold hover:text-blue-highlight hover:underline focus:text-blue-highlight focus:underline"
   >
-    <slot />
+    <slot /><span class="sr-only">Opens in a new window.</span>
   </a>
 </template>
 

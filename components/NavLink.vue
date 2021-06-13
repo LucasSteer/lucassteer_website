@@ -3,7 +3,7 @@
     class="transition duration-200 ease-in-out font-semibold tablet:text-xl tablet:tracking-widest"
     :class="{
       'text-green-baseLarge': !url,
-      'hover:text-green-highlightLarge': url,
+      'hover:text-green-highlightLarge hover:underline focus:text-green-highlightLarge focus:underline': url,
     }"
     :href="url"
   >
