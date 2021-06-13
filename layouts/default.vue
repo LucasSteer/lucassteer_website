@@ -11,13 +11,13 @@
       <nav class="w-full">
         <ul class="flex flex-row justify-around">
           <li>
-            <NavLink url="/" text="About Me" />
+            <NavLink :url="rootUrl" text="About Me" />
           </li>
           <li>
-            <NavLink url="/myexperiences" text="My Experiences" />
+            <NavLink :url="myExperiencesUrl" text="My Experiences" />
           </li>
           <li>
-            <NavLink url="/myprojects" text="My Projects" />
+            <NavLink :url="myProjectsUrl" text="My Projects" />
           </li>
         </ul>
       </nav>
@@ -51,6 +51,19 @@ export default {
   components: {
     NavLink,
     ExternalLink,
+  },
+  data() {
+    return {
+      rootUrl: this.conditionalUrl('/'),
+      myExperiencesUrl: this.conditionalUrl('/myexperiences'),
+      myProjectsUrl: this.conditionalUrl('/myprojects'),
+    };
+  },
+  methods: {
+    // If the current path is the same as `url`, return `undefined`
+    conditionalUrl(url) {
+      return this.$route.path === url ? undefined : url;
+    },
   },
 };
 </script>
