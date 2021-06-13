@@ -13,7 +13,7 @@
           {{ title }}
         </h2>
         <h3
-          class="text-sm tracking-widest tablet:text-base tablet:leading-8 tablet:text-xl"
+          class="text-sm tracking-widest tablet:text-base tablet:leading-8 desktop:text-xl"
         >
           {{ subtitle }}
         </h3>
