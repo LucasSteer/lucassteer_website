@@ -7,7 +7,7 @@
         class="rounded-full h-32 w-32 m-2 tablet:h-40 tablet:w-40 tablet:m-4 desktop:h-64 desktop:w-64"
       />
       <h2
-        class="text-2xl text-green-500 tracking-widest font-semibold tablet:text-3xl "
+        class="text-2xl text-green-600 tracking-widest font-semibold tablet:text-3xl "
       >
         Lucas Steer
       </h2>
