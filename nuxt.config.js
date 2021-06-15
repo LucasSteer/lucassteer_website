@@ -1,14 +1,21 @@
 export default {
-  mode: 'universal',
   head: {
     htmlAttrs: {
-      lang: 'en-CA'
+      lang: 'en-CA',
     },
     title: 'Lucas Steer',
     meta: [
-      { name: 'description', content: 'The personal webpage of Lucas Steer, a Full-Stack Software Engineer based out of Toronto, Canada.' },
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'description',
+        content: 'The personal webpage of Lucas Steer, a Full-Stack Software Engineer based out of Toronto, Canada.',
+      },
+      {
+        charset: 'utf-8',
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
     ],
     link: [
       {

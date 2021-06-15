@@ -14,6 +14,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:nuxt/recommended'
   ],
+  ignorePatterns: ["**/*.config.js", "docs/"],
   // plugins: [
   //   'prettier'
   // ],
