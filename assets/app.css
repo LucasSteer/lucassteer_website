@@ -1,10 +1,12 @@
 /* purgecss start ignore */
 @tailwind base;
 
-* {
-  /* font-size: 10px; */
-  font-size: 16px;
-  @apply font-sans text-grey;
+@layer base {
+  * {
+    /* font-size: 10px; */
+    font-size: 16px;
+    @apply font-sans text-grey-base;
+  }
 }
 
 @tailwind components;

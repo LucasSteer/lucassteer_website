@@ -448,7 +448,7 @@ module.exports = {
     },
     textColor: {
       grey: {
-        default: '#2D3748',
+        base: '#2D3748',
       },
       green: {
         base: '#19522E',
