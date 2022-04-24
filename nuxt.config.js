@@ -7,7 +7,8 @@ export default {
     meta: [
       {
         name: 'description',
-        content: 'The personal webpage of Lucas Steer, a Full-Stack Software Engineer based out of Toronto, Canada.',
+        content:
+          'The personal webpage of Lucas Steer, a Full-Stack Software Engineer based out of Toronto, Canada.',
       },
       {
         charset: 'utf-8',
@@ -111,6 +112,10 @@ export default {
     ],
   },
   buildModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module',
+    // Doc: https://github.com/nuxt-community/stylelint-module
+    '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],

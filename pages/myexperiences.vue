@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4">
+  <main class="p-4">
     <ExperienceCard
       link="https://www.avanade.com"
       heading="Avanade"
@@ -107,7 +107,7 @@
         audiences and use cases.
       </p>
     </ExperienceCard>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -115,6 +115,7 @@ import ExperienceCard from '~/components/ExperienceCard.vue';
 import ExperienceCardConnecter from '~/components/ExperienceCardConnecter.vue';
 
 export default {
+  name: 'MyexperiencesPage',
   components: {
     ExperienceCard,
     ExperienceCardConnecter,

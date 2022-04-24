@@ -30,9 +30,7 @@
     <footer
       class="min-h-16 border-t-2 border-grey-900 px-4 pt-2 tablet:flex tablet:flex-row tablet:justify-between tablet:items-center tablet:pt-0"
     >
-      <p class="text-xs mb-1">
-        © 2022 Lucas Steer. All Rights Reserved.
-      </p>
+      <p class="text-xs mb-1">© 2022 Lucas Steer. All Rights Reserved.</p>
       <p class="text-xs relative">
         Contact:
         <ExternalLink url="mailto:lucassteer@gmail.com" class="text-xs"
@@ -50,6 +48,7 @@ import ExternalLink from '~/components/ExternalLink.vue';
 require('@/assets/app.css'); // import all CSS
 
 export default {
+  name: 'DefaultLayout',
   components: {
     NavLink,
     ExternalLink,
