@@ -1,0 +1,5 @@
+{
+  "*.js": ["eslint", "prettier --write --ignore-unknown"],
+  "*.css": ["stylelint", "prettier --write --ignore-unknown"],
+  "*.vue": ["eslint", "stylelint", "prettier --write --ignore-unknown"]
+}
