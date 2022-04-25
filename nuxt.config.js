@@ -126,6 +126,7 @@ export default {
     purgeCSSInDev: false,
     exposeConfig: false,
   },
+  target: 'static',
   generate: {
     subFolders: false,
     dir: 'docs', // for GitHub pages
