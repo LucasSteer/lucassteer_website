@@ -1,0 +1,8 @@
+# husky files
+.husky
+
+# Github Pages Output
+docs/
+
+# package lock
+package-lock.json
