@@ -12,9 +12,19 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint",
-    "*.{css,vue}": "stylelint",
-    "*": "prettier --write --ignore-unknown"
+    "*.js": [
+      "eslint",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.css": [
+      "stylelint",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.vue": [
+      "eslint",
+      "stylelint",
+      "prettier --write --ignore-unknown"
+    ]
   },
   "dependencies": {
     "nuxt": "^2.15.8"
