@@ -5,7 +5,14 @@
   * {
     /* font-size: 10px; */
     font-size: 16px;
-    @apply font-sans text-grey-base;
+    scrollbar-gutter: stable both-edges;
+    @apply font-sans text-grey;
+  }
+
+  @supports not (scrollbar-gutter: auto) {
+    html {
+      overflow-y: scroll;
+    }
   }
 }
 
