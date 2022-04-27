@@ -130,5 +130,6 @@ export default {
   generate: {
     subFolders: false,
     dir: 'docs', // for GitHub pages
+    fallback: '404.html',
   },
 };
