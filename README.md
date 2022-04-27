@@ -21,5 +21,4 @@ $ npm run generate
 
 - When adding more projects, change the `desktop:w-1/2` class to `desktop:w-7/12`
 - Setup some sort of CI to automatically run builds based off of this repository
-- Custom 404 page
 - Improve visuals of navbar at the mobile breakpoint
