@@ -19,6 +19,23 @@ $ npm run generate
 
 ## TODO
 
-- When adding more projects, change the `desktop:w-1/2` class to `desktop:w-7/12`
+- Add darkMode
+  - Redefine primary/secondary colours for darkMode (or one for both light and dark if possible)
+  - Redesign any components necessary to use scaled gray backgrounds instead of shadows
+  - Maybe: add manual toggle for dark mode (will need to check for best practices since I want to use prefers-color-scheme where possible)
+- Enhance ExperienceCard component
+  - Add "sub-cards" for different positions at the same company
+  - Maybe: tags for skills
+  - Maybe: drop-downs for more detailed descriptions
+- Redesign index page
+  - More of a bubbled feature highlighting style, rather than blocks of text?
+- Redesign ProjectCard component
+  - Title of project card above image
+  - Remove horizontal padding and rounding of image
+  - Have dimensions scale with greater number of cards
+- Redesign navbar
+  - Improve visuals of navbar at the mobile breakpoint (maybe a hamburger menu?)
+- Redesign logo
+  - More readable regardless of background colour (maybe a circle solid background?)
+  - Could reduce colours and remove gradients to make the primary colour on the L
 - Setup some sort of CI to automatically run builds based off of this repository
-- Improve visuals of navbar at the mobile breakpoint
