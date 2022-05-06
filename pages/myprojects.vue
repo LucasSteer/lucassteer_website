@@ -1,5 +1,12 @@
 <template>
-  <main class="flex flex-row flex-wrap justify-around">
+  <main
+    class="mx-auto grid gap-12 p-12 tablet:gap-8 tablet:p-8"
+    :class="{
+      'tablet:grid-cols-2': projects.length >= 2, // fewer items than columns looks weird without context
+      'desktop:grid-cols-3': projects.length >= 3,
+      'desktop:w-3/4': projects.length == 1, // fitting to container is too large for desktop
+    }"
+  >
     <ProjectCard
       v-for="project in projects"
       :key="project.title"
