@@ -1,6 +1,6 @@
 <template>
   <main class="text-center">
-    <h1 class="tracking-wide pb-10">
+    <h1 class="pb-10 tracking-wide">
       <span
         v-if="error.statusCode === 404"
         class="text-6xl text-green-baseLarge"
@@ -15,7 +15,7 @@
     <img
       src="/favicon/favicon-310.png"
       alt=""
-      class="opacity-25 mx-auto mt-56"
+      class="mx-auto mt-56 opacity-25"
     />
   </main>
 </template>

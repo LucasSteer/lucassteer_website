@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full shadow-card rounded-lg m-4 relative overflow-hidden transition duration-200 ease-in-out transform hover:scale-103 focus:scale-103 desktop:w-1/2"
+    class="hover:scale-103 focus:scale-103 relative m-4 w-full transform overflow-hidden rounded-lg shadow-card transition duration-200 ease-in-out desktop:w-1/2"
   >
     <ExternalLink :url="link">
       <img
@@ -8,13 +8,13 @@
         :alt="imgAlt"
         height="703"
         width="703"
-        class="mx-auto w-full h-full"
+        class="mx-auto h-full w-full"
       />
       <div
-        class="w-full absolute bottom-0 p-2 bg-white flex flex-col justify-center min-h-1/6 tablet:py-4 tablet:px-8 desktop:min-h-1/6"
+        class="min-h-1/6 desktop:min-h-1/6 absolute bottom-0 flex w-full flex-col justify-center bg-white p-2 tablet:py-4 tablet:px-8"
       >
         <h2
-          class="text-xl text-green-baseLarge tracking-widest tablet:text-2xl desktop:text-4xl"
+          class="text-xl tracking-widest text-green-baseLarge tablet:text-2xl desktop:text-4xl"
         >
           {{ title }}
         </h2>

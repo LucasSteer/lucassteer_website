@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full pt-2 pb-4 px-4 shadow-card rounded-lg desktop:w-7/12"
+    class="w-full rounded-lg px-4 pt-2 pb-4 shadow-card desktop:w-7/12"
     :class="{ 'desktop:ml-auto': !isOdd }"
   >
     <h2>
@@ -11,14 +11,14 @@
       </ExternalLink>
     </h2>
     <div
-      class="flex flex-row items-center border-b-2 border-grey-400 pt-2 pb-4 mb-2 tablet:py-4 tablet:mb-4"
+      class="mb-2 flex flex-row items-center border-b-2 border-grey-400 pt-2 pb-4 tablet:mb-4 tablet:py-4"
     >
       <img
         :src="imgSrc"
         :alt="imgAlt"
         height="64"
         width="64"
-        class="min-h-16 min-w-16 h-16 w-16 object-scale-down rounded-full border-grey-700 border-2 mx-2 tablet:mx-8"
+        class="min-w-16 mx-2 h-16 min-h-16 w-16 rounded-full border-2 border-grey-700 object-scale-down tablet:mx-8"
       />
       <div class="ml-2 tablet:ml-0">
         <p class="text-base tablet:text-lg">

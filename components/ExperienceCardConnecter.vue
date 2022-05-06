@@ -1,5 +1,5 @@
 <template>
-  <div class="w-0 h-8 mx-auto border border-grey-900" />
+  <div class="mx-auto h-8 w-0 border border-grey-900" />
 </template>
 
 <script>

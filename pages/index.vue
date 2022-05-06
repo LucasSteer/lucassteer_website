@@ -6,15 +6,15 @@
         alt="A picture of me, Lucas Steer, smiling in a field while wearing a navy-blue suit"
         height="128"
         width="128"
-        class="rounded-full h-32 w-32 m-2 tablet:h-40 tablet:w-40 tablet:m-4 desktop:h-64 desktop:w-64"
+        class="m-2 h-32 w-32 rounded-full tablet:m-4 tablet:h-40 tablet:w-40 desktop:h-64 desktop:w-64"
       />
       <h2
-        class="text-2xl text-green-baseLarge tracking-widest font-semibold tablet:text-3xl"
+        class="text-2xl font-semibold tracking-widest text-green-baseLarge tablet:text-3xl"
       >
         Lucas Steer
       </h2>
       <h3
-        class="text-lg text-green-baseLarge tracking-widest mb-4 tablet:mb-8 tablet:text-2xl"
+        class="mb-4 text-lg tracking-widest text-green-baseLarge tablet:mb-8 tablet:text-2xl"
       >
         He/Him
       </h3>
@@ -60,7 +60,7 @@
     </section>
     <section>
       <h2
-        class="text-lg text-green-base tracking-widest font-semibold my-4 tablet:text-xl"
+        class="my-4 text-lg font-semibold tracking-widest text-green-base tablet:text-xl"
       >
         A note about this site
       </h2>
