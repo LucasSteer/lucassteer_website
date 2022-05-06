@@ -1,5 +1,5 @@
 <template>
-  <main class="p-4">
+  <main class="px-4 py-8">
     <ExperienceCard
       link="https://www.avanade.com"
       heading="Avanade"

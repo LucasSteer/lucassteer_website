@@ -24,7 +24,7 @@
         </ul>
       </nav>
     </header>
-    <div class="container mx-auto my-4">
+    <div class="container mx-auto">
       <nuxt />
     </div>
     <footer
