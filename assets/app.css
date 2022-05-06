@@ -3,10 +3,12 @@
 
 @layer base {
   * {
-    /* font-size: 10px; */
     font-size: 16px;
-    scrollbar-gutter: stable both-edges;
     @apply font-sans text-grey;
+  }
+
+  html {
+    scrollbar-gutter: stable both-edges;
   }
 
   @supports not (scrollbar-gutter: auto) {
