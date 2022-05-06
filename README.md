@@ -30,9 +30,9 @@ $ npm run generate
 - Redesign index page
   - More of a bubbled feature highlighting style, rather than blocks of text?
 - Redesign ProjectCard component
-  - Title of project card above image
-  - Remove horizontal padding and rounding of image
-  - Have dimensions scale with greater number of cards
+  - Maybe: Title of project card above image
+  - Maybe: Remove horizontal padding and rounding of image
+  - Maybe: tags for skills
 - Redesign navbar
   - Improve visuals of navbar at the mobile breakpoint (maybe a hamburger menu?)
 - Redesign logo
