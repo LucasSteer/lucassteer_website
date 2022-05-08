@@ -4,11 +4,12 @@
 @layer base {
   * {
     font-size: 16px;
-    @apply font-sans text-grey;
+    @apply font-sans;
   }
 
   html {
     scrollbar-gutter: stable both-edges;
+    @apply text-grey;
   }
 
   @supports not (scrollbar-gutter: auto) {
