@@ -35,6 +35,18 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      primary: {
+        base: '#19522E',
+        baseLarge: '#206F3E',
+        highlight: '#268249',
+        highlightLarge: '#30A65D',
+      },
+      links: {
+        base: '#144A76',
+        baseLarge: '#1965A3',
+        highlight: '#1E78C2',
+        highlightLarge: '#4299E1',
+      },
     }),
     columns: {
       auto: 'auto',
@@ -812,23 +824,14 @@ module.exports = {
       1: '1',
       2: '2',
     },
-    textColor: {
+    textColor: ({ theme }) => ({
       grey: {
         DEFAULT: '#2D3748',
       },
-      green: {
-        base: '#19522E',
-        baseLarge: '#206F3E',
-        highlight: '#268249',
-        highlightLarge: '#30A65D',
-      },
-      blue: {
-        base: '#144A76',
-        baseLarge: '#1965A3',
-        highlight: '#1E78C2',
-        highlightLarge: '#4299E1',
-      },
-    },
+      white: theme('colors.white'),
+      green: theme('colors.primary'),
+      blue: theme('colors.links'),
+    }),
     textDecorationColor: ({ theme }) => theme('colors'),
     textDecorationThickness: {
       auto: 'auto',
