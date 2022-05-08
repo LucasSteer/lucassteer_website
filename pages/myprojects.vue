@@ -2,9 +2,8 @@
   <main
     class="mx-auto grid gap-12 p-12 tablet:gap-8 tablet:p-8"
     :class="{
-      'tablet:grid-cols-2': projects.length >= 2, // fewer items than columns looks weird without context
-      'desktop:grid-cols-3': projects.length >= 3,
-      'desktop:w-3/4': projects.length == 1, // fitting to container is too large for desktop
+      'desktop:grid-cols-2': projects.length >= 2, // fewer items than columns looks weird without context
+      'desktop:w-2/3': projects.length == 1, // fitting to container is too large for desktop
     }"
   >
     <ProjectCard
@@ -15,6 +14,7 @@
       :link="project.link"
       :imgSrc="project.imgSrc"
       :imgAlt="project.imgAlt"
+      :tags="project.tags"
     />
   </main>
 </template>
@@ -41,6 +41,7 @@ export default {
           link: 'https://github.com/LucasSteer/CIS4250_GeocARching',
           imgSrc: '/thumbnails/GeocARching.jpg',
           imgAlt: 'A black-and-white photo of a 3D model of a cactus in AR',
+          tags: ['Android', 'Kotlin', 'Firebase', 'AR'],
         },
       ],
     };

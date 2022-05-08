@@ -2,7 +2,10 @@
   <section
     class="transform overflow-hidden rounded-lg shadow-card transition duration-200 ease-in-out hover:scale-103 focus:scale-103 motion-reduce:transition-none motion-reduce:hover:transform-none"
   >
-    <ExternalLink :url="link">
+    <ExternalLink
+      :url="link"
+      class="text-grey hover:text-grey hover:no-underline focus:text-grey focus:no-underline"
+    >
       <img
         :src="imgSrc"
         :alt="imgAlt"
@@ -11,7 +14,7 @@
         class="h-full w-full"
       />
       <div
-        class="min-h-1/6 absolute bottom-0 flex w-full flex-col justify-center bg-white p-2 tablet:py-4 tablet:px-8"
+        class="min-h-1/6 absolute bottom-0 flex w-full flex-col justify-center gap-2 bg-white px-4 pt-2 pb-8 tablet:px-8 tablet:pt-3 tablet:pb-10"
       >
         <h2
           class="text-xl tracking-widest text-green-baseLarge tablet:text-2xl desktop:text-4xl"
@@ -23,6 +26,14 @@
         >
           {{ subtitle }}
         </h3>
+        <div class="mt-4 flex flex-row gap-4">
+          <span
+            v-for="(tag, index) in tags"
+            :key="index"
+            class="rounded-md bg-primary-base p-2 align-middle leading-4 text-white tablet:text-lg tablet:leading-4 desktop:text-xl"
+            >{{ tag }}</span
+          >
+        </div>
       </div>
     </ExternalLink>
   </section>
@@ -56,6 +67,12 @@ export default {
     link: {
       type: String,
       default: '/',
+    },
+    tags: {
+      type: Array,
+      default: () => {
+        [];
+      },
     },
   },
 };
