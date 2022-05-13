@@ -5,8 +5,8 @@
       heading="Avanade"
       img-src="/logos/AvanadeLogo.png"
       img-alt="Avanade Logo"
-      ec-role="Analyst, Full-Stack Developer"
       timeline="January 2020 - Present"
+      location="Toronto, Ontario, Canada"
       is-odd
     >
       <div class="mt-4 tablet:mx-4 tablet:mb-4 tablet:mt-6">
@@ -52,6 +52,7 @@
       img-alt="CAAT Pension Plan Logo"
       ec-role="Software Developer (Summer Student)"
       timeline="May 2019 - August 2019"
+      location="Toronto, Ontario, Canada"
       :is-odd="false"
     >
       <p>
@@ -71,6 +72,7 @@
       img-alt="CGI Logo"
       ec-role="Software Engineer (Co-op)"
       timeline="May 2018 - August 2018"
+      location="Markham, Ontario, Canada"
       is-odd
     >
       <p>
@@ -88,6 +90,7 @@
       img-alt="Jibestream Logo"
       ec-role="Developer (Co-op)"
       timeline="January 2018 - March 2018"
+      location="Toronto, Ontario, Canada"
       :is-odd="false"
     >
       <p>
@@ -107,6 +110,7 @@
       img-alt="Confederation Freezers Logo"
       ec-role="Application Developer (Co-op)"
       timeline="May 2017 - August 2017"
+      location="Brampton, Ontario, Canada"
       is-odd
     >
       <p>
@@ -126,6 +130,7 @@
       img-alt="eSentire Logo"
       ec-role="Technical Writer (Co-op)"
       timeline="May 2016 - December 2016"
+      location="Cambridge, Ontario, Canada"
       :is-odd="false"
     >
       <p>
