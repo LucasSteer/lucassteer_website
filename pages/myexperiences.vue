@@ -9,11 +9,40 @@
       timeline="January 2020 - Present"
       is-odd
     >
-      <p>
-        I'm currently employed as an analyst-level full-stack developer at
-        Avanade. I work with clients across industries and contribute to the
-        success of their projects throughout the software stack.
-      </p>
+      <div class="mt-4 tablet:mx-4 tablet:mb-4 tablet:mt-6">
+        <PromotionCard
+          ec-role="Consultant, Full-Stack Developer"
+          timeline="December 2021 - Present"
+        >
+          <p>
+            I'm currently employed as an analyst-level full-stack developer at
+            Avanade. I work with clients across industries and contribute to the
+            success of their projects throughout the software stack.
+          </p>
+        </PromotionCard>
+        <ExperienceCardConnecter />
+        <PromotionCard
+          ec-role="Senior Analyst, Full-Stack Developer"
+          timeline="December 2020 - December 2021"
+        >
+          <p>
+            I'm currently employed as an analyst-level full-stack developer at
+            Avanade. I work with clients across industries and contribute to the
+            success of their projects throughout the software stack.
+          </p>
+        </PromotionCard>
+        <ExperienceCardConnecter />
+        <PromotionCard
+          ec-role="Analyst, Full-Stack Developer"
+          timeline="January 2020 - December 2020"
+        >
+          <p>
+            I'm currently employed as an analyst-level full-stack developer at
+            Avanade. I work with clients across industries and contribute to the
+            success of their projects throughout the software stack.
+          </p>
+        </PromotionCard>
+      </div>
     </ExperienceCard>
     <ExperienceCardConnecter />
     <ExperienceCard
@@ -113,12 +142,14 @@
 <script>
 import ExperienceCard from '~/components/ExperienceCard.vue';
 import ExperienceCardConnecter from '~/components/ExperienceCardConnecter.vue';
+import PromotionCard from '~/components/PromotionCard.vue';
 
 export default {
   name: 'MyexperiencesPage',
   components: {
     ExperienceCard,
     ExperienceCardConnecter,
+    PromotionCard,
   },
   head() {
     return {
