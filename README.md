@@ -24,8 +24,6 @@ $ npm run generate
   - Redesign any components necessary to use scaled gray backgrounds instead of shadows
   - Maybe: add manual toggle for dark mode (will need to check for best practices since I want to use prefers-color-scheme where possible)
 - Enhance ExperienceCard component
-  - Add "sub-cards" for different positions at the same company
-  - Maybe: tags for skills
   - Maybe: drop-downs for more detailed descriptions
 - Redesign index page
   - More of a bubbled feature highlighting style, rather than blocks of text?
