@@ -15,9 +15,13 @@
           timeline="December 2021 - Present"
         >
           <p>
-            I'm currently employed as an analyst-level full-stack developer at
-            Avanade. I work with clients across industries and contribute to the
-            success of their projects throughout the software stack.
+            Near the end of my second year, I was promoted to the Consultant
+            level for my client work and my leadership roles in internal Avanade
+            groups, like our analyst community. These days I'm a technical
+            architect for a large public services client. I'm responsible for
+            the deployment and administration of a highly integrated system that
+            uses Dynamics 365 for CRM and ERP alongside Azure objects for API
+            management, cloud storage, messaging, and serverless code.
           </p>
         </PromotionCard>
         <ExperienceCardConnecter />
@@ -26,9 +30,13 @@
           timeline="December 2020 - December 2021"
         >
           <p>
-            I'm currently employed as an analyst-level full-stack developer at
-            Avanade. I work with clients across industries and contribute to the
-            success of their projects throughout the software stack.
+            I was promoted to Senior Analyst before the end of my first year for
+            being able to hit the ground running and deliver excellent work for
+            our client. While there, I was also given a role promotion and
+            became the development team lead for the project. My ability to
+            define technical priorities, delegate tasks, and advocate for my
+            team in business discussions resolved the project's timeline issues
+            and delivered the next five releases ahead of schedule.
           </p>
         </PromotionCard>
         <ExperienceCardConnecter />
@@ -37,9 +45,13 @@
           timeline="January 2020 - December 2020"
         >
           <p>
-            I'm currently employed as an analyst-level full-stack developer at
-            Avanade. I work with clients across industries and contribute to the
-            success of their projects throughout the software stack.
+            When I was hired on by Avanade as an analyst-level full-stack
+            developer I was quickly placed on my first project with a large
+            banking client. There I worked as a front-end web developer and used
+            Vue and Tailwind to develop a framework for building SPAs. I also
+            implemented mobile-first, accessibility-focused, responsive web
+            designs that helped set the standard for the team that uses our
+            framework.
           </p>
         </PromotionCard>
       </div>
@@ -58,7 +70,7 @@
       <p>
         At CAAT Pension Plan, myself and another summer student created the
         first phase of a refresh of the company's intranet using SharePoint. We
-        ensured that CAAT employeers were a key part in the design process by
+        ensured that CAAT employees were a key part in the design process by
         creating and running ideation and requirements gathering sessions. We
         then refined these requirements with key stakeholders and implemented
         them according to industry best practices.
@@ -97,9 +109,9 @@
         Jibestream exposed me to modern front-end web development as a co-op
         developer. Using React, Redux, and ES6 JavaScript, I re-engineered an
         existing application to make use of the latest release of Jibestream's
-        proprietary SDK. Myself and a fellow co-op conducted peer reviews of
-        each other's work to ensure that it behaved as expected and employed
-        best practices.
+        proprietary SDK. A fellow co-op and I conducted peer reviews of each
+        other's work to ensure that it behaved as expected and employed best
+        practices.
       </p>
     </ExperienceCard>
     <ExperienceCardConnecter />
@@ -137,7 +149,7 @@
         As a technical writer at eSentire I was responsible for translating the
         work of technical resources, such as developers, into clear and tangible
         benefits for end users. I was responsible for constructing, refining,
-        and maintaining internal and exteral documentation for a variety of
+        and maintaining internal and external documentation for a variety of
         audiences and use cases.
       </p>
     </ExperienceCard>
