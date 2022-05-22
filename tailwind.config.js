@@ -827,6 +827,7 @@ module.exports = {
     textColor: ({ theme }) => ({
       grey: {
         DEFAULT: '#2D3748',
+        ...theme('colors.grey'),
       },
       white: theme('colors.white'),
       green: theme('colors.primary'),
