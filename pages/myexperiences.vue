@@ -1,8 +1,7 @@
 <template>
   <main class="flex flex-col px-4 py-8">
     <ExperienceCard
-      link="https://www.avanade.com"
-      heading="Avanade"
+      company="Avanade"
       img-src="/logos/AvanadeLogo.png"
       img-alt="Avanade Logo"
       ec-role="Multiple Roles"
@@ -69,8 +68,7 @@
     </ExperienceCard>
     <ExperienceCardConnecter />
     <ExperienceCard
-      link="https://www.caatpension.on.ca"
-      heading="CAAT Pension Plan"
+      company="CAAT Pension Plan"
       img-src="/logos/CAATPensionPlanLogo.png"
       img-alt="CAAT Pension Plan Logo"
       ec-role="Software Developer (Summer Student)"
@@ -91,8 +89,7 @@
     </ExperienceCard>
     <ExperienceCardConnecter />
     <ExperienceCard
-      link="https://www.cgi.com"
-      heading="CGI"
+      company="CGI"
       img-src="/logos/CGILogo.png"
       img-alt="CGI Logo"
       ec-role="Software Engineer (Co-op)"
@@ -111,8 +108,7 @@
     </ExperienceCard>
     <ExperienceCardConnecter />
     <ExperienceCard
-      link="https://www.jibestream.com"
-      heading="Jibestream"
+      company="Jibestream"
       img-src="/logos/JibestreamLogo.png"
       img-alt="Jibestream Logo"
       ec-role="Developer (Co-op)"
@@ -133,8 +129,7 @@
     </ExperienceCard>
     <ExperienceCardConnecter />
     <ExperienceCard
-      link="https://www.gocold.ca"
-      heading="Confederation Freezers"
+      company="Confederation Freezers"
       img-src="/logos/ConfederationFreezersLogo.png"
       img-alt="Confederation Freezers Logo"
       ec-role="Application Developer (Co-op)"
@@ -155,8 +150,7 @@
     </ExperienceCard>
     <ExperienceCardConnecter />
     <ExperienceCard
-      link="https://www.esentire.com"
-      heading="eSentire"
+      company="eSentire"
       img-src="/logos/eSentireLogo.png"
       img-alt="eSentire Logo"
       ec-role="Technical Writer (Co-op)"

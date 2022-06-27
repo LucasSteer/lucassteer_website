@@ -19,12 +19,10 @@
           class="min-w-16 h-16 min-h-16 w-16 rounded-full border-2 border-grey-700 object-scale-down"
         />
         <div class="ml-2 tablet:ml-8">
-          <h2>
-            <ExternalLink
-              :url="link"
-              class="text-2xl tracking-widest text-blue-baseLarge hover:text-blue-highlightLarge focus:text-blue-highlightLarge"
-              >{{ heading }}
-            </ExternalLink>
+          <h2
+            class="text-2xl tracking-widest font-semibold text-green-baseLarge"
+          >
+            {{ company }}
           </h2>
           <p
             class="text-base font-semibold tracking-wide text-green-base tablet:text-lg"
@@ -60,17 +58,15 @@
 </template>
 
 <script>
-import ExternalLink from '~/components/ExternalLink.vue';
 import AccordionWrapper from '~/components/AccordionWrapper.vue';
 
 export default {
   name: 'ExperienceCard',
   components: {
-    ExternalLink,
     AccordionWrapper,
   },
   props: {
-    heading: {
+    company: {
       type: String,
       default: '',
     },
@@ -81,10 +77,6 @@ export default {
     imgAlt: {
       type: String,
       default: '',
-    },
-    link: {
-      type: String,
-      default: '/',
     },
     ecRole: {
       type: String,
