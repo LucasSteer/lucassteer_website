@@ -1,6 +1,6 @@
 <template>
-  <section
-    class="group w-full cursor-pointer rounded-lg px-4 pt-2 pb-2 shadow-card hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 desktop:w-7/12"
+  <button
+    class="group w-full text-left cursor-pointer rounded-lg px-4 pt-2 pb-2 shadow-card hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 desktop:w-7/12"
     :class="{
       'desktop:ml-auto': !isOdd,
       'pb-4': isExpanded,
@@ -54,7 +54,7 @@
     <AccordionWrapper>
       <slot v-if="isExpanded" />
     </AccordionWrapper>
-  </section>
+  </button>
 </template>
 
 <script>
