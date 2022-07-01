@@ -6,6 +6,8 @@
       'pb-4': isExpanded,
     }"
     @click="isExpanded = !isExpanded"
+    :aria-controls="`${company}-${ecRole}`"
+    :aria-expanded="isExpanded ? 'true' : 'false'"
   >
     <div
       class="flex flex-row items-center justify-between border-grey-400 px-2 pt-2 tablet:px-8 tablet:py-4"
@@ -51,7 +53,7 @@
       class="w-auto scale-x-0 transform-gpu border-b-2 border-grey-700 transition-transform duration-300"
       :class="{ 'scale-x-100': isExpanded }"
     ></div>
-    <AccordionWrapper>
+    <AccordionWrapper :id="`${company}-${ecRole}`">
       <slot v-if="isExpanded" />
     </AccordionWrapper>
   </button>
