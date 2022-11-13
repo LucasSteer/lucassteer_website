@@ -8,7 +8,7 @@
     @click="isExpanded = !isExpanded"
   >
     <div
-      class="flex flex-row justify-between border-grey-400 px-2 pt-2 tablet:px-8 tablet:py-4"
+      class="flex flex-row justify-between items-center border-grey-400 px-2 pt-2 tablet:px-8 tablet:py-4"
     >
       <div class="flex flex-row items-center">
         <img
