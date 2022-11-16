@@ -16,7 +16,7 @@
             timeline="December 2021 - Present"
           >
             <div>
-              <p class="pt-4 tablet:px-4 tablet:pt-6 tablet:pb-4">
+              <p>
                 Near the end of my second year, I was promoted to the Consultant
                 level for my client work and my leadership roles in internal
                 Avanade groups, like our analyst community. These days I'm a
@@ -34,7 +34,7 @@
             timeline="December 2020 - December 2021"
           >
             <div>
-              <p class="pt-4 tablet:px-4 tablet:pt-6 tablet:pb-4">
+              <p>
                 I was promoted to Senior Analyst before the end of my first year
                 for being able to hit the ground running and deliver excellent
                 work for our client. While there, I was also given a role
@@ -52,7 +52,7 @@
             timeline="January 2020 - December 2020"
           >
             <div>
-              <p class="pt-4 tablet:px-4 tablet:pt-6 tablet:pb-4">
+              <p>
                 When I was hired on by Avanade as an analyst-level full-stack
                 developer I was quickly placed on my first project with a large
                 banking client. There I worked as a front-end web developer and

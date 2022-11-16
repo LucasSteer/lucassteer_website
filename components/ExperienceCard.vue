@@ -6,11 +6,11 @@
       'pb-4': isExpanded,
     }"
     @click="isExpanded = !isExpanded"
-    :aria-controls="`${company}-${ecRole}`"
+    :aria-controls="accordionId"
     :aria-expanded="isExpanded ? 'true' : 'false'"
   >
     <div
-      class="flex flex-row items-center justify-between border-grey-400 px-2 pt-2 tablet:px-8 tablet:py-4"
+      class="flex flex-row items-center justify-between border-grey-400 px-2 py-4 tablet:px-8"
     >
       <div class="flex flex-row items-center">
         <img
@@ -20,7 +20,7 @@
           width="64"
           class="min-w-16 h-16 min-h-16 w-16 rounded-full border-2 border-grey-700 object-scale-down"
         />
-        <div class="ml-2 tablet:ml-8">
+        <div class="ml-4 tablet:ml-8">
           <h2
             class="text-2xl tracking-widest font-semibold text-green-baseLarge"
           >
@@ -53,7 +53,7 @@
       class="w-auto scale-x-0 transform-gpu border-b-2 border-grey-700 transition-transform duration-300"
       :class="{ 'scale-x-100': isExpanded }"
     ></div>
-    <AccordionWrapper :id="`${company}-${ecRole}`">
+    <AccordionWrapper :id="accordionId">
       <slot v-if="isExpanded" />
     </AccordionWrapper>
   </button>
@@ -100,6 +100,7 @@ export default {
   data() {
     return {
       isExpanded: false,
+      accordionId: `${this.company}-${this.ecRole}`.replace(/\s/g, ''),
     };
   },
 };

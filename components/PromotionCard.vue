@@ -8,7 +8,9 @@
         {{ timeline }}
       </p>
     </div>
-    <slot />
+    <div class="pt-2 px-2 tablet:pb-2 tablet:px-4">
+      <slot />
+    </div>
   </section>
 </template>
 

@@ -24,7 +24,17 @@ $ npm run generate
   - Redesign any components necessary to use scaled gray backgrounds instead of shadows
   - Maybe: add manual toggle for dark mode (will need to check for best practices since I want to use prefers-color-scheme where possible)
 - Enhance ExperienceCard component
-  - Maybe: drop-downs for more detailed descriptions
+  - Special icon for the expansion caret
+  - accordion currently not very accessible (reads everything in button)
+    - Resources:
+      - [accordion example in w3 docs](https://www.w3.org/WAI/ARIA/apg/example-index/accordion/accordion)
+      - [details element MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+      - [animating the details element by CSS tricks](https://css-tricks.com/how-to-animate-the-details-element/)
+  - prefers-reduced-motion considerations for accordion animation or functionality
+    - Resources:
+      - [prefers-reduced-motion MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
+      - [Google Dev docs about prefers-reduced-motion](https://web.dev/prefers-reduced-motion/)
+      - [prefers-reduced-motion support in Tailwind docs](https://tailwindcss.com/docs/animation#prefers-reduced-motion)
 - Redesign index page
   - More of a bubbled feature highlighting style, rather than blocks of text?
 - Redesign navbar
