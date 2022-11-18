@@ -30,11 +30,6 @@ $ npm run generate
       - [accordion example in w3 docs](https://www.w3.org/WAI/ARIA/apg/example-index/accordion/accordion)
       - [details element MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
       - [animating the details element by CSS tricks](https://css-tricks.com/how-to-animate-the-details-element/)
-  - prefers-reduced-motion considerations for accordion animation or functionality
-    - Resources:
-      - [prefers-reduced-motion MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
-      - [Google Dev docs about prefers-reduced-motion](https://web.dev/prefers-reduced-motion/)
-      - [prefers-reduced-motion support in Tailwind docs](https://tailwindcss.com/docs/animation#prefers-reduced-motion)
 - Redesign index page
   - More of a bubbled feature highlighting style, rather than blocks of text?
 - Redesign navbar
@@ -43,3 +38,7 @@ $ npm run generate
   - More readable regardless of background colour (maybe a circle solid background?)
   - Could reduce colours and remove gradients to make the primary colour on the L
 - Setup some sort of CI to automatically run builds based off of this repository
+
+## Known Issues
+
+- prefers-reduced-motion messes with project card layout

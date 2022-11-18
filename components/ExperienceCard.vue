@@ -39,7 +39,7 @@
       </div>
 
       <div
-        class="h-16 w-16 select-none rounded-full text-center align-top transition-all duration-500 ease-in-out"
+        class="h-16 w-16 select-none rounded-full text-center align-top transition-all motion-reduce:transition-none duration-500 ease-in-out"
         :class="{ 'rotate-180': isExpanded }"
       >
         <p
@@ -50,7 +50,7 @@
       </div>
     </div>
     <div
-      class="w-auto scale-x-0 transform-gpu border-b-2 border-grey-700 transition-transform duration-300"
+      class="w-auto scale-x-0 transform-gpu border-b-2 border-grey-700 transition-transform motion-reduce:transition-none duration-300"
       :class="{ 'scale-x-100': isExpanded }"
     ></div>
     <AccordionWrapper :id="accordionId">
