@@ -38,7 +38,3 @@ $ npm run generate
   - More readable regardless of background colour (maybe a circle solid background?)
   - Could reduce colours and remove gradients to make the primary colour on the L
 - Setup some sort of CI to automatically run builds based off of this repository
-
-## Known Issues
-
-- prefers-reduced-motion messes with project card layout
