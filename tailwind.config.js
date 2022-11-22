@@ -818,7 +818,11 @@ module.exports = {
     space: ({ theme }) => ({
       ...theme('spacing'),
     }),
-    stroke: ({ theme }) => theme('colors'),
+    stroke: ({ theme }) => ({
+      grey: theme('colors.grey'),
+      green: theme('colors.primary'),
+      blue: theme('colors.links'),
+    }),
     strokeWidth: {
       0: '0',
       1: '1',

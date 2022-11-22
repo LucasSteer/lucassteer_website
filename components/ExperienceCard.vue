@@ -37,17 +37,18 @@
           </p>
         </div>
       </div>
-
-      <div
-        class="h-16 w-16 select-none rounded-full text-center align-top transition-all motion-reduce:transition-none duration-500 ease-in-out"
+      <svg
+        viewBox="0 0 100 100"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+        width="50"
+        class="stroke-grey-500 group-hover:stroke-green-highlight group-focus:stroke-green-highlight transition-all motion-reduce:transition-none duration-500 ease-in-out"
         :class="{ 'rotate-180': isExpanded }"
       >
-        <p
-          class="text-6xl text-grey-500 group-hover:text-green-highlight group-focus:text-green-highlight"
-        >
-          ˅
-        </p>
-      </div>
+        <path d="m 10 30 l 40 40 l 40 -40"></path>
+      </svg>
     </div>
     <div
       class="w-auto scale-x-0 transform-gpu border-b-2 border-grey-700 transition-transform motion-reduce:transition-none duration-300"

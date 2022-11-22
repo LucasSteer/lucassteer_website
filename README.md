@@ -23,7 +23,6 @@ $ npm run generate
   - accordion currently not very accessible (reads everything in button)
     - Resources:
       - [accordion example in w3 docs](https://www.w3.org/WAI/ARIA/apg/example-index/accordion/accordion)
-  - Special icon for the expansion caret
   - Maybe: expand/collapse all for experience accordions
   - Maybe: tags for experiences
 - Setup some sort of CI to automatically run builds based off of this repository
