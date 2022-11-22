@@ -96,10 +96,14 @@ export default {
       type: Boolean,
       default: false,
     },
+    startExpanded: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {
-      isExpanded: false,
+      isExpanded: this.startExpanded,
       accordionId: `${this.company}-${this.ecRole}`.replace(/\s/g, ''),
     };
   },

@@ -24,14 +24,17 @@ $ npm run generate
   - Redesign any components necessary to use scaled gray backgrounds instead of shadows
   - Maybe: add manual toggle for dark mode (will need to check for best practices since I want to use prefers-color-scheme where possible)
 - Enhance ExperienceCard component
-  - Special icon for the expansion caret
   - accordion currently not very accessible (reads everything in button)
     - Resources:
       - [accordion example in w3 docs](https://www.w3.org/WAI/ARIA/apg/example-index/accordion/accordion)
-      - [details element MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
-      - [animating the details element by CSS tricks](https://css-tricks.com/how-to-animate-the-details-element/)
+  - Special icon for the expansion caret
+  - Maybe: expand/collapse all for experience accordions
+  - Maybe: tags for experiences
 - Redesign index page
   - More of a bubbled feature highlighting style, rather than blocks of text?
+  - a11y issue
+    - headings used for name and pronouns abuse heading structure (could be fixed as part of about me / index redesign)
+  - modify note about the site regarding accessibility and JavaScript (as JavaScript is required to make certain components accessible, such as the accordions)
 - Redesign navbar
   - Improve visuals of navbar at the mobile breakpoint (maybe a hamburger menu?)
 - Redesign logo
