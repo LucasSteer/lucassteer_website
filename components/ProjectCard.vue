@@ -1,6 +1,6 @@
 <template>
   <section
-    class="transform transition-transform duration-200 ease-in-out overflow-hidden rounded-lg shadow-card hover:scale-103 focus:scale-103 motion-reduce:transition-none motion-reduce:hover:transition-none motion-reduce:focus:transition-none motion-reduce:hover:scale-100"
+    class="transform motion-safe:transition-transform duration-200 ease-in-out overflow-hidden rounded-lg shadow-card motion-safe:hover:scale-103 motion-safe:focus:scale-103"
   >
     <ExternalLink
       :url="link"
