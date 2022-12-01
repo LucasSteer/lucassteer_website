@@ -19,12 +19,6 @@ $ npm run generate
 
 ## TODO
 
-- Enhance ExperienceCard component
-  - accordion currently not very accessible (reads everything in button)
-    - Resources:
-      - [accordion example in w3 docs](https://www.w3.org/WAI/ARIA/apg/example-index/accordion/accordion)
-  - Maybe: expand/collapse all for experience accordions
-  - Maybe: tags for experiences
 - Setup some sort of CI to automatically run builds based off of this repository
 - Redesign navbar
   - Improve visuals of navbar at the mobile breakpoint (maybe a hamburger menu?)

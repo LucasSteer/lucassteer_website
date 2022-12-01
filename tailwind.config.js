@@ -299,7 +299,11 @@ module.exports = {
       '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
       none: '0 0 #0000',
     },
-    fill: ({ theme }) => theme('colors'),
+    fill: ({ theme }) => ({
+      grey: theme('colors.grey'),
+      green: theme('colors.primary'),
+      blue: theme('colors.links'),
+    }),
     grayscale: {
       0: '0',
       DEFAULT: '100%',
