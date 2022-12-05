@@ -8,8 +8,7 @@
   >
     <h2>
       <button
-        class="group w-full text-left cursor-pointer py-2 px-4 hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100"
-        :class="{ 'py-0': isExpanded }"
+        class="group w-full text-left cursor-pointer px-4 hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100"
         @click="isExpanded = !isExpanded"
         :aria-controls="accordionId"
         :aria-expanded="isExpanded ? 'true' : 'false'"
