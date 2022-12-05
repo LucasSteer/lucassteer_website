@@ -299,7 +299,11 @@ module.exports = {
       '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
       none: '0 0 #0000',
     },
-    fill: ({ theme }) => theme('colors'),
+    fill: ({ theme }) => ({
+      grey: theme('colors.grey'),
+      green: theme('colors.primary'),
+      blue: theme('colors.links'),
+    }),
     grayscale: {
       0: '0',
       DEFAULT: '100%',
@@ -818,7 +822,11 @@ module.exports = {
     space: ({ theme }) => ({
       ...theme('spacing'),
     }),
-    stroke: ({ theme }) => theme('colors'),
+    stroke: ({ theme }) => ({
+      grey: theme('colors.grey'),
+      green: theme('colors.primary'),
+      blue: theme('colors.links'),
+    }),
     strokeWidth: {
       0: '0',
       1: '1',
@@ -827,6 +835,7 @@ module.exports = {
     textColor: ({ theme }) => ({
       grey: {
         DEFAULT: '#2D3748',
+        ...theme('colors.grey'),
       },
       white: theme('colors.white'),
       green: theme('colors.primary'),
