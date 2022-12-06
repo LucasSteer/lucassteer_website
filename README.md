@@ -9,12 +9,10 @@ $ sudo npm install --unsafe-perm --no-optional
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
 # generate static project
 $ npm run generate
+# preview static project
+$ npm run preview
 ```
 
 ## TODO
@@ -34,3 +32,9 @@ $ npm run generate
 - Redesign logo
   - More readable regardless of background colour (maybe a circle solid background?)
   - Could reduce colours and remove gradients to make the primary colour on the L
+
+## BUG
+
+- title not working
+- favicon not working
+- likely other head attrs
