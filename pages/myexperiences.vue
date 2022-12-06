@@ -145,17 +145,8 @@
 </template>
 
 <script>
-import ExperienceCard from '~/components/ExperienceCard.vue';
-import ExperienceCardConnecter from '~/components/ExperienceCardConnecter.vue';
-import PromotionCard from '~/components/PromotionCard.vue';
-
 export default {
   name: 'MyexperiencesPage',
-  components: {
-    ExperienceCard,
-    ExperienceCardConnecter,
-    PromotionCard,
-  },
   head() {
     return {
       title: 'My Experiences | Lucas Steer',

@@ -42,14 +42,7 @@
 </template>
 
 <script>
-import NavLink from '~/components/NavLink.vue';
-import ExternalLink from '~/components/ExternalLink.vue';
-
 export default {
   name: 'DefaultLayout',
-  components: {
-    NavLink,
-    ExternalLink,
-  },
 };
 </script>

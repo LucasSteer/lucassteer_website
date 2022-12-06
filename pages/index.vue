@@ -92,15 +92,8 @@
 </template>
 
 <script>
-import ExternalLink from '~/components/ExternalLink.vue';
-import InternalLink from '~/components/InternalLink.vue';
-
 export default {
   name: 'IndexPage',
-  components: {
-    ExternalLink,
-    InternalLink,
-  },
   head() {
     return {
       title: 'About Me | Lucas Steer',

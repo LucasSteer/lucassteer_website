@@ -13,13 +13,8 @@
 </template>
 
 <script>
-import TimelineBadge from './TimelineBadge.vue';
-
 export default {
   name: 'PromotionCard',
-  components: {
-    TimelineBadge,
-  },
   props: {
     ecRole: {
       type: String,
