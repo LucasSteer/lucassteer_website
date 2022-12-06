@@ -25,7 +25,7 @@
       </nav>
     </header>
     <div class="container mx-auto">
-      <nuxt />
+      <slot />
     </div>
     <footer
       class="min-h-16 border-t-2 border-grey-900 px-4 pt-2 tablet:flex tablet:flex-row tablet:items-center tablet:justify-between tablet:pt-0"
@@ -44,8 +44,6 @@
 <script>
 import NavLink from '~/components/NavLink.vue';
 import ExternalLink from '~/components/ExternalLink.vue';
-
-require('@/assets/app.css'); // import all CSS
 
 export default {
   name: 'DefaultLayout',

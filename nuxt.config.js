@@ -1,4 +1,5 @@
-export default {
+// eslint-disable-next-line no-undef
+export default defineNuxtConfig({
   head: {
     htmlAttrs: {
       lang: 'en-CA',
@@ -119,12 +120,12 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
-  tailwindcss: {
-    configPath: '~/tailwind.config.js',
-    cssPath: '~/assets/app.css',
-    // purgeCSSInDev: true,
-    purgeCSSInDev: false,
-    exposeConfig: false,
+  css: ['~/assets/css/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
   target: 'static',
   generate: {
@@ -132,4 +133,4 @@ export default {
     dir: 'docs', // for GitHub pages
     fallback: '404.html',
   },
-};
+});
