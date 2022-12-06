@@ -2,7 +2,7 @@
   <main class="p-4">
     <section class="flex flex-col items-center">
       <img
-        src="headshot.jpg"
+        src="/headshot.jpg"
         alt="A picture of me, Lucas Steer, smiling in a field while wearing a navy-blue suit"
         height="128"
         width="128"
