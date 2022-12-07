@@ -88,15 +88,8 @@
 </template>
 
 <script>
-import AccordionWrapper from '~/components/AccordionWrapper.vue';
-import TimelineBadge from './TimelineBadge.vue';
-
 export default {
   name: 'ExperienceCard',
-  components: {
-    AccordionWrapper,
-    TimelineBadge,
-  },
   props: {
     company: {
       type: String,

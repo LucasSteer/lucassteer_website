@@ -3,8 +3,8 @@
     @enter="onEnter"
     @after-enter="onAfterEnter"
     @leave="onLeave"
-    enter-active-class="transform-gpu transition-all motion-reduce:transition-none duration-300 overflow-hidden"
-    leave-active-class="transform-gpu transition-all motion-reduce:transition-none duration-300 overflow-hidden"
+    enter-active-class="transform-gpu motion-safe:transition-all motion-safe:duration-300 overflow-hidden"
+    leave-active-class="transform-gpu motion-safe:transition-all motion-safe:duration-300 overflow-hidden"
     enter-to-class="h-0"
     leave-to-class="h-0"
   >
@@ -17,7 +17,7 @@
 
 export default {
   name: 'AccordionWrapper',
-  onMounted() {
+  mounted() {
     this.prefersReducedMotionMatch = window.matchMedia(
       '(prefers-reduced-motion: reduce)'
     );

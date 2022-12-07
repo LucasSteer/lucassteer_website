@@ -40,13 +40,8 @@
 </template>
 
 <script>
-import ExternalLink from '~/components/ExternalLink.vue';
-
 export default {
   name: 'ProjectCard',
-  components: {
-    ExternalLink,
-  },
   props: {
     title: {
       type: String,

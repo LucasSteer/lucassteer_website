@@ -20,13 +20,8 @@
 </template>
 
 <script>
-import ProjectCard from '~/components/ProjectCard.vue';
-
 export default {
   name: 'MyprojectsPage',
-  components: {
-    ProjectCard,
-  },
   head() {
     return {
       title: 'My Projects | Lucas Steer',
