@@ -4,7 +4,7 @@
 
 ```bash
 # install dependencies
-$ sudo npm install --unsafe-perm --no-optional
+$ npm ci
 
 # serve with hot reload at localhost:3000
 $ npm run dev
@@ -17,7 +17,6 @@ $ npm run preview
 
 ## TODO
 
-- Setup some sort of CI to automatically run builds based off of this repository
 - Redesign navbar
   - Improve visuals of navbar at the mobile breakpoint (maybe a hamburger menu?)
 - Redesign index page
@@ -32,9 +31,3 @@ $ npm run preview
 - Redesign logo
   - More readable regardless of background colour (maybe a circle solid background?)
   - Could reduce colours and remove gradients to make the primary colour on the L
-
-## BUG
-
-- title not working
-- favicon not working
-- likely other head attrs
