@@ -3,7 +3,7 @@
     :href="url"
     target="_blank"
     rel="noreferrer noopener"
-    class="font-semibold text-blue-base hover:text-blue-highlight hover:underline focus:text-blue-highlight focus:underline"
+    class="font-bold tracking-wide text-blue-base hover:text-blue-highlight hover:underline focus:text-blue-highlight focus:underline"
   >
     <slot /><span class="sr-only">Opens in a new window.</span>
   </a>
