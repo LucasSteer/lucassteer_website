@@ -1,6 +1,6 @@
 <template>
   <a
-    class="font-semibold transition duration-200 ease-in-out hover:text-green-highlightLarge hover:underline focus:text-green-highlightLarge focus:underline tablet:text-xl tablet:tracking-widest"
+    class="font-bold transition duration-200 ease-in-out hover:text-green-highlightLarge hover:underline focus:text-green-highlightLarge focus:underline tablet:text-xl tablet:tracking-wider"
     :class="{ 'text-green-baseLarge': isCurrentPage }"
     :href="url"
   >

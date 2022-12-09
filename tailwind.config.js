@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     './components/**/*.{js,vue,ts}',
@@ -373,6 +375,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      hyperlegible: ['Atkinson Hyperlegible', ...defaultTheme.fontFamily.sans],
       sans: [
         'ui-sans-serif',
         'system-ui',

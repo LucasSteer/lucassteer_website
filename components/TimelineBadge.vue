@@ -20,14 +20,14 @@
       :class="{ 'text-sm tablet:text-base': compact }"
     >
       <span
-        class="text-base tablet:text-lg font-semibold"
+        class="text-base tablet:text-lg font-bold"
         :class="{ 'text-sm tablet:text-base': compact }"
       >
         {{ start }}
       </span>
       to
       <span
-        class="text-base tablet:text-lg font-semibold"
+        class="text-base tablet:text-lg font-bold"
         :class="{ 'text-sm tablet:text-base': compact }"
       >
         {{ end }}

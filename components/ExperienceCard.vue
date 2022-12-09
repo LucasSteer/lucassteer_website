@@ -26,11 +26,11 @@
             />
             <div class="ml-4 tablet:ml-8">
               <p
-                class="text-2xl tracking-widest font-semibold text-green-baseLarge"
+                class="text-2xl tracking-widest font-bold text-green-baseLarge"
               >
                 {{ company }}
                 <span
-                  class="block text-base font-semibold tracking-wide text-green-base tablet:text-lg"
+                  class="block text-base font-bold tracking-wider text-green-base tablet:text-lg"
                   >{{ ecRole }}</span
                 >
               </p>

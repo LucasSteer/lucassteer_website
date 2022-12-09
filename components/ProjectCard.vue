@@ -22,7 +22,7 @@
           {{ title }}
         </h2>
         <h3
-          class="text-sm tracking-widest tablet:text-base tablet:leading-8 desktop:text-xl"
+          class="text-sm tracking-wider tablet:text-base tablet:leading-8 desktop:text-xl"
         >
           {{ subtitle }}
         </h3>
@@ -30,7 +30,7 @@
           <span
             v-for="(tag, index) in tags"
             :key="index"
-            class="rounded-md bg-primary-base p-2 align-middle leading-4 text-white tablet:text-lg tablet:leading-4 desktop:text-xl"
+            class="rounded-md bg-primary-base font-normal tracking-wide p-2 align-middle leading-4 text-white tablet:text-lg tablet:leading-4 desktop:text-xl"
             >{{ tag }}</span
           >
         </div>

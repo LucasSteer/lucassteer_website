@@ -9,7 +9,7 @@
         class="m-2 h-32 w-32 rounded-full tablet:m-4 tablet:h-40 tablet:w-40 desktop:h-64 desktop:w-64"
       />
       <h2
-        class="text-2xl font-semibold tracking-widest text-green-baseLarge tablet:text-3xl"
+        class="text-2xl font-bold tracking-widest text-green-baseLarge tablet:text-3xl"
       >
         Lucas Steer
       </h2>
@@ -60,7 +60,7 @@
     </section>
     <section>
       <h2
-        class="my-4 text-lg font-semibold tracking-widest text-green-base tablet:text-xl"
+        class="my-4 text-lg font-bold tracking-wider text-green-base tablet:text-xl"
       >
         A note about this site
       </h2>
