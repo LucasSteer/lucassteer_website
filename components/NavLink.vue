@@ -1,7 +1,9 @@
 <template>
   <a
-    class="font-bold transition duration-200 ease-in-out hover:text-green-highlightLarge hover:underline focus:text-green-highlightLarge focus:underline tablet:text-xl tablet:tracking-wider"
-    :class="{ 'text-green-baseLarge': isCurrentPage }"
+    class="font-bold transition duration-200 ease-in-out hover:text-green-highlightLarge dark:hover:text-greenDarkMode-highlightLarge hover:underline focus:text-green-highlightLarge dark:focus:text-greenDarkMode-highlightLarge focus:underline tablet:text-xl tablet:tracking-wider"
+    :class="{
+      'text-green-baseLarge dark:text-greenDarkMode-baseLarge': isCurrentPage,
+    }"
     :href="url"
   >
     {{ text }}

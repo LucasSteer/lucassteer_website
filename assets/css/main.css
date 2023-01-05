@@ -45,7 +45,7 @@
 
   html {
     scrollbar-gutter: stable both-edges;
-    @apply text-grey;
+    @apply text-grey dark:text-white dark:bg-zinc-800;
   }
 
   @supports not (scrollbar-gutter: auto) {

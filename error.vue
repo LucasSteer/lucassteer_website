@@ -1,18 +1,23 @@
 <template>
   <NuxtLayout>
-    <main class="text-center">
+    <main class="flex flex-col justify-around text-center">
       <h1 class="pb-10 tracking-wide">
         <span
-          v-if="error.statusCode === '404'"
-          class="text-6xl text-green-baseLarge"
+          v-if="error.statusCode == '404'"
+          class="text-2xl tablet:text-3xl desktop:text-4xl text-green-baseLarge dark:text-greenDarkMode-baseLarge"
         >
-          Page not found
+          Page not found ☹
         </span>
-        <span v-else class="text-6xl text-green-baseLarge">
-          An error occurred
+        <span
+          v-else
+          class="text-2xl tablet:text-3xl desktop:text-4xl text-green-baseLarge dark:text-greenDarkMode-baseLarge"
+        >
+          An error occurred 😕
         </span>
       </h1>
-      <p class="text-xl">Use the navigation bar to find your way back!</p>
+      <p class="text-lg tablet:text-xl desktop:text-2xl">
+        Use the navigation bar to find your way back!
+      </p>
       <img
         src="/favicon/favicon-310.png"
         alt=""
