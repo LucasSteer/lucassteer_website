@@ -1,7 +1,7 @@
 <template>
-  <div class="flex h-screen flex-col justify-between">
+  <div class="flex h-screen flex-col justify-between mx-4">
     <header
-      class="flex min-h-16 mx-4 flex-row items-center justify-between border-b-2 border-grey-900 dark:border-grey-400 px-2 py-2 tablet:min-h-initial tablet:pr-8"
+      class="flex min-h-16 flex-row items-center justify-between border-b-2 border-grey-900 dark:border-grey-400 px-2 py-2 tablet:min-h-initial tablet:pr-8"
     >
       <img
         src="/favicon/favicon-57.png"
