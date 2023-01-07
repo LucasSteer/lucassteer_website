@@ -11,7 +11,7 @@ module.exports = {
     './error.vue',
   ],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'class',
   theme: {
     screens: {
       tablet: '768px',

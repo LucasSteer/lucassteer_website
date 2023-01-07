@@ -23,6 +23,7 @@
           </li>
         </ul>
       </nav>
+      <ThemeSwitcher />
     </header>
     <div class="container mx-auto">
       <slot />
