@@ -25,8 +25,7 @@ $ npm run preview
     - headings used for name and pronouns abuse heading structure (could be fixed as part of about me / index redesign)
   - modify note about the site regarding accessibility and JavaScript (as JavaScript is required to make certain components accessible, such as the accordions)
 - Add darkMode
-  - Add custom icons for theme switcher and each theme option
-  - Improve visuals for theme swticher popover
+  - TODO: fix visuals of project cards
 - Redesign logo
   - More readable regardless of background colour (maybe a circle solid background?)
   - Could reduce colours and remove gradients to make the primary colour on the L

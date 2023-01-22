@@ -322,7 +322,12 @@ module.exports = {
       none: '0 0 #0000',
     },
     fill: ({ theme }) => ({
-      grey: theme('colors.grey'),
+      none: 'none',
+      grey: {
+        DEFAULT: '#2D3748',
+        ...theme('colors.grey'),
+      },
+      white: theme('colors.white'),
       green: theme('colors.primary'),
       greenDarkMode: theme('colors.primaryDarkMode'),
       blue: theme('colors.links'),
