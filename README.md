@@ -25,6 +25,8 @@ $ npm run preview
     - headings used for name and pronouns abuse heading structure (could be fixed as part of about me / index redesign)
   - modify note about the site regarding accessibility and JavaScript (as JavaScript is required to make certain components accessible, such as the accordions)
 - Add darkMode
+  - TODO: tab focus in theme switcher
+  - TODO: tab focus for project card
   - TODO: fix visuals of project cards
 - Redesign logo
   - More readable regardless of background colour (maybe a circle solid background?)
