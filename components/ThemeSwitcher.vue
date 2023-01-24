@@ -21,9 +21,13 @@
       ref="themeSwitcher"
       id="themeSwitcher"
       v-if="isExpanded"
-      class="absolute mt-4 z-10 right-5 py-2 pl-2 pr-4 flex flex-col gap-1 shadow-card rounded-lg dark:shadow-none dark:border-2 dark:border-white bg-white dark:bg-zinc-800 opacity-100"
+      class="absolute mt-4 z-10 right-5 flex flex-col shadow-card rounded-lg dark:shadow-none dark:border-2 dark:border-white bg-white dark:bg-zinc-800 opacity-100"
     >
-      <label for="system">
+      <label
+        for="system"
+        class="py-2 pl-3 pr-6 rounded-t-lg hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
+        :class="{ 'bg-grey-50 dark:bg-zinc-700': colourScheme === 'system' }"
+      >
         <input
           type="radio"
           id="system"
@@ -41,9 +45,17 @@
         >
           <use xlink:href="icons/systemThemeIcon.svg#svg5"></use>
         </svg>
-        <span class="pl-1"> System </span>
+        <span
+          class="pl-1 font-bold peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
+        >
+          System
+        </span>
       </label>
-      <label for="light">
+      <label
+        for="light"
+        class="py-2 pl-3 pr-6 hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
+        :class="{ 'bg-grey-50 dark:bg-zinc-700': colourScheme === 'light' }"
+      >
         <input
           type="radio"
           id="light"
@@ -61,9 +73,17 @@
         >
           <use xlink:href="icons/lightThemeIcon.svg#svg5"></use>
         </svg>
-        <span class="pl-1"> Light </span>
+        <span
+          class="pl-1 font-bold peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
+        >
+          Light
+        </span>
       </label>
-      <label for="dark">
+      <label
+        for="dark"
+        class="py-2 pl-3 pr-6 rounded-b-lg hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
+        :class="{ 'bg-grey-50 dark:bg-zinc-700': colourScheme === 'dark' }"
+      >
         <input
           type="radio"
           id="dark"
@@ -81,7 +101,11 @@
         >
           <use xlink:href="icons/darkThemeIcon.svg#svg5"></use>
         </svg>
-        <span class="pl-1"> Dark </span>
+        <span
+          class="pl-1 font-bold peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
+        >
+          Dark
+        </span>
       </label>
     </fieldset>
   </div>
