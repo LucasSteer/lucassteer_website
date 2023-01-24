@@ -1,17 +1,25 @@
 <template>
   <div>
-    <button ref="themeSwitcherButton" @click="toggleThemeSwitcher">
+    <button
+      ref="themeSwitcherButton"
+      @click="toggleThemeSwitcher"
+      aria-controls="themeSwitcher"
+      :aria-expanded="isExpanded ? 'true' : 'false'"
+    >
+      <span class="sr-only">Toggle theme switcher menu</span>
       <svg
         height="48"
         width="48"
         :viewBox="themeIconViewboxList[colourScheme]"
         class="stroke-none fill-grey dark:fill-white"
       >
+        <title>{{ colourScheme }} theme icon</title>
         <use :xlink:href="`icons/${colourScheme}ThemeIcon.svg#svg5`"></use>
       </svg>
     </button>
     <fieldset
       ref="themeSwitcher"
+      id="themeSwitcher"
       v-if="isExpanded"
       class="absolute mt-4 z-10 right-5 py-2 pl-2 pr-4 flex flex-col gap-1 shadow-card rounded-lg dark:shadow-none dark:border-2 dark:border-white bg-white dark:bg-zinc-800 opacity-100"
     >
@@ -19,7 +27,7 @@
         <input
           type="radio"
           id="system"
-          name="system"
+          name="theme"
           value="system"
           @input="setColourScheme('system')"
           :checked="colourScheme === 'system'"
@@ -39,7 +47,7 @@
         <input
           type="radio"
           id="light"
-          name="light"
+          name="theme"
           value="light"
           @input="setColourScheme('light')"
           :checked="colourScheme === 'light'"
@@ -59,7 +67,7 @@
         <input
           type="radio"
           id="dark"
-          name="dark"
+          name="theme"
           value="dark"
           @input="setColourScheme('dark')"
           :checked="colourScheme === 'dark'"
@@ -98,33 +106,38 @@ export default {
     };
   },
   methods: {
-    toggleThemeSwitcher() {
-      this.isExpanded = !this.isExpanded;
-
-      // if the theme switcher isn't open, we don't need the click handler
-      if (!this.isExpanded) {
+    clickOutsideCallback(event) {
+      // ignore clicks within the the theme switcher and on the toggle button
+      if (
+        this.$refs.themeSwitcher.contains(event.target) ||
+        this.$refs.themeSwitcherButton.contains(event.target)
+      ) {
         return;
       }
 
-      const clickOutsideCallback = (event) => {
-        // handle case where the click handler is added when opening the theme switcher
-        if (
-          this.$refs.themeSwitcherButton.contains(event.target) &&
-          this.isExpanded
-        ) {
-          return;
-        }
+      this.closeThemeSwitcher();
+    },
+    keyupCallback(event) {
+      if (event.key === 'Enter' || event.key === 'Escape') {
+        this.closeThemeSwitcher();
+      }
+    },
+    closeThemeSwitcher() {
+      window.removeEventListener('click', this.clickOutsideCallback);
+      window.removeEventListener('keyup', this.keyupCallback);
 
-        // if we're clicking on the theme switcher, we don't want to close
-        if (this.$refs.themeSwitcher.contains(event.target)) {
-          return;
-        }
+      this.isExpanded = false;
+    },
+    toggleThemeSwitcher() {
+      if (!this.isExpanded) {
+        // open the theme switcher
+        this.isExpanded = true;
 
-        this.isExpanded = false;
-        window.removeEventListener('click', clickOutsideCallback);
-      };
-
-      window.addEventListener('click', clickOutsideCallback);
+        window.addEventListener('click', this.clickOutsideCallback);
+        window.addEventListener('keyup', this.keyupCallback);
+      } else {
+        this.closeThemeSwitcher();
+      }
     },
     setColourScheme(newColourScheme) {
       if (newColourScheme) {
