@@ -708,13 +708,16 @@ module.exports = {
       fit: 'fit-content',
       initial: 'initial',
     }),
-    minWidth: {
+    minWidth: (theme) => ({
       0: '0px',
+      ...theme('spacing'),
       full: '100%',
+      screen: '100vh',
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',
-    },
+      initial: 'initial',
+    }),
     objectPosition: {
       bottom: 'bottom',
       center: 'center',

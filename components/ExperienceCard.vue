@@ -1,6 +1,6 @@
 <template>
   <div
-    class="desktop:w-7/12 shadow-card rounded-lg dark:shadow-none dark:border-[3px] dark:border-grey-400"
+    class="desktop:w-7/12 shadow-card rounded-lg dark:shadow-none dark:border-4 dark:border-grey-400"
     :class="{
       'desktop:ml-auto': !isOdd,
       'pb-4': isExpanded,
