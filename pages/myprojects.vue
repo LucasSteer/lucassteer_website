@@ -3,7 +3,7 @@
     class="mx-auto grid gap-12 p-12 tablet:gap-8 tablet:p-8"
     :class="{
       'desktop:grid-cols-2': projects.length >= 2, // fewer items than columns looks weird without context
-      'desktop:w-2/3': projects.length == 1, // fitting to container is too large for desktop
+      'desktop:w-7/12': projects.length == 1, // fitting to container is too large for desktop
     }"
   >
     <ProjectCard

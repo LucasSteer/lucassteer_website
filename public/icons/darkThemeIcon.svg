@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+  width="288.37381"
+  height="295.43442"
+  viewBox="0 0 76.298874 78.167022"
+  version="1.1"
+  id="svg5"
+  inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+  sodipodi:docname="ColourSchemeIcons.svg"
+  xml:space="preserve"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:svg="http://www.w3.org/2000/svg"
+>
+  <sodipodi:namedview
+    id="namedview7"
+    borderopacity="1"
+    inkscape:showpageshadow="0"
+    inkscape:pageopacity="0"
+    inkscape:pagecheckerboard="0"
+    inkscape:document-units="mm"
+    showgrid="false"
+    inkscape:zoom="0.63118804"
+    inkscape:cx="606.79224"
+    inkscape:cy="1034.557"
+    inkscape:window-width="2560"
+    inkscape:window-height="1377"
+    inkscape:window-x="1912"
+    inkscape:window-y="-8"
+    inkscape:window-maximized="1"
+    inkscape:current-layer="layer1"
+  />
+  <defs id="defs2" />
+  <g
+    inkscape:label="Layer 1"
+    inkscape:groupmode="layer"
+    id="layer1"
+    transform="translate(-116.76865,-123.77768)"
+  >
+    <path
+      id="circle11092"
+      d="m 141.66319,125.19753 a 39.350811,39.350811 0 0 0 -23.47454,35.97661 39.350811,39.350811 0 0 0 39.35057,39.35057 39.350811,39.350811 0 0 0 34.10851,-19.73058 39.350811,39.350811 0 0 1 -15.87655,3.37447 39.350811,39.350811 0 0 1 -39.35108,-39.35057 39.350811,39.350811 0 0 1 5.24309,-19.6205 z"
+    />
+  </g>
+</svg>

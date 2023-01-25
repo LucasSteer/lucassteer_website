@@ -6,7 +6,7 @@
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="6"
-      class="stroke-green-highlight h-7 tablet:h-8"
+      class="stroke-green-highlight dark:stroke-greenDarkMode-base h-7 tablet:h-8"
       :class="{ 'h-6 tablet:h-7': compact }"
       role="img"
     >

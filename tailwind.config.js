@@ -8,9 +8,10 @@ module.exports = {
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
     './app.vue',
+    './error.vue',
   ],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'class',
   theme: {
     screens: {
       tablet: '768px',
@@ -55,6 +56,18 @@ module.exports = {
         baseLarge: '#1965A3',
         highlight: '#1E78C2',
         highlightLarge: '#4299E1',
+      },
+      primaryDarkMode: {
+        base: '#44CA77',
+        baseLarge: '#2EA35B',
+        highlight: '#7CDAA0',
+        highlightLarge: '#34B766',
+      },
+      linksDarkMode: {
+        base: '#7CB8E9',
+        baseLarge: '#3B94DE',
+        highlight: '#9CCBF2',
+        highlightLarge: '#5EA7E4',
       },
     }),
     columns: {
@@ -309,9 +322,16 @@ module.exports = {
       none: '0 0 #0000',
     },
     fill: ({ theme }) => ({
-      grey: theme('colors.grey'),
+      none: 'none',
+      grey: {
+        DEFAULT: '#2D3748',
+        ...theme('colors.grey'),
+      },
+      white: theme('colors.white'),
       green: theme('colors.primary'),
+      greenDarkMode: theme('colors.primaryDarkMode'),
       blue: theme('colors.links'),
+      blueDarkMode: theme('colors.linksDarkMode'),
     }),
     grayscale: {
       0: '0',
@@ -688,13 +708,16 @@ module.exports = {
       fit: 'fit-content',
       initial: 'initial',
     }),
-    minWidth: {
+    minWidth: (theme) => ({
       0: '0px',
+      ...theme('spacing'),
       full: '100%',
+      screen: '100vh',
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',
-    },
+      initial: 'initial',
+    }),
     objectPosition: {
       bottom: 'bottom',
       center: 'center',
@@ -835,7 +858,9 @@ module.exports = {
     stroke: ({ theme }) => ({
       grey: theme('colors.grey'),
       green: theme('colors.primary'),
+      greenDarkMode: theme('colors.primaryDarkMode'),
       blue: theme('colors.links'),
+      blueDarkMode: theme('colors.linksDarkMode'),
     }),
     strokeWidth: {
       0: '0',
@@ -849,7 +874,9 @@ module.exports = {
       },
       white: theme('colors.white'),
       green: theme('colors.primary'),
+      greenDarkMode: theme('colors.primaryDarkMode'),
       blue: theme('colors.links'),
+      blueDarkMode: theme('colors.linksDarkMode'),
     }),
     textDecorationColor: ({ theme }) => theme('colors'),
     textDecorationThickness: {

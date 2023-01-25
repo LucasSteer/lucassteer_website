@@ -1,7 +1,7 @@
 <template>
-  <div class="flex h-screen flex-col justify-between">
+  <div class="flex flex-col h-screen min-w-96 justify-between mx-4">
     <header
-      class="flex min-h-16 flex-row items-center justify-between border-b-2 border-grey-900 px-2 py-2 tablet:min-h-initial tablet:pr-8"
+      class="flex min-h-16 flex-row items-center justify-between border-b-2 border-grey-900 dark:border-grey-400 px-2 py-2 tablet:min-h-initial tablet:px-9"
     >
       <img
         src="/favicon/favicon-57.png"
@@ -23,17 +23,18 @@
           </li>
         </ul>
       </nav>
+      <ThemeSwitcher />
     </header>
     <div class="container mx-auto">
       <slot />
     </div>
     <footer
-      class="min-h-16 border-t-2 border-grey-900 px-4 pt-2 tablet:flex tablet:flex-row tablet:items-center tablet:justify-between tablet:pt-0"
+      class="min-h-16 border-t-2 border-grey-900 dark:border-grey-400 px-4 pt-2 tablet:flex tablet:flex-row tablet:items-center tablet:justify-between tablet:pt-0"
     >
-      <p class="mb-1 text-xs">© 2022 Lucas Steer. All Rights Reserved.</p>
-      <p class="relative text-xs">
+      <p class="mb-1 text-sm">© 2022 Lucas Steer. All Rights Reserved.</p>
+      <p class="relative text-sm">
         Contact:
-        <ExternalLink url="mailto:lucassteer@gmail.com" class="text-xs"
+        <ExternalLink url="mailto:lucassteer@gmail.com" class="text-sm"
           >lucassteer@gmail.com</ExternalLink
         >
       </p>

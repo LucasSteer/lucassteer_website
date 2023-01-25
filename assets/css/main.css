@@ -45,12 +45,15 @@
 
   html {
     scrollbar-gutter: stable both-edges;
-    @apply text-grey;
   }
 
   @supports not (scrollbar-gutter: auto) {
     html {
       overflow-y: scroll;
     }
+  }
+
+  body {
+    @apply text-grey dark:text-white dark:bg-zinc-800;
   }
 }

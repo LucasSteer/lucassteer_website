@@ -1,6 +1,6 @@
 <template>
   <div
-    class="desktop:w-7/12 shadow-card rounded-lg"
+    class="desktop:w-7/12 shadow-card rounded-lg dark:shadow-none dark:border-4 dark:border-grey-400"
     :class="{
       'desktop:ml-auto': !isOdd,
       'pb-4': isExpanded,
@@ -8,7 +8,7 @@
   >
     <h2>
       <button
-        class="group w-full text-left cursor-pointer px-4 hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100"
+        class="group w-full text-left cursor-pointer px-4 rounded-t-lg hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
         @click="isExpanded = !isExpanded"
         :aria-controls="accordionId"
         :aria-expanded="isExpanded ? 'true' : 'false'"
@@ -26,11 +26,11 @@
             />
             <div class="ml-4 tablet:ml-8">
               <p
-                class="text-2xl tracking-widest font-bold text-green-baseLarge"
+                class="text-2xl tracking-widest font-bold text-green-baseLarge dark:text-greenDarkMode-baseLarge"
               >
                 {{ company }}
                 <span
-                  class="block text-base font-bold tracking-wider text-green-base tablet:text-lg"
+                  class="block text-base font-bold tracking-wider text-green-base dark:text-greenDarkMode-base tablet:text-lg"
                   >{{ ecRole }}</span
                 >
               </p>
@@ -43,7 +43,7 @@
             stroke-linejoin="round"
             stroke-width="8"
             width="50"
-            class="stroke-grey-500 group-hover:stroke-green-highlight group-focus:stroke-green-highlight transition-all motion-reduce:transition-none duration-500 ease-in-out"
+            class="stroke-grey-500 dark:stroke-grey-300 group-hover:stroke-green-highlight dark:group-hover:stroke-greenDarkMode-base group-focus:stroke-green-highlight dark:group-focus:stroke-greenDarkMode-base transition-all motion-reduce:transition-none duration-300 ease-in-out"
             :class="{ 'rotate-180': isExpanded }"
             aria-hidden="true"
           >
@@ -51,7 +51,7 @@
           </svg>
         </div>
         <div
-          class="w-auto scale-x-0 mx-4 transform-gpu border-b-2 border-grey-700 transition-transform motion-reduce:transition-none duration-300"
+          class="w-auto scale-x-0 mx-4 transform-gpu border-b-2 border-grey-400 dark:border-grey-200 transition-transform motion-reduce:transition-none duration-300"
           :class="{ 'scale-x-100': isExpanded }"
         ></div>
       </button>
@@ -69,7 +69,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="6"
-              class="stroke-green-highlight h-7 tablet:h-8"
+              class="stroke-green-highlight dark:stroke-greenDarkMode-base h-7 tablet:h-8"
               role="img"
             >
               <title>Location Icon</title>
