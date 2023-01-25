@@ -14,7 +14,7 @@
         class="stroke-none fill-grey dark:fill-white"
       >
         <title>{{ colourScheme }} theme icon</title>
-        <use :xlink:href="`icons/${colourScheme}ThemeIcon.svg#svg5`"></use>
+        <use :xlink:href="`/icons/${colourScheme}ThemeIcon.svg#svg5`"></use>
       </svg>
     </button>
     <fieldset
@@ -43,7 +43,7 @@
           :viewBox="themeIconViewboxList['system']"
           class="stroke-none fill-grey dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
         >
-          <use xlink:href="icons/systemThemeIcon.svg#svg5"></use>
+          <use xlink:href="/icons/systemThemeIcon.svg#svg5"></use>
         </svg>
         <span
           class="pl-1 font-bold peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
@@ -71,7 +71,7 @@
           :viewBox="themeIconViewboxList['light']"
           class="stroke-none fill-grey dark:fill-white peer-checked:fill-green-highlight inline"
         >
-          <use xlink:href="icons/lightThemeIcon.svg#svg5"></use>
+          <use xlink:href="/icons/lightThemeIcon.svg#svg5"></use>
         </svg>
         <span
           class="pl-1 font-bold peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
@@ -99,7 +99,7 @@
           :viewBox="themeIconViewboxList['dark']"
           class="stroke-none fill-grey dark:fill-white dark:peer-checked:fill-greenDarkMode-base inline"
         >
-          <use xlink:href="icons/darkThemeIcon.svg#svg5"></use>
+          <use xlink:href="/icons/darkThemeIcon.svg#svg5"></use>
         </svg>
         <span
           class="pl-1 font-bold peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
