@@ -117,10 +117,23 @@ export default {
   mounted() {
     this.setColourScheme();
 
+    // Don't worry about the color-scheme if high-contrast mode is active
+    window.matchMedia('(forced-colors: active)').onchange = (e) => {
+      this.isForcedColorsActive = e.matches;
+
+      if (this.isForcedColorsActive) {
+        document.documentElement.classList.remove('dark');
+      } else {
+        this.setColourScheme();
+      }
+    };
+
     // Add event listener to handle OS preference switching
     // NOTE: I know I'm only using one of these and that it will persist through the app's lifetime, so no need to remove listener
     window.matchMedia('(prefers-color-scheme: dark)').onchange = (e) => {
       if ('colourScheme' in localStorage) return; // only handle OS preference
+
+      if (this.isForcedColorsActive) return; // don't handle theme if WHCM is on
 
       if (e.matches) {
         document.documentElement.classList.add('dark');
@@ -174,6 +187,8 @@ export default {
         this.colourScheme = newColourScheme;
       }
 
+      if (this.isForcedColorsActive) return; // don't change theme if WHCM is on
+
       // On page load or when changing colour schemes, best to add inline in `head` to avoid FOUC
       if (
         localStorage.colourScheme === 'dark' ||
@@ -188,6 +203,8 @@ export default {
   },
   data() {
     return {
+      isForcedColorsActive: window.matchMedia('(forced-colors: active)')
+        .matches,
       colourScheme: localStorage.colourScheme
         ? localStorage.colourScheme
         : 'system',
