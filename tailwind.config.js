@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: [
@@ -68,6 +69,27 @@ module.exports = {
         baseLarge: '#3B94DE',
         highlight: '#9CCBF2',
         highlightLarge: '#5EA7E4',
+      },
+      systemColors: {
+        AccentColor: 'AccentColor',
+        AccentColorText: 'AccentColorText',
+        ActiveText: 'ActiveText',
+        ButtonBorder: 'ButtonBorder',
+        ButtonFace: 'ButtonFace',
+        ButtonText: 'ButtonText',
+        Canvas: 'Canvas',
+        CanvasText: 'CanvasText',
+        Field: 'Field',
+        FieldText: 'FieldText',
+        GrayText: 'GrayText',
+        Highlight: 'Highlight',
+        HighlightText: 'HighlightText',
+        LinkText: 'LinkText',
+        Mark: 'Mark',
+        MarkText: 'MarkText',
+        SelectedItem: 'SelectedItem',
+        SelectedItemText: 'SelectedItemText',
+        VisitedText: 'VisitedText',
       },
     }),
     columns: {
@@ -332,6 +354,7 @@ module.exports = {
       greenDarkMode: theme('colors.primaryDarkMode'),
       blue: theme('colors.links'),
       blueDarkMode: theme('colors.linksDarkMode'),
+      systemColors: theme('colors.systemColors'),
     }),
     grayscale: {
       0: '0',
@@ -861,6 +884,7 @@ module.exports = {
       greenDarkMode: theme('colors.primaryDarkMode'),
       blue: theme('colors.links'),
       blueDarkMode: theme('colors.linksDarkMode'),
+      systemColors: theme('colors.systemColors'),
     }),
     strokeWidth: {
       0: '0',
@@ -877,6 +901,7 @@ module.exports = {
       greenDarkMode: theme('colors.primaryDarkMode'),
       blue: theme('colors.links'),
       blueDarkMode: theme('colors.linksDarkMode'),
+      systemColors: theme('colors.systemColors'),
     }),
     textDecorationColor: ({ theme }) => theme('colors'),
     textDecorationThickness: {
@@ -1029,5 +1054,9 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => {
+      addVariant('forced-colors', '@media (forced-colors: active)');
+    }),
+  ],
 };
