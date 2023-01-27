@@ -69,7 +69,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="6"
-              class="stroke-green-highlight forced-colors:stroke-systemColors-AccentColor dark:stroke-greenDarkMode-base h-7 tablet:h-8"
+              class="stroke-green-highlight forced-colors:stroke-systemColors-Highlight dark:stroke-greenDarkMode-base h-7 tablet:h-8"
               role="img"
             >
               <title>Location Icon</title>

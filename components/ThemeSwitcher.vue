@@ -46,12 +46,12 @@
           width="35"
           height="35"
           :viewBox="themeIconViewboxList['system']"
-          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
+          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-Highlight dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
         >
           <use xlink:href="/icons/systemThemeIcon.svg#svg5"></use>
         </svg>
         <span
-          class="pl-1 font-bold forced-colors:peer-checked:text-systemColors-AccentColor peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
+          class="pl-1 font-bold forced-colors:peer-checked:text-systemColors-Highlight peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
         >
           System
         </span>
@@ -79,12 +79,12 @@
           width="35"
           height="35"
           :viewBox="themeIconViewboxList['light']"
-          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
+          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-Highlight dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
         >
           <use xlink:href="/icons/lightThemeIcon.svg#svg5"></use>
         </svg>
         <span
-          class="pl-1 font-bold forced-colors:peer-checked:text-systemColors-AccentColor peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
+          class="pl-1 font-bold forced-colors:peer-checked:text-systemColors-Highlight peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
         >
           Light
         </span>
@@ -112,12 +112,12 @@
           width="35"
           height="35"
           :viewBox="themeIconViewboxList['dark']"
-          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
+          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-Highlight dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
         >
           <use xlink:href="/icons/darkThemeIcon.svg#svg5"></use>
         </svg>
         <span
-          class="pl-1 font-bold forced-colors:peer-checked:text-systemColors-AccentColor peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
+          class="pl-1 font-bold forced-colors:peer-checked:text-systemColors-Highlight peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
         >
           Dark
         </span>
