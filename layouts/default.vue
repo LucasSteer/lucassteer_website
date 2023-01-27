@@ -8,7 +8,7 @@
         alt="Lucas Steer's Logo"
         height="48"
         width="48"
-        class="hidden h-12 w-12 tablet:block"
+        class="hidden h-12 w-12 tablet:block forced-colors:bg-systemColors-ButtonBorder forced-colors:rounded-full forced-colors:p-1"
       />
       <nav class="w-full">
         <ul class="flex flex-row justify-around">

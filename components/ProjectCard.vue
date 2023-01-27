@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative overflow-hidden rounded-lg shadow-card dark:shadow-none dark:border-4 dark:border-grey-400"
+    class="relative overflow-hidden rounded-lg shadow-card forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
   >
     <ExternalLink
       :url="link"
@@ -8,7 +8,7 @@
     >
       <img :src="imgSrc" :alt="imgAlt" class="h-full w-full" />
       <div
-        class="min-h-1/6 w-full absolute bottom-0 flex flex-col justify-center gap-2 bg-white dark:bg-zinc-800 group-hover:bg-grey-50 group-focus:bg-grey-50 group-active:bg-grey-100 dark:group-hover:bg-zinc-700 dark:group-focus:bg-zinc-700 dark:group-active:bg-zinc-600 px-4 pt-2 pb-8 tablet:px-8 tablet:pt-3 tablet:pb-10"
+        class="min-h-1/6 w-full absolute bottom-0 flex flex-col justify-center gap-2 bg-white dark:bg-zinc-800 forced-colors:group-hover:text-systemColors-SelectedItemText forced-colors:group-focus:text-systemColors-SelectedItemText forced-colors:group-active:text-systemColors-SelectedItemText forced-colors:group-hover:bg-systemColors-SelectedItem forced-colors:group-focus:bg-systemColors-SelectedItem forced-colors:group-active:bg-systemColors-SelectedItem group-hover:bg-grey-50 group-focus:bg-grey-50 group-active:bg-grey-100 dark:group-hover:bg-zinc-700 dark:group-focus:bg-zinc-700 dark:group-active:bg-zinc-600 px-4 pt-2 pb-8 tablet:px-8 tablet:pt-3 tablet:pb-10"
       >
         <h2
           class="text-xl tracking-widest text-green-baseLarge dark:text-greenDarkMode-baseLarge tablet:text-2xl desktop:text-4xl"
@@ -24,7 +24,7 @@
           <span
             v-for="(tag, index) in tags"
             :key="index"
-            class="rounded-md bg-primary-base dark:bg-primaryDarkMode-base font-normal dark:font-bold tracking-wide p-2 align-middle leading-4 text-white dark:text-grey tablet:text-lg tablet:leading-4 desktop:text-xl"
+            class="rounded-md bg-primary-base forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:bg-primaryDarkMode-base font-normal forced-colors:group-hover:text-systemColors-SelectedItemText forced-colors:group-focus:text-systemColors-SelectedItemText forced-colors:group-active:text-systemColors-SelectedItemText forced-colors:group-hover:bg-systemColors-SelectedItem forced-colors:group-focus:bg-systemColors-SelectedItem forced-colors:group-active:bg-systemColors-SelectedItem dark:font-bold tracking-wide p-2 align-middle leading-4 text-white dark:text-grey tablet:text-lg tablet:leading-4 desktop:text-xl"
             >{{ tag }}</span
           >
         </div>
