@@ -25,8 +25,11 @@
     >
       <label
         for="system"
-        class="py-2 pl-3 pr-6 rounded-t-lg hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
-        :class="{ 'bg-grey-50 dark:bg-zinc-700': colourScheme === 'system' }"
+        class="py-2 pl-3 pr-6 rounded-t-lg hover:bg-grey-50 active:bg-grey-100 forced-colors:hover:border-2 forced-colors:hover:m-[6px] forced-colors:hover:py-0 forced-colors:hover:pl-1 forced-colors:hover:pr-4 dark:hover:bg-zinc-700 dark:active:bg-zinc-600"
+        :class="{
+          'bg-grey-50 forced-colors:border-2 forced-colors:m-[6px] forced-colors:py-0 forced-colors:pl-1 forced-colors:pr-4 dark:bg-zinc-700':
+            activeElement === 'system',
+        }"
       >
         <input
           type="radio"
@@ -35,6 +38,8 @@
           value="system"
           @input="setColourScheme('system')"
           :checked="colourScheme === 'system'"
+          @focus="activeElement = 'system'"
+          @blur="activeElement = ''"
           class="appearance-none peer"
         />
         <svg
@@ -53,8 +58,11 @@
       </label>
       <label
         for="light"
-        class="py-2 pl-3 pr-6 hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
-        :class="{ 'bg-grey-50 dark:bg-zinc-700': colourScheme === 'light' }"
+        class="py-2 pl-3 pr-6 rounded-lg hover:bg-grey-50 active:bg-grey-100 forced-colors:hover:border-2 forced-colors:hover:m-[6px] forced-colors:hover:py-0 forced-colors:hover:pl-1 forced-colors:hover:pr-4 dark:hover:bg-zinc-700 dark:active:bg-zinc-600"
+        :class="{
+          'bg-grey-50 forced-colors:border-2 forced-colors:m-[6px] forced-colors:py-0 forced-colors:pl-1 forced-colors:pr-4 dark:bg-zinc-700':
+            activeElement === 'light',
+        }"
       >
         <input
           type="radio"
@@ -63,13 +71,15 @@
           value="light"
           @input="setColourScheme('light')"
           :checked="colourScheme === 'light'"
+          @focus="activeElement = 'light'"
+          @blur="activeElement = ''"
           class="appearance-none peer"
         />
         <svg
           width="35"
           height="35"
           :viewBox="themeIconViewboxList['light']"
-          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white peer-checked:fill-green-highlight inline"
+          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
         >
           <use xlink:href="/icons/lightThemeIcon.svg#svg5"></use>
         </svg>
@@ -81,8 +91,11 @@
       </label>
       <label
         for="dark"
-        class="py-2 pl-3 pr-6 rounded-b-lg hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
-        :class="{ 'bg-grey-50 dark:bg-zinc-700': colourScheme === 'dark' }"
+        class="py-2 pl-3 pr-6 rounded-b-lg hover:bg-grey-50 active:bg-grey-100 forced-colors:hover:border-2 forced-colors:hover:m-[6px] forced-colors:hover:py-0 forced-colors:hover:pl-1 forced-colors:hover:pr-4 dark:hover:bg-zinc-700 dark:active:bg-zinc-600"
+        :class="{
+          'bg-grey-50 forced-colors:border-2 forced-colors:m-[6px] forced-colors:py-0 forced-colors:pl-1 forced-colors:pr-4 dark:bg-zinc-700':
+            activeElement === 'dark',
+        }"
       >
         <input
           type="radio"
@@ -91,13 +104,15 @@
           value="dark"
           @input="setColourScheme('dark')"
           :checked="colourScheme === 'dark'"
+          @focus="activeElement = 'dark'"
+          @blur="activeElement = ''"
           class="appearance-none peer"
         />
         <svg
           width="35"
           height="35"
           :viewBox="themeIconViewboxList['dark']"
-          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white dark:peer-checked:fill-greenDarkMode-base inline"
+          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
         >
           <use xlink:href="/icons/darkThemeIcon.svg#svg5"></use>
         </svg>
@@ -214,6 +229,7 @@ export default {
         dark: '-50 -50 388.37381 395.4344',
       },
       isExpanded: false,
+      activeElement: '',
     };
   },
 };
