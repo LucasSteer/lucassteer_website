@@ -1,6 +1,6 @@
 <template>
   <div
-    class="desktop:w-7/12 shadow-card rounded-lg dark:shadow-none dark:border-4 dark:border-grey-400"
+    class="desktop:w-7/12 shadow-card rounded-lg forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
     :class="{
       'desktop:ml-auto': !isOdd,
       'pb-4': isExpanded,
@@ -43,7 +43,7 @@
             stroke-linejoin="round"
             stroke-width="8"
             width="50"
-            class="stroke-grey-500 dark:stroke-grey-300 group-hover:stroke-green-highlight dark:group-hover:stroke-greenDarkMode-base group-focus:stroke-green-highlight dark:group-focus:stroke-greenDarkMode-base transition-all motion-reduce:transition-none duration-300 ease-in-out"
+            class="stroke-grey-500 forced-colors:stroke-systemColors-ButtonText dark:stroke-grey-300 group-hover:stroke-green-highlight forced-colors:group-hover:stroke-systemColors-Highlight dark:group-hover:stroke-greenDarkMode-base group-focus:stroke-green-highlight forced-colors:group-focus:stroke-systemColors-Highlight dark:group-focus:stroke-greenDarkMode-base transition-all motion-reduce:transition-none duration-300 ease-in-out"
             :class="{ 'rotate-180': isExpanded }"
             aria-hidden="true"
           >
@@ -69,7 +69,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="6"
-              class="stroke-green-highlight dark:stroke-greenDarkMode-base h-7 tablet:h-8"
+              class="stroke-green-highlight forced-colors:stroke-systemColors-AccentColor dark:stroke-greenDarkMode-base h-7 tablet:h-8"
               role="img"
             >
               <title>Location Icon</title>

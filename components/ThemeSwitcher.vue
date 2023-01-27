@@ -11,7 +11,7 @@
         height="48"
         width="48"
         :viewBox="themeIconViewboxList[colourScheme]"
-        class="stroke-none fill-grey dark:fill-white"
+        class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white"
       >
         <title>{{ colourScheme }} theme icon</title>
         <use :xlink:href="`/icons/${colourScheme}ThemeIcon.svg#svg5`"></use>
@@ -21,7 +21,7 @@
       ref="themeSwitcher"
       id="themeSwitcher"
       v-if="isExpanded"
-      class="absolute mt-4 z-10 right-5 flex flex-col shadow-card rounded-lg dark:shadow-none dark:border-2 dark:border-white bg-white dark:bg-zinc-800 opacity-100"
+      class="absolute mt-4 z-10 right-5 flex flex-col shadow-card rounded-lg forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-white bg-white dark:bg-zinc-800 opacity-100"
     >
       <label
         for="system"
@@ -41,12 +41,12 @@
           width="35"
           height="35"
           :viewBox="themeIconViewboxList['system']"
-          class="stroke-none fill-grey dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
+          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white peer-checked:fill-green-highlight dark:peer-checked:fill-greenDarkMode-highlight inline"
         >
           <use xlink:href="/icons/systemThemeIcon.svg#svg5"></use>
         </svg>
         <span
-          class="pl-1 font-bold peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
+          class="pl-1 font-bold forced-colors:peer-checked:text-systemColors-AccentColor peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
         >
           System
         </span>
@@ -69,12 +69,12 @@
           width="35"
           height="35"
           :viewBox="themeIconViewboxList['light']"
-          class="stroke-none fill-grey dark:fill-white peer-checked:fill-green-highlight inline"
+          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white peer-checked:fill-green-highlight inline"
         >
           <use xlink:href="/icons/lightThemeIcon.svg#svg5"></use>
         </svg>
         <span
-          class="pl-1 font-bold peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
+          class="pl-1 font-bold forced-colors:peer-checked:text-systemColors-AccentColor peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
         >
           Light
         </span>
@@ -97,12 +97,12 @@
           width="35"
           height="35"
           :viewBox="themeIconViewboxList['dark']"
-          class="stroke-none fill-grey dark:fill-white dark:peer-checked:fill-greenDarkMode-base inline"
+          class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText forced-colors:peer-checked:fill-systemColors-AccentColor dark:fill-white dark:peer-checked:fill-greenDarkMode-base inline"
         >
           <use xlink:href="/icons/darkThemeIcon.svg#svg5"></use>
         </svg>
         <span
-          class="pl-1 font-bold peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
+          class="pl-1 font-bold forced-colors:peer-checked:text-systemColors-AccentColor peer-checked:text-green-base dark:peer-checked:text-greenDarkMode-base"
         >
           Dark
         </span>
