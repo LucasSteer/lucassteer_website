@@ -9,6 +9,9 @@ $ npm ci
 # serve with hot reload at localhost:3000
 $ npm run dev
 
+# clear local cache, if needed
+$ npm run cleanup
+
 # generate static project
 $ npm run generate
 # preview static project
