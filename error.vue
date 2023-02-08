@@ -16,7 +16,7 @@
         </span>
       </h1>
       <p class="text-lg tablet:text-xl desktop:text-2xl">
-        Use the navigation bar to find your way back!
+        Use the navigation menu to find your way back!
       </p>
       <img
         src="/favicon/favicon-310.png"

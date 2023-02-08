@@ -3,10 +3,10 @@
     class="rounded-lg px-4 pb-4 shadow-card forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-grey-400"
   >
     <div
-      class="border-b-2 border-grey-400 dark:border-grey-200 y-2 px-2 tablet:py-3 tablet:px-4"
+      class="border-b-2 align-middle border-grey-400 dark:border-grey-200 pt-3 pb-2 px-2 tablet:px-4"
     >
       <h3
-        class="text-xl font-bold tracking-wide text-green-baseLarge dark:text-greenDarkMode-baseLarge"
+        class="text-xl font-bold tracking-wide leading-5 text-green-baseLarge dark:text-greenDarkMode-baseLarge"
       >
         {{ ecRole }}
       </h3>

@@ -1,29 +1,19 @@
 <template>
-  <div class="flex flex-col h-screen min-w-96 justify-between mx-4">
+  <div class="flex flex-col h-screen min-w-96 justify-between px-4">
     <header
-      class="flex min-h-16 flex-row items-center justify-between border-b-2 border-grey-900 dark:border-grey-400 px-2 py-2 tablet:min-h-initial tablet:px-9"
+      class="grid items-center grid-cols-7 desktop:grid-cols-8 place-items-center border-b-2 border-grey-900 dark:border-grey-400 py-4 desktop:px-4"
     >
+      <NavMenu />
       <img
-        src="/favicon/favicon-57.png"
-        alt="Lucas Steer's Logo"
-        height="48"
-        width="48"
-        class="hidden h-12 w-12 tablet:block forced-colors:bg-systemColors-ButtonBorder forced-colors:rounded-full forced-colors:p-1"
+        :src="`/logos/LucasSteerLogo_${this.colourScheme}Mode.svg`"
+        alt="My personal logo: 'Lucas Steer' written in the Atkinson Hyperlegible font"
+        width="300"
+        class="col-span-3 col-start-3 desktop:col-span-2 desktop:col-start-auto tablet:block"
       />
-      <nav class="w-full">
-        <ul class="flex flex-row justify-around">
-          <li>
-            <NavLink url="/" text="About Me" />
-          </li>
-          <li>
-            <NavLink url="/myexperiences" text="My Experiences" />
-          </li>
-          <li>
-            <NavLink url="/myprojects" text="My Projects" />
-          </li>
-        </ul>
-      </nav>
-      <ThemeSwitcher />
+      <ThemeSwitcher
+        class="h-12 justify-self-end col-start-7 desktop:col-span-3 desktop:col-start-auto"
+        @onThemeChange="(colourScheme) => (this.colourScheme = colourScheme)"
+      />
     </header>
     <div class="container mx-auto">
       <slot />
@@ -45,5 +35,19 @@
 <script>
 export default {
   name: 'DefaultLayout',
+  mounted() {
+    if (window.matchMedia('(forced-colors: active)').matches) {
+      this.colourScheme = 'forcedColors';
+    } else {
+      this.colourScheme = document.documentElement.classList.contains('dark')
+        ? 'dark'
+        : 'light';
+    }
+  },
+  data() {
+    return {
+      colourScheme: 'light',
+    };
+  },
 };
 </script>

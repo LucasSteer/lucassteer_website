@@ -5,13 +5,12 @@
       @click="toggleThemeSwitcher"
       aria-controls="themeSwitcher"
       :aria-expanded="isExpanded ? 'true' : 'false'"
+      class="group"
     >
       <span class="sr-only">Toggle theme switcher menu</span>
       <svg
-        height="48"
-        width="48"
         :viewBox="themeIconViewboxList[colourScheme]"
-        class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white"
+        class="h-12 stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white group-hover:fill-green-highlight group-focus:fill-green-highlight forced-colors:group-hover:fill-systemColors-Highlight forced-colors:group-focus:fill-systemColors-Highlight dark:group-hover:fill-greenDarkMode-highlight dark:group-focus:fill-greenDarkMode-highlight"
       >
         <title>{{ colourScheme }} theme icon</title>
         <use :xlink:href="`/icons/${colourScheme}ThemeIcon.svg#svg5`"></use>
@@ -21,7 +20,7 @@
       ref="themeSwitcher"
       id="themeSwitcher"
       v-if="isExpanded"
-      class="absolute mt-4 z-10 right-5 flex flex-col shadow-card rounded-lg forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-white bg-white dark:bg-zinc-800 opacity-100"
+      class="absolute mt-4 z-10 right-5 flex flex-col shadow-card rounded-lg forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-grey-400 bg-white dark:bg-zinc-800 opacity-100"
     >
       <label
         for="system"
@@ -138,6 +137,7 @@ export default {
 
       if (this.isForcedColorsActive) {
         document.documentElement.classList.remove('dark');
+        this.$emit('onThemeChange', 'forcedColors');
       } else {
         this.setColourScheme();
       }
@@ -152,8 +152,10 @@ export default {
 
       if (e.matches) {
         document.documentElement.classList.add('dark');
+        this.$emit('onThemeChange', 'dark');
       } else {
         document.documentElement.classList.remove('dark');
+        this.$emit('onThemeChange', 'light');
       }
     };
   },
@@ -211,8 +213,10 @@ export default {
           window.matchMedia('(prefers-color-scheme: dark)').matches)
       ) {
         document.documentElement.classList.add('dark');
+        this.$emit('onThemeChange', 'dark');
       } else {
         document.documentElement.classList.remove('dark');
+        this.$emit('onThemeChange', 'light');
       }
     },
   },
