@@ -33,6 +33,7 @@
       }"
       id="navMenu"
       @keydown.tab="handleTab"
+      @keyup.escape="closeNavMenu"
     >
       <button
         class="group visible self-start desktop:hidden"
