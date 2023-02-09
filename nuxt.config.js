@@ -123,6 +123,7 @@ export default defineNuxtConfig({
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+  modules: ['@pinia/nuxt'],
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
