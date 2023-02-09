@@ -5,23 +5,23 @@
       @click="toggleThemeSwitcher"
       aria-controls="themeSwitcher"
       :aria-expanded="isExpanded ? 'true' : 'false'"
+      class="group"
     >
-      <span class="sr-only">Toggle theme switcher menu</span>
       <svg
-        height="48"
-        width="48"
-        :viewBox="themeIconViewboxList[colourScheme]"
-        class="stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white"
+        :viewBox="themeIconViewboxList[selectedTheme]"
+        class="h-12 stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white group-hover:fill-green-highlight group-focus:fill-green-highlight forced-colors:group-hover:fill-systemColors-Highlight forced-colors:group-focus:fill-systemColors-Highlight dark:group-hover:fill-greenDarkMode-highlight dark:group-focus:fill-greenDarkMode-highlight"
       >
-        <title>{{ colourScheme }} theme icon</title>
-        <use :xlink:href="`/icons/${colourScheme}ThemeIcon.svg#svg5`"></use>
+        <title>
+          Toggle theme switcher menu - {{ selectedTheme }} theme icon
+        </title>
+        <use :xlink:href="`/icons/${selectedTheme}ThemeIcon.svg#svg5`"></use>
       </svg>
     </button>
     <fieldset
       ref="themeSwitcher"
       id="themeSwitcher"
       v-if="isExpanded"
-      class="absolute mt-4 z-10 right-5 flex flex-col shadow-card rounded-lg forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-white bg-white dark:bg-zinc-800 opacity-100"
+      class="absolute mt-4 z-10 right-5 flex flex-col shadow-card rounded-lg forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-grey-400 bg-white dark:bg-zinc-800"
     >
       <label
         for="system"
@@ -36,8 +36,8 @@
           id="system"
           name="theme"
           value="system"
-          @input="setColourScheme('system')"
-          :checked="colourScheme === 'system'"
+          @input="setSelectedTheme('system')"
+          :checked="selectedTheme === 'system'"
           @focus="activeElement = 'system'"
           @blur="activeElement = ''"
           class="appearance-none peer"
@@ -69,8 +69,8 @@
           id="light"
           name="theme"
           value="light"
-          @input="setColourScheme('light')"
-          :checked="colourScheme === 'light'"
+          @input="setSelectedTheme('light')"
+          :checked="selectedTheme === 'light'"
           @focus="activeElement = 'light'"
           @blur="activeElement = ''"
           class="appearance-none peer"
@@ -102,8 +102,8 @@
           id="dark"
           name="theme"
           value="dark"
-          @input="setColourScheme('dark')"
-          :checked="colourScheme === 'dark'"
+          @input="setSelectedTheme('dark')"
+          :checked="selectedTheme === 'dark'"
           @focus="activeElement = 'dark'"
           @blur="activeElement = ''"
           class="appearance-none peer"
@@ -127,33 +127,39 @@
 </template>
 
 <script>
+import { useThemeStore } from '@/stores/theme';
+import { mapStores } from 'pinia';
+
 export default {
   name: 'ThemeSwitcher',
   mounted() {
-    this.setColourScheme();
+    this.setSelectedTheme();
 
-    // Don't worry about the color-scheme if high-contrast mode is active
+    // Don't worry about the theme if high-contrast mode is active
     window.matchMedia('(forced-colors: active)').onchange = (e) => {
       this.isForcedColorsActive = e.matches;
 
       if (this.isForcedColorsActive) {
         document.documentElement.classList.remove('dark');
+        this.themeStore.setForcedColors();
       } else {
-        this.setColourScheme();
+        this.setSelectedTheme();
       }
     };
 
     // Add event listener to handle OS preference switching
     // NOTE: I know I'm only using one of these and that it will persist through the app's lifetime, so no need to remove listener
     window.matchMedia('(prefers-color-scheme: dark)').onchange = (e) => {
-      if ('colourScheme' in localStorage) return; // only handle OS preference
+      if ('selectedTheme' in localStorage) return; // only handle OS preference
 
       if (this.isForcedColorsActive) return; // don't handle theme if WHCM is on
 
       if (e.matches) {
         document.documentElement.classList.add('dark');
+        this.themeStore.setDark();
       } else {
         document.documentElement.classList.remove('dark');
+        this.themeStore.setLight();
       }
     };
   },
@@ -191,37 +197,41 @@ export default {
         this.closeThemeSwitcher();
       }
     },
-    setColourScheme(newColourScheme) {
-      if (newColourScheme) {
-        if (newColourScheme === 'system') {
-          localStorage.removeItem('colourScheme');
+    setSelectedTheme(newSelectedTheme) {
+      if (newSelectedTheme) {
+        if (newSelectedTheme === 'system') {
+          localStorage.removeItem('selectedTheme');
         } else {
-          localStorage.colourScheme = newColourScheme;
+          localStorage.selectedTheme = newSelectedTheme;
         }
 
-        this.colourScheme = newColourScheme;
+        this.selectedTheme = newSelectedTheme;
       }
 
-      if (this.isForcedColorsActive) return; // don't change theme if WHCM is on
-
-      // On page load or when changing colour schemes, best to add inline in `head` to avoid FOUC
-      if (
-        localStorage.colourScheme === 'dark' ||
-        (!('colourScheme' in localStorage) &&
+      if (this.isForcedColorsActive) {
+        this.themeStore.setForcedColors();
+      } else if (
+        localStorage.selectedTheme === 'dark' ||
+        (!('selectedTheme' in localStorage) &&
           window.matchMedia('(prefers-color-scheme: dark)').matches)
       ) {
         document.documentElement.classList.add('dark');
+        this.themeStore.setDark();
       } else {
         document.documentElement.classList.remove('dark');
+        this.themeStore.setLight();
       }
     },
+  },
+  computed: {
+    ...mapStores(useThemeStore),
   },
   data() {
     return {
       isForcedColorsActive: window.matchMedia('(forced-colors: active)')
         .matches,
-      colourScheme: localStorage.colourScheme
-        ? localStorage.colourScheme
+      selectedTheme: localStorage.selectedTheme
+        ? localStorage.selectedTheme
         : 'system',
       themeIconViewboxList: {
         system: '-50 -50 534.92682 534.9278',

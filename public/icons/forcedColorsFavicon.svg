@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="20.472359mm"
+   height="20.472359mm"
+   viewBox="0 0 20.472358 20.47236"
+   version="1.1"
+   id="svg12274"
+   sodipodi:docname="Favicon_forcedColorsMode.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1140"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="9.6172764"
+     inkscape:cx="43.25549"
+     inkscape:cy="20.795909"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12274" />
+  <defs
+     id="defs12271" />
+  <circle
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:5.29167;stroke-dasharray:none"
+     id="path1365"
+     cx="10.23618"
+     cy="10.236179"
+     r="7.5903463"
+     inkscape:export-filename="path1365.svg"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96" />
+  <g
+     id="layer1"
+     transform="translate(-60.400973,-35.210684)">
+    <path
+       id="path11220"
+       style="color:#000000;font-size:19.05px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';letter-spacing:1.05833px;word-spacing:-1.05833px;fill:#30a65d;fill-opacity:1;stroke:none;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;-inkscape-stroke:none"
+       d="m 70.748778,49.640145 -2.84996,2.601391 h 7.0528 a 0.52921795,0.52921795 0 0 0 0.52917,-0.529166 v -1.543059 a 0.52921795,0.52921795 0 0 0 -0.52917,-0.529166 z" />
+    <path
+       id="path11963"
+       style="color:#000000;font-size:19.05px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';letter-spacing:1.05833px;word-spacing:-1.05833px;fill:#000000;stroke:none;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;-inkscape-stroke:none"
+       d="m 66.322688,38.458398 a 0.52921795,0.52921795 0 0 0 -0.52917,0.529167 v 11.331091 l 2.84944,-2.601391 v -8.7297 a 0.52921795,0.52921795 0 0 0 -0.52917,-0.529167 z" />
+  </g>
+</svg>

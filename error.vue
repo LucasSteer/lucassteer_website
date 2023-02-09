@@ -16,21 +16,27 @@
         </span>
       </h1>
       <p class="text-lg tablet:text-xl desktop:text-2xl">
-        Use the navigation bar to find your way back!
+        Use the navigation menu to find your way back!
       </p>
       <img
-        src="/favicon/favicon-310.png"
+        :src="`/icons/${themeStore.theme}Favicon.svg`"
         alt=""
-        class="mx-auto mt-56 opacity-25"
+        class="mx-auto mt-56 opacity-50 forced-colors:opacity-100 h-64 tablet:h-72 desktop:h-80"
       />
     </main>
   </NuxtLayout>
 </template>
 
 <script>
+import { useThemeStore } from '@/stores/theme';
+import { mapStores } from 'pinia';
+
 export default {
   name: 'ErrorPage',
   props: ['error'],
-  layout: 'error', // you can set a custom layout for the error page
+  layout: 'error',
+  computed: {
+    ...mapStores(useThemeStore),
+  },
 };
 </script>

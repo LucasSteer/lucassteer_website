@@ -879,7 +879,11 @@ module.exports = {
       ...theme('spacing'),
     }),
     stroke: ({ theme }) => ({
-      grey: theme('colors.grey'),
+      grey: {
+        DEFAULT: '#2D3748',
+        ...theme('colors.grey'),
+      },
+      white: theme('colors.white'),
       green: theme('colors.primary'),
       greenDarkMode: theme('colors.primaryDarkMode'),
       blue: theme('colors.links'),
