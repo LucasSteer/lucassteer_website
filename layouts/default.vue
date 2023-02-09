@@ -5,14 +5,13 @@
     >
       <NavMenu />
       <img
-        :src="`/logos/LucasSteerLogo_${this.colourScheme}Mode.svg`"
+        :src="`/logos/LucasSteerLogo_${themeStore.theme}Mode.svg`"
         alt="My personal logo: 'Lucas Steer' written in the Atkinson Hyperlegible font"
         width="300"
         class="col-span-3 col-start-3 desktop:col-span-2 desktop:col-start-auto tablet:block"
       />
       <ThemeSwitcher
         class="h-12 justify-self-end col-start-7 desktop:col-span-3 desktop:col-start-auto"
-        @onThemeChange="(colourScheme) => (this.colourScheme = colourScheme)"
       />
     </header>
     <div class="container mx-auto">
@@ -33,21 +32,13 @@
 </template>
 
 <script>
+import { useThemeStore } from '@/stores/theme';
+import { mapStores } from 'pinia';
+
 export default {
   name: 'DefaultLayout',
-  mounted() {
-    if (window.matchMedia('(forced-colors: active)').matches) {
-      this.colourScheme = 'forcedColors';
-    } else {
-      this.colourScheme = document.documentElement.classList.contains('dark')
-        ? 'dark'
-        : 'light';
-    }
-  },
-  data() {
-    return {
-      colourScheme: 'light',
-    };
+  computed: {
+    ...mapStores(useThemeStore),
   },
 };
 </script>
