@@ -21,17 +21,13 @@
       </svg>
     </button>
     <div
-      class="desktop:hidden fixed inset-0 z-10 w-screen h-screen opacity-30 motion-safe:transition-opacity motion-safe:duration-300 motion-safe:ease-in-out bg-black dark:bg-white"
-      :class="{ 'opacity-0 -z-10': !isNavMenuExpanded }"
-      @click="closeNavMenu"
-    ></div>
-    <div
       class="flex flex-col fixed inset-0 z-20 gap-12 px-8 pt-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-in-out forced-colors:border-r-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-r-2 dark:border-grey-400 bg-white dark:bg-zinc-800 shadow-card desktop:shadow-none h-screen w-1/2 desktop:static desktop:h-auto desktop:w-auto desktop:px-0 desktop:pt-0 desktop:dark:border-r-0 desktop:forced-colors:border-r-0 desktop:transition-none desktop:translate-x-0"
       :class="{
         '-translate-x-full -z-10 dark:border-r-0 forced-colors:border-r-0 shadow-none':
           !isNavMenuExpanded,
       }"
       id="navMenu"
+      ref="navMenu"
       @keydown.tab="handleTab"
       @keyup.escape="closeNavMenu"
     >
@@ -97,6 +93,17 @@ export default {
 
       document.documentElement.classList.remove('h-full', 'overflow-y-hidden'); // disable scroll-lock on body
     },
+    clickOutsideCallback(event) {
+      // ignore clicks within the the nav menu and on open button (to not block opening)
+      if (
+        this.$refs.navMenu.contains(event.target) ||
+        this.$refs.openNavMenuButton.contains(event.target)
+      ) {
+        return;
+      }
+
+      this.isNavMenuExpanded = false;
+    },
     handleTab(event) {
       if (!this.isNavMenuExpanded) return;
 
@@ -134,10 +141,14 @@ export default {
   watch: {
     isNavMenuExpanded(newValue) {
       if (newValue) {
+        window.addEventListener('click', this.clickOutsideCallback);
+
         this.$nextTick(() => {
           this.$refs.closeNavMenuButton.focus();
         });
       } else {
+        window.removeEventListener('click', this.clickOutsideCallback);
+
         this.$nextTick(() => {
           this.$refs.openNavMenuButton.focus();
         });

@@ -7,12 +7,13 @@
       :aria-expanded="isExpanded ? 'true' : 'false'"
       class="group"
     >
-      <span class="sr-only">Toggle theme switcher menu</span>
       <svg
         :viewBox="themeIconViewboxList[selectedTheme]"
         class="h-12 stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white group-hover:fill-green-highlight group-focus:fill-green-highlight forced-colors:group-hover:fill-systemColors-Highlight forced-colors:group-focus:fill-systemColors-Highlight dark:group-hover:fill-greenDarkMode-highlight dark:group-focus:fill-greenDarkMode-highlight"
       >
-        <title>{{ selectedTheme }} theme icon</title>
+        <title>
+          Toggle theme switcher menu - {{ selectedTheme }} theme icon
+        </title>
         <use :xlink:href="`/icons/${selectedTheme}ThemeIcon.svg#svg5`"></use>
       </svg>
     </button>
