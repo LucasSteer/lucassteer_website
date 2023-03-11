@@ -16,7 +16,3 @@ $ npm run generate
 # preview static project
 $ npm run preview
 ```
-
-## TODO
-
-- Fix mobile view of nav menu (spacing seems off...?)
