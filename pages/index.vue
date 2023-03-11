@@ -1,93 +1,102 @@
 <template>
-  <main class="p-4">
-    <section class="flex flex-col items-center">
+  <main class="p-4 desktop:grid grid-cols-3 items-center gap-4">
+    <section
+      class="flex flex-row gap-2 tablet:flex-col items-center justify-center"
+    >
       <img
         src="/headshot.jpg"
         alt="A picture of me, Lucas Steer, smiling in a field while wearing a navy-blue suit"
-        height="128"
-        width="128"
-        class="m-2 h-32 w-32 rounded-full tablet:m-4 tablet:h-40 tablet:w-40 desktop:h-64 desktop:w-64"
+        class="m-2 h-32 w-32 rounded-full tablet:m-4 tablet:h-40 tablet:w-40 desktop:h-96 desktop:w-96"
       />
-      <h2
-        class="text-2xl font-bold tracking-widest text-green-baseLarge dark:text-greenDarkMode-baseLarge tablet:text-3xl"
-      >
+      <h1 class="text-2xl font-bold tracking-widest tablet:text-4xl">
         Lucas Steer
-      </h2>
-      <h3
-        class="mb-4 text-lg tracking-widest text-green-baseLarge dark:text-greenDarkMode-baseLarge tablet:mb-8 tablet:text-2xl"
-      >
-        He/Him
-      </h3>
-    </section>
-    <section>
-      <p class="mb-4 tablet:text-lg">
-        Hey, thanks for dropping by my site! I'm a full-stack software engineer
-        who's always looking for new and exciting challenges. I believe in
-        experiencing and supporting a diverse set of perspectives as it helps
-        strengthen the impact that everyone can have. I'm a people person who
-        enjoys working collaboratively in cross-disciplinary teams and I excel
-        at translating problems and solutions clearly from clients to developers
-        and everywhere in between.
-      </p>
-      <p class="tablet:text-lg">
-        If you want to learn about the work that I have done, am doing, or hope
-        to do, please check out
-        <InternalLink
-          url="myexperiences"
-          text="my experiences"
-          class="tablet:text-lg"
-        />
-        and
-        <InternalLink
-          url="myprojects"
-          text="my projects"
-          class="tablet:text-lg"
-        />. If you want to get in touch, please connect with me on
-        <ExternalLink
-          url="https://www.linkedin.com/in/lucassteer/"
-          text="LinkedIn"
-          class="tablet:text-lg"
-          >LinkedIn</ExternalLink
+        <i class="block text-center font-normal tracking-wider tablet:text-2xl"
+          >He/Him</i
         >
-        or email me at
-        <ExternalLink
-          url="mailto:lucassteer@gmail.com"
-          text="lucassteer@gmail.com"
-          class="tablet:text-lg"
-          >lucassteer@gmail.com</ExternalLink
-        >.
-      </p>
+      </h1>
     </section>
-    <section>
-      <h2
-        class="my-4 text-lg font-bold tracking-wider text-green-base dark:text-greenDarkMode-base tablet:text-xl"
+    <div class="col-span-2">
+      <section
+        class="my-4 tablet:m-4 p-4 shadow-card rounded-lg forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
       >
-        A note about this site
-      </h2>
-      <p class="mb-2 text-sm tablet:text-base">
-        My website was designed mobile and accessible first and does not require
-        JavaScript to be enabled. It should be accessible using assistive
-        technologies and intends to support the most recent versions of modern
-        browsers (such as Firefox, Chrome, and Edge) on both low and high
-        resolution devices. This site should be usable in older browsers (such
-        as IE11), but no special care has been made to support them.
-      </p>
-      <p class="text-sm tablet:text-base">
-        If you notice any accessiblity issues or have other concerns regarding
-        this website or its content, please reach out to me at
-        <ExternalLink
-          url="mailto:lucassteer@gmail.com"
-          class="text-sm tablet:text-base"
-          >lucassteer@gmail.com</ExternalLink
+        <h2
+          class="mb-2 text-lg font-bold tracking-wider text-green-base dark:text-greenDarkMode-base tablet:text-xl"
         >
-        or create an issue on this projects
-        <ExternalLink
-          url="https://github.com/LucasSteer/lucassteer_website"
-          class="text-sm tablet:text-base"
-          >GitHub repository</ExternalLink
-        >.
-      </p>
-    </section>
+          Full-stack software engineer
+        </h2>
+        <p class="tablet:text-lg">
+          ... who's always looking for unique and exciting challenges! I've had
+          a frontend focus lately, but I have experience across the stack and
+          love to learn new things. I pride myself in being able to solve
+          problems and communicate solutions clearly for any audience.
+        </p>
+        <p class="pt-4 tablet:text-lg">
+          Check out
+          <InternalLink
+            url="myexperiences"
+            text="my experiences"
+            class="tablet:text-lg"
+          />
+          and
+          <InternalLink
+            url="myprojects"
+            text="my projects"
+            class="tablet:text-lg"
+          />
+          to learn more about what I've done and what I'm working on!
+        </p>
+      </section>
+      <section
+        class="my-4 tablet:m-4 p-4 shadow-card rounded-lg forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
+      >
+        <h2
+          class="mb-2 text-lg font-bold tracking-wider text-green-base dark:text-greenDarkMode-base tablet:text-xl"
+        >
+          Passionate about web accessibility
+        </h2>
+        <p class="tablet:text-lg">
+          ... and its ability to bring more equitable access to all. In both my
+          professional and personal projects, I strive to include accessibility
+          best practices in my work. I took extra care to ensure that users who
+          rely on screen readers, high contrast modes, and other accessibility
+          tools will have equitable access to this site's contents.
+        </p>
+        <p class="pt-4 tablet:text-lg">
+          If you notice any issues with this site, whether they're related to
+          accessibility or not, feel free to create an issue on this project's
+          <ExternalLink
+            url="https://github.com/LucasSteer/lucassteer_website"
+            class="tablet:text-lg"
+            >GitHub repo</ExternalLink
+          >!
+        </p>
+      </section>
+      <section
+        class="my-4 tablet:m-4 p-4 shadow-card rounded-lg forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
+      >
+        <h2
+          class="mb-2 text-lg font-bold tracking-wider text-green-base dark:text-greenDarkMode-base tablet:text-xl"
+        >
+          Connect with me
+        </h2>
+        <p class="tablet:text-lg">
+          ... on
+          <ExternalLink
+            url="https://www.linkedin.com/in/lucassteer/"
+            text="LinkedIn"
+            class="tablet:text-lg"
+            >LinkedIn</ExternalLink
+          >
+          or by reaching out to me directly by emailing me at
+          <ExternalLink
+            url="mailto:lucassteer@gmail.com"
+            text="lucassteer@gmail.com"
+            class="tablet:text-lg"
+            >lucassteer@gmail.com</ExternalLink
+          >.
+        </p>
+      </section>
+    </div>
   </main>
 </template>
 
