@@ -1,16 +1,19 @@
 <template>
   <main class="p-4 desktop:grid grid-cols-3 items-center gap-4">
     <section
-      class="flex flex-row gap-2 tablet:flex-col items-center justify-center"
+      class="flex flex-row gap-[4vw] items-center justify-center tablet:gap-0 tablet:flex-col desktop:gap-4"
     >
       <img
         src="/headshot.jpg"
         alt="A picture of me, Lucas Steer, smiling in a field while wearing a navy-blue suit"
         class="m-2 h-32 w-32 rounded-full tablet:m-4 tablet:h-40 tablet:w-40 desktop:h-96 desktop:w-96"
       />
-      <h1 class="text-2xl font-bold tracking-widest tablet:text-4xl">
+      <h1
+        class="text-2xl text-center text-green-baseLarge dark:text-greenDarkMode-baseLarge font-bold tracking-widest tablet:text-4xl"
+      >
         Lucas Steer
-        <i class="block text-center font-normal tracking-wider tablet:text-2xl"
+        <i
+          class="block text-center text-grey dark:text-white font-normal tracking-wider tablet:text-2xl"
           >He/Him</i
         >
       </h1>
@@ -25,10 +28,9 @@
           Full-stack software engineer
         </h2>
         <p class="tablet:text-lg">
-          ... who's always looking for unique and exciting challenges! I've had
-          a frontend focus lately, but I have experience across the stack and
-          love to learn new things. I pride myself in being able to solve
-          problems and communicate solutions clearly for any audience.
+          ... who's always looking for unique and exciting challenges! I pride
+          myself in being able to solve problems across the stack and
+          communicate solutions clearly for any audience.
         </p>
         <p class="pt-4 tablet:text-lg">
           Check out
@@ -43,7 +45,8 @@
             text="my projects"
             class="tablet:text-lg"
           />
-          to learn more about what I've done and what I'm working on!
+          to learn more about what I've done and the new things that I'm
+          learning and working on!
         </p>
       </section>
       <section
@@ -55,11 +58,9 @@
           Passionate about web accessibility
         </h2>
         <p class="tablet:text-lg">
-          ... and its ability to bring more equitable access to all. In both my
-          professional and personal projects, I strive to include accessibility
-          best practices in my work. I took extra care to ensure that users who
-          rely on screen readers, high contrast modes, and other accessibility
-          tools will have equitable access to this site's contents.
+          ... and its ability to bring more equitable access to everyone. I
+          strive to have accessibility best practices be a core part of both my
+          professional and personal work.
         </p>
         <p class="pt-4 tablet:text-lg">
           If you notice any issues with this site, whether they're related to
@@ -87,7 +88,7 @@
             class="tablet:text-lg"
             >LinkedIn</ExternalLink
           >
-          or by reaching out to me directly by emailing me at
+          or email me directly at
           <ExternalLink
             url="mailto:lucassteer@gmail.com"
             text="lucassteer@gmail.com"
