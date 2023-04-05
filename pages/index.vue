@@ -1,12 +1,12 @@
 <template>
   <div class="p-4 desktop:grid grid-cols-3 items-center gap-4">
     <div
-      class="flex flex-row gap-[4vw] items-center justify-center tablet:gap-0 tablet:flex-col desktop:gap-4"
+      class="flex flex-row gap-[2vw] items-center justify-center tablet:gap-0 tablet:flex-col desktop:gap-4"
     >
       <img
         src="/headshot.jpg"
         alt="Headshot of Lucas Steer"
-        class="m-2 h-32 w-32 rounded-full tablet:m-4 tablet:h-40 tablet:w-40 desktop:h-96 desktop:w-96"
+        class="h-32 w-32 rounded-full tablet:m-4 tablet:h-40 tablet:w-40 desktop:h-96 desktop:w-96"
       />
       <h1
         class="text-2xl text-center text-green-baseLarge dark:text-greenDarkMode-baseLarge font-bold tracking-widest tablet:text-4xl"

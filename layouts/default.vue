@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen min-w-96 justify-between px-4">
+  <div class="flex flex-col h-screen min-w-[360px] justify-between px-4">
     <a class="sr-only" href="#maincontent">Skip to main content</a>
     <header
       class="grid items-center grid-cols-7 desktop:grid-cols-8 place-items-center border-b-2 border-grey-900 dark:border-grey-400 py-4 desktop:px-4"
