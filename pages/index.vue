@@ -6,7 +6,7 @@
       <img
         src="/headshot.jpg"
         alt="Headshot of Lucas Steer"
-        class="h-32 w-32 rounded-full tablet:m-4 tablet:h-40 tablet:w-40 desktop:h-96 desktop:w-96"
+        class="h-[128px] w-[128px] rounded-full tablet:m-4 tablet:h-[160px] tablet:w-[160px] desktop:h-[384px] desktop:w-[384px]"
       />
       <h1
         class="text-2xl text-center text-green-baseLarge dark:text-greenDarkMode-baseLarge font-bold tracking-widest tablet:text-4xl"

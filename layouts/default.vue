@@ -8,8 +8,7 @@
       <img
         :src="`/logos/LucasSteerLogo_${themeStore.theme}Mode.svg`"
         alt="Lucas Steer logo"
-        width="300"
-        class="col-span-3 col-start-3 desktop:col-span-2 desktop:col-start-auto tablet:block"
+        class="col-span-3 col-start-3 w-72 desktop:col-span-2 desktop:col-start-auto tablet:block"
       />
       <ThemeSwitcher
         class="h-12 justify-self-end col-start-7 desktop:col-span-3 desktop:col-start-auto"
