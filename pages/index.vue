@@ -1,6 +1,6 @@
 <template>
-  <main class="p-4 desktop:grid grid-cols-3 items-center gap-4">
-    <section
+  <div class="p-4 desktop:grid grid-cols-3 items-center gap-4">
+    <div
       class="flex flex-row gap-[4vw] items-center justify-center tablet:gap-0 tablet:flex-col desktop:gap-4"
     >
       <img
@@ -17,9 +17,9 @@
           >He/Him</i
         >
       </h1>
-    </section>
-    <div class="col-span-2">
-      <section
+    </div>
+    <section class="col-span-2">
+      <div
         class="my-4 tablet:m-4 p-4 shadow-card rounded-lg forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
       >
         <h2
@@ -48,8 +48,8 @@
           to learn more about what I've done and the new things that I'm
           learning and working on!
         </p>
-      </section>
-      <section
+      </div>
+      <div
         class="my-4 tablet:m-4 p-4 shadow-card rounded-lg forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
       >
         <h2
@@ -71,8 +71,8 @@
             >GitHub repo</ExternalLink
           >!
         </p>
-      </section>
-      <section
+      </div>
+      <div
         class="my-4 tablet:m-4 p-4 shadow-card rounded-lg forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
       >
         <h2
@@ -96,9 +96,9 @@
             >lucassteer@gmail.com</ExternalLink
           >.
         </p>
-      </section>
-    </div>
-  </main>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

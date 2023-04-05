@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col px-4 py-8">
+  <div class="flex flex-col px-4 py-8">
     <ExperienceCard
       company="Avanade"
       img-src="/logos/AvanadeLogo.png"
@@ -141,7 +141,7 @@
         audiences and use cases.
       </p>
     </ExperienceCard>
-  </main>
+  </div>
 </template>
 
 <script>

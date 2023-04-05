@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <main class="flex flex-col justify-around text-center">
+    <div class="flex flex-col justify-around text-center">
       <h1 class="pb-10 tracking-wide">
         <span
           v-if="error.statusCode == '404'"
@@ -23,7 +23,7 @@
         alt=""
         class="mx-auto mt-56 opacity-50 forced-colors:opacity-100 h-64 tablet:h-72 desktop:h-80"
       />
-    </main>
+    </div>
   </NuxtLayout>
 </template>
 

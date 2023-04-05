@@ -1,5 +1,5 @@
 <template>
-  <main
+  <div
     class="mx-auto grid gap-12 p-12 tablet:gap-8 tablet:p-8"
     :class="{
       'desktop:grid-cols-2': projects.length >= 2, // fewer items than columns looks weird without context
@@ -16,7 +16,7 @@
       :imgAlt="project.imgAlt"
       :tags="project.tags"
     />
-  </main>
+  </div>
 </template>
 
 <script>
