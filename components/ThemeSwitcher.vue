@@ -5,17 +5,20 @@
       @click="toggleThemeSwitcher"
       aria-controls="themeSwitcher"
       :aria-expanded="isExpanded ? 'true' : 'false'"
-      class="group"
+      class="group flex flex-row items-center gap-2"
     >
       <svg
         :viewBox="themeIconViewboxList[selectedTheme]"
-        class="h-12 stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white group-hover:fill-green-highlight group-focus:fill-green-highlight forced-colors:group-hover:fill-systemColors-Highlight forced-colors:group-focus:fill-systemColors-Highlight dark:group-hover:fill-greenDarkMode-highlight dark:group-focus:fill-greenDarkMode-highlight"
+        class="h-12 px-4 stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white group-hover:fill-green-highlight group-focus:fill-green-highlight forced-colors:group-hover:fill-systemColors-Highlight forced-colors:group-focus:fill-systemColors-Highlight dark:group-hover:fill-greenDarkMode-highlight dark:group-focus:fill-greenDarkMode-highlight"
       >
-        <title>
-          Toggle theme switcher menu - {{ selectedTheme }} theme icon
-        </title>
         <use :xlink:href="`/icons/${selectedTheme}ThemeIcon.svg#svg5`"></use>
       </svg>
+      <p
+        class="text-xl font-bold tracking-wide sr-only desktop:not-sr-only group-hover:text-green-highlight group-focus:text-green-highlight forced-colors:group-hover:text-systemColors-Highlight forced-colors:group-focus:text-systemColors-Highlight dark:group-hover:text-greenDarkMode-highlight dark:group-focus:text-greenDarkMode-highlight"
+      >
+        Set Theme
+        <span class="sr-only"> {{ selectedTheme }} theme active </span>
+      </p>
     </button>
     <fieldset
       ref="themeSwitcher"
