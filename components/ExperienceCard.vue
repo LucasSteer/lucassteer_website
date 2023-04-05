@@ -70,9 +70,7 @@
               stroke-linejoin="round"
               stroke-width="6"
               class="stroke-green-highlight forced-colors:stroke-systemColors-Highlight dark:stroke-greenDarkMode-base h-7 tablet:h-8"
-              role="img"
             >
-              <title>Location Icon</title>
               <path d="m 50 10 c -30 0 -40 40 0 80 c 40 -40 30 -80 0 -80" />
               <circle cx="50" cy="40" r="10" />
             </svg>
