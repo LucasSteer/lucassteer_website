@@ -21,7 +21,7 @@
       </svg>
     </button>
     <div
-      class="flex flex-col fixed inset-0 z-20 gap-12 px-8 pt-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-in-out forced-colors:border-r-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-r-2 dark:border-grey-400 bg-white dark:bg-zinc-800 shadow-card desktop:shadow-none h-screen w-1/2 min-w-80 desktop:static desktop:h-auto desktop:w-auto desktop:px-0 desktop:pt-0 desktop:dark:border-r-0 desktop:forced-colors:border-r-0 desktop:transition-none desktop:translate-x-0"
+      class="flex flex-col fixed inset-0 z-20 overflow-y-auto desktop:overflow-y-hidden gap-12 px-8 pt-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-in-out forced-colors:border-r-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-r-2 dark:border-grey-400 bg-white dark:bg-zinc-800 shadow-card desktop:shadow-none h-screen w-1/2 min-w-80 desktop:static desktop:h-auto desktop:w-auto desktop:px-0 desktop:pt-0 desktop:dark:border-r-0 desktop:forced-colors:border-r-0 desktop:transition-none desktop:translate-x-0"
       :class="{
         '-translate-x-full -z-10 dark:border-r-0 forced-colors:border-r-0 shadow-none':
           !isNavMenuExpanded,
