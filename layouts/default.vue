@@ -7,7 +7,7 @@
       <NavMenu />
       <img
         :src="`/logos/LucasSteerLogo_${themeStore.theme}Mode.svg`"
-        alt="My personal logo: 'Lucas Steer' written in the Atkinson Hyperlegible font"
+        alt="Lucas Steer logo"
         width="300"
         class="col-span-3 col-start-3 desktop:col-span-2 desktop:col-start-auto tablet:block"
       />

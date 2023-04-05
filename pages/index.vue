@@ -5,7 +5,7 @@
     >
       <img
         src="/headshot.jpg"
-        alt="A picture of me, Lucas Steer, smiling in a field while wearing a navy-blue suit"
+        alt="Headshot of Lucas Steer"
         class="m-2 h-32 w-32 rounded-full tablet:m-4 tablet:h-40 tablet:w-40 desktop:h-96 desktop:w-96"
       />
       <h1

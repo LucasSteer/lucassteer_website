@@ -35,7 +35,7 @@ export default {
           subtitle: 'Geocaching implemented in AR for Android devices',
           link: 'https://github.com/LucasSteer/CIS4250_GeocARching',
           imgSrc: '/thumbnails/GeocARching.jpg',
-          imgAlt: 'A black-and-white photo of a 3D model of a cactus in AR',
+          imgAlt: 'Black-and-white screenshot of a 3D-modelled cactus in AR',
           tags: ['Android', 'Kotlin', 'Firebase', 'AR'],
         },
       ],
