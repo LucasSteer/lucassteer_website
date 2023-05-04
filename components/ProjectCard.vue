@@ -11,7 +11,7 @@
         class="min-h-1/6 w-full absolute bottom-0 flex flex-col justify-center gap-2 bg-white dark:bg-zinc-800 forced-colors:group-hover:text-systemColors-SelectedItemText forced-colors:group-focus:text-systemColors-SelectedItemText forced-colors:group-active:text-systemColors-SelectedItemText forced-colors:group-hover:bg-systemColors-SelectedItem forced-colors:group-focus:bg-systemColors-SelectedItem forced-colors:group-active:bg-systemColors-SelectedItem group-hover:bg-grey-50 group-focus:bg-grey-50 group-active:bg-grey-100 dark:group-hover:bg-zinc-700 dark:group-focus:bg-zinc-700 dark:group-active:bg-zinc-600 px-4 pt-2 pb-8 tablet:px-8 tablet:pt-3 tablet:pb-10"
       >
         <h2
-          class="text-xl tracking-widest text-green-baseLarge dark:text-greenDarkMode-baseLarge tablet:text-2xl desktop:text-4xl"
+          class="text-xl decoration-2 underline-offset-4 underline group-hover:decoration-4 group-focus:decoration-4 tracking-widest text-green-baseLarge dark:text-greenDarkMode-baseLarge tablet:text-2xl desktop:text-4xl"
         >
           {{ title }}
         </h2>
