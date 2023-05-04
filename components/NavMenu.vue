@@ -53,7 +53,7 @@
         </svg>
       </button>
       <ul
-        class="visible flex flex-col gap-6 tablet:gap-12 pl-12 desktop:flex-row desktop:justify-between desktop:pl-0 desktop:gap-7"
+        class="visible flex flex-col gap-6 tablet:gap-12 pl-12 desktop:flex-row desktop:justify-between desktop:px-1 desktop:gap-7"
         :class="{ 'invisible desktop:visible': !isNavMenuExpanded }"
       >
         <li>
