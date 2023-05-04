@@ -11,7 +11,7 @@
         class="col-span-3 col-start-3 w-72 desktop:col-span-2 desktop:col-start-auto tablet:block"
       />
       <ThemeSwitcher
-        class="h-12 justify-self-end col-start-7 desktop:col-span-3 desktop:col-start-auto"
+        class="justify-self-end col-start-7 desktop:col-span-3 desktop:col-start-auto"
       />
     </header>
     <main id="maincontent" class="container mx-auto">

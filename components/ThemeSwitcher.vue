@@ -5,11 +5,11 @@
       @click="toggleThemeSwitcher"
       aria-controls="themeSwitcher"
       :aria-expanded="isExpanded ? 'true' : 'false'"
-      class="group flex flex-row items-center gap-2"
+      class="group flex flex-row items-center gap-2 shadow-card rounded-lg p-2 dark:shadow-none dark:border-2 dark:border-grey-400 hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
     >
       <svg
         :viewBox="themeIconViewboxList[selectedTheme]"
-        class="h-12 px-4 stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white group-hover:fill-green-highlight group-focus:fill-green-highlight forced-colors:group-hover:fill-systemColors-Highlight forced-colors:group-focus:fill-systemColors-Highlight dark:group-hover:fill-greenDarkMode-highlight dark:group-focus:fill-greenDarkMode-highlight"
+        class="h-12 w-12 stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white group-hover:fill-green-highlight group-focus:fill-green-highlight forced-colors:group-hover:fill-systemColors-Highlight forced-colors:group-focus:fill-systemColors-Highlight dark:group-hover:fill-greenDarkMode-highlight dark:group-focus:fill-greenDarkMode-highlight"
       >
         <use :xlink:href="`/icons/${selectedTheme}ThemeIcon.svg#svg5`"></use>
       </svg>
@@ -24,7 +24,7 @@
       ref="themeSwitcher"
       id="themeSwitcher"
       v-if="isExpanded"
-      class="absolute mt-4 z-10 right-5 flex flex-col shadow-card rounded-lg forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-grey-400 bg-white dark:bg-zinc-800"
+      class="absolute mt-8 z-10 right-4 desktop:right-8 flex flex-col shadow-card rounded-lg forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-grey-400 bg-white dark:bg-zinc-800"
     >
       <label
         for="system"
