@@ -14,5 +14,14 @@
     "ecmaVersion": "latest"
   },
   "plugins": ["vue"],
-  "rules": {}
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["**/pages/**/*.{js,ts,jsx,tsx,vue}"],
+      "rules": { "vue/multi-word-component-names": "off" }
+    }
+  ],
+  "globals": {
+    "useHead": false
+  }
 }

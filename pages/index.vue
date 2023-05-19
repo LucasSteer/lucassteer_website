@@ -101,13 +101,15 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'IndexPage',
-  head() {
-    return {
-      title: 'About Me | Lucas Steer',
-    };
-  },
-};
+<script setup>
+useHead({
+  title: 'About Me | Lucas Steer',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'The home page for Lucas Steer, a Full-Stack Software Engineer based out of Toronto, Canada.',
+    },
+  ],
+});
 </script>

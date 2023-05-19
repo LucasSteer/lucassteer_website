@@ -144,13 +144,15 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MyexperiencesPage',
-  head() {
-    return {
-      title: 'My Experiences | Lucas Steer',
-    };
-  },
-};
+<script setup>
+useHead({
+  title: 'My Experiences | Lucas Steer',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Read about my professional experiences as a Full-Stack Software Engineer!',
+    },
+  ],
+});
 </script>

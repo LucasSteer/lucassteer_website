@@ -19,27 +19,26 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MyprojectsPage',
-  head() {
-    return {
-      title: 'My Projects | Lucas Steer',
-    };
+<script setup>
+useHead({
+  title: 'My Projects | Lucas Steer',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Learn more about my past and ongoing projects as a Full-Stack Software Engineer!',
+    },
+  ],
+});
+
+const projects = [
+  {
+    title: 'GeocARching',
+    subtitle: 'Geocaching implemented in AR for Android devices',
+    link: 'https://github.com/LucasSteer/CIS4250_GeocARching',
+    imgSrc: '/thumbnails/GeocARching.jpg',
+    imgAlt: 'Black-and-white screenshot of a 3D-modelled cactus in AR',
+    tags: ['Android', 'Kotlin', 'Firebase', 'AR'],
   },
-  data() {
-    return {
-      projects: [
-        {
-          title: 'GeocARching',
-          subtitle: 'Geocaching implemented in AR for Android devices',
-          link: 'https://github.com/LucasSteer/CIS4250_GeocARching',
-          imgSrc: '/thumbnails/GeocARching.jpg',
-          imgAlt: 'Black-and-white screenshot of a 3D-modelled cactus in AR',
-          tags: ['Android', 'Kotlin', 'Firebase', 'AR'],
-        },
-      ],
-    };
-  },
-};
+];
 </script>
