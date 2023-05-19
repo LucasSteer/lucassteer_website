@@ -1,4 +1,5 @@
 <template>
+  <PageHeader text="My Experiences" />
   <div class="flex flex-col px-4 py-8">
     <ExperienceCard
       company="Avanade"

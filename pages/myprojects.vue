@@ -1,4 +1,5 @@
 <template>
+  <PageHeader text="My Projects" />
   <div
     class="mx-auto grid gap-12 p-12 tablet:gap-8 tablet:p-8"
     :class="{

@@ -1,4 +1,5 @@
 <template>
+  <PageHeader text="About Me" />
   <div class="p-4 desktop:grid grid-cols-3 items-center gap-4">
     <div
       class="flex flex-row gap-[2vw] items-center justify-center tablet:gap-0 tablet:flex-col desktop:gap-4"

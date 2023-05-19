@@ -14,7 +14,9 @@
     "ecmaVersion": "latest"
   },
   "plugins": ["vue"],
-  "rules": {},
+  "rules": {
+    "vue/no-multiple-template-root": 0
+  },
   "overrides": [
     {
       "files": ["**/pages/**/*.{js,ts,jsx,tsx,vue}"],
