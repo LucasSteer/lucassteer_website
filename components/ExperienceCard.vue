@@ -57,7 +57,7 @@
       </button>
     </h2>
     <AccordionWrapper :id="accordionId">
-      <div class="px-4" v-if="isExpanded">
+      <div class="px-4" v-show="isExpanded">
         <div
           class="mx-4 mt-4 flex flex-col gap-2 tablet:flex-row tablet:items-center tablet:justify-between"
         >
