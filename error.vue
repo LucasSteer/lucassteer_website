@@ -16,16 +16,20 @@
   </NuxtLayout>
 </template>
 
-<script>
+<script setup>
 import { useThemeStore } from '@/stores/theme';
-import { mapStores } from 'pinia';
 
-export default {
-  name: 'ErrorPage',
-  props: ['error'],
+const themeStore = useThemeStore();
+
+defineProps({
+  error: Object,
+});
+
+definePageMeta({
   layout: 'error',
-  computed: {
-    ...mapStores(useThemeStore),
-  },
-};
+});
+
+useHead({
+  title: 'Page Not Found | Lucas Steer',
+});
 </script>
