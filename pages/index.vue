@@ -9,15 +9,18 @@
         alt="Headshot of Lucas Steer"
         class="h-[128px] w-[128px] rounded-full tablet:m-4 tablet:h-[160px] tablet:w-[160px] desktop:h-[384px] desktop:w-[384px]"
       />
-      <h1
-        class="text-2xl text-center text-green-baseLarge dark:text-greenDarkMode-baseLarge font-bold tracking-widest tablet:text-4xl"
-      >
-        Lucas Steer
-        <i
-          class="block text-center text-grey dark:text-white font-normal tracking-wider tablet:text-2xl"
-          >He/Him</i
+      <div>
+        <h2
+          class="text-2xl text-center text-green-baseLarge dark:text-greenDarkMode-baseLarge font-bold tracking-widest tablet:text-4xl"
         >
-      </h1>
+          Lucas Steer
+        </h2>
+        <p
+          class="text-center italic font-normal tracking-wider text-grey dark:text-white tablet:text-2xl"
+        >
+          He/Him
+        </p>
+      </div>
     </div>
     <section class="col-span-2">
       <div
