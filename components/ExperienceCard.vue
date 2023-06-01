@@ -26,7 +26,7 @@
             />
             <div class="ml-4 tablet:ml-8">
               <p
-                class="text-2xl tracking-widest font-bold text-green-baseLarge dark:text-greenDarkMode-baseLarge"
+                class="text-2xl tablet:text-3xl tracking-widest font-bold text-green-baseLarge dark:text-greenDarkMode-baseLarge"
               >
                 {{ company }}
                 <span

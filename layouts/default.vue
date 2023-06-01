@@ -23,8 +23,8 @@
       <p class="mb-1 text-sm">© 2023 Lucas Steer. All Rights Reserved.</p>
       <p class="relative text-sm">
         Contact:
-        <ExternalLink url="mailto:lucassteer@gmail.com" class="text-sm"
-          >lucassteer@gmail.com</ExternalLink
+        <InlineLink url="mailto:lucassteer@gmail.com" class="text-sm"
+          >lucassteer@gmail.com</InlineLink
         >
       </p>
     </footer>

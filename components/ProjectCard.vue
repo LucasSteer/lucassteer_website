@@ -2,7 +2,7 @@
   <section
     class="relative overflow-hidden rounded-lg shadow-card forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
   >
-    <ExternalLink
+    <InlineLink
       :url="link"
       class="group text-grey no-underline dark:text-white hover:text-grey dark:hover:text-white focus:text-grey dark:focus:text-white"
     >
@@ -29,7 +29,7 @@
           >
         </div>
       </div>
-    </ExternalLink>
+    </InlineLink>
   </section>
 </template>
 

@@ -38,17 +38,13 @@
         </p>
         <p class="pt-4 tablet:text-lg">
           Check out
-          <InternalLink
-            url="myexperiences"
-            text="my experiences"
-            class="tablet:text-lg"
-          />
+          <InlineLink url="myexperiences" class="tablet:text-lg"
+            >my experiences</InlineLink
+          >
           and
-          <InternalLink
-            url="myprojects"
-            text="my projects"
-            class="tablet:text-lg"
-          />
+          <InlineLink url="myprojects" class="tablet:text-lg"
+            >my projects</InlineLink
+          >
           to learn more about what I've done and the new things that I'm
           learning and working on!
         </p>
@@ -69,10 +65,10 @@
         <p class="pt-4 tablet:text-lg">
           If you notice any issues with this site, whether they're related to
           accessibility or not, feel free to create an issue on this project's
-          <ExternalLink
+          <InlineLink
             url="https://github.com/LucasSteer/lucassteer_website"
             class="tablet:text-lg"
-            >GitHub repo</ExternalLink
+            >GitHub repo</InlineLink
           >!
         </p>
       </div>
@@ -86,18 +82,14 @@
         </h2>
         <p class="tablet:text-lg">
           ... on
-          <ExternalLink
+          <InlineLink
             url="https://www.linkedin.com/in/lucassteer/"
-            text="LinkedIn"
             class="tablet:text-lg"
-            >LinkedIn</ExternalLink
+            >LinkedIn</InlineLink
           >
           or email me directly at
-          <ExternalLink
-            url="mailto:lucassteer@gmail.com"
-            text="lucassteer@gmail.com"
-            class="tablet:text-lg"
-            >lucassteer@gmail.com</ExternalLink
+          <InlineLink url="mailto:lucassteer@gmail.com" class="tablet:text-lg"
+            >lucassteer@gmail.com</InlineLink
           >.
         </p>
       </div>
