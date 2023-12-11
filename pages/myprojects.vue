@@ -38,7 +38,7 @@ const projects = [
     subtitle: 'Geocaching implemented in AR for Android devices',
     link: 'https://github.com/LucasSteer/CIS4250_GeocARching',
     imgSrc: '/thumbnails/GeocARching.jpg',
-    imgAlt: 'Black-and-white screenshot of a 3D-modelled cactus in AR',
+    imgAlt: '',
     tags: ['Android', 'Kotlin', 'Firebase', 'AR'],
   },
 ];
