@@ -102,7 +102,7 @@ export default {
         return;
       }
 
-      this.isNavMenuExpanded = false;
+      this.closeNavMenu();
     },
     handleTab(event) {
       if (!this.isNavMenuExpanded) return;
