@@ -2,16 +2,21 @@
   <div class="flex flex-col h-screen min-w-[360px] justify-between px-4">
     <a class="sr-only" href="#maincontent">Skip to main content</a>
     <header
-      class="grid items-center grid-cols-7 desktop:grid-cols-8 place-items-center border-b-2 border-grey-900 dark:border-grey-400 py-4 desktop:px-4"
+      class="grid items-center grid-cols-8 desktop:grid-cols-8 place-items-center border-b-2 border-grey-900 dark:border-grey-400 py-4 desktop:px-4"
     >
-      <NavMenu />
+      <NavMenu class="w-full col-span-3" />
+      <img
+        :src="`/icons/${themeStore.theme}Favicon.svg`"
+        alt=""
+        class="w-10 col-span-2 tablet:hidden"
+      />
       <img
         :src="`/logos/LucasSteerLogo_${themeStore.theme}Mode.svg`"
         alt="Lucas Steer logo"
-        class="col-span-3 col-start-3 w-72 desktop:col-span-2 desktop:col-start-auto tablet:block"
+        class="hidden col-span-2 tablet:w-72 tablet:block desktop:col-start-auto"
       />
       <ThemeSwitcher
-        class="justify-self-end col-start-7 desktop:col-span-3 desktop:col-start-auto desktop:pr-1"
+        class="justify-self-end col-span-3 desktop:col-span-3 desktop:col-start-auto desktop:pr-1"
       />
     </header>
     <main id="maincontent" class="container mx-auto">
