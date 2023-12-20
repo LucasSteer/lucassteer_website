@@ -9,6 +9,7 @@
     >
       <InlineLink :url="link" class="group/link no-underline">
         <h2
+          ref="cardTitle"
           class="inline text-xl underline decoration-2 underline-offset-4 group-hover:decoration-4 group-focus/link:decoration-4 tracking-widest text-blue-baseLarge dark:text-blueDarkMode-baseLarge tablet:text-3xl desktop:text-4xl"
         >
           {{ title }}
@@ -65,8 +66,10 @@ export default {
   },
   methods: {
     openLink(event, url) {
-      location.href = url;
+      if (this.$refs.cardTitle === event.target) return;
+
       event.preventDefault();
+      location.href = url;
     },
   },
 };
