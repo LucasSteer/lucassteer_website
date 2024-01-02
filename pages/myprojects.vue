@@ -1,5 +1,6 @@
 <template>
-  <main
+  <PageHeader text="My Projects" />
+  <div
     class="mx-auto grid gap-12 p-12 tablet:gap-8 tablet:p-8"
     :class="{
       'desktop:grid-cols-2': projects.length >= 2, // fewer items than columns looks weird without context
@@ -16,30 +17,29 @@
       :imgAlt="project.imgAlt"
       :tags="project.tags"
     />
-  </main>
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'MyprojectsPage',
-  head() {
-    return {
-      title: 'My Projects | Lucas Steer',
-    };
+<script setup>
+useHead({
+  title: 'My Projects | Lucas Steer',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Learn more about my past and ongoing projects as a Full-Stack Software Engineer!',
+    },
+  ],
+});
+
+const projects = [
+  {
+    title: 'GeocARching',
+    subtitle: 'Geocaching implemented in AR for Android devices',
+    link: 'https://github.com/LucasSteer/CIS4250_GeocARching',
+    imgSrc: '/thumbnails/GeocARching.jpg',
+    imgAlt: '',
+    tags: ['Android', 'Kotlin', 'Firebase', 'AR'],
   },
-  data() {
-    return {
-      projects: [
-        {
-          title: 'GeocARching',
-          subtitle: 'Geocaching implemented in AR for Android devices',
-          link: 'https://github.com/LucasSteer/CIS4250_GeocARching',
-          imgSrc: '/thumbnails/GeocARching.jpg',
-          imgAlt: 'A black-and-white photo of a 3D model of a cactus in AR',
-          tags: ['Android', 'Kotlin', 'Firebase', 'AR'],
-        },
-      ],
-    };
-  },
-};
+];
 </script>

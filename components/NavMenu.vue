@@ -1,7 +1,7 @@
 <template>
-  <nav class="justify-self-start h-12 desktop:col-span-3 desktop:h-auto">
+  <nav class="justify-self-start desktop:col-span-3 desktop:h-auto">
     <button
-      class="group px-4 desktop:hidden"
+      class="group flex flex-row items-center gap-1 tablet:gap-2 shadow-card rounded-lg p-2 dark:shadow-none dark:border-2 dark:border-grey-400 hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600 desktop:hidden"
       @click="openNavMenu"
       ref="openNavMenuButton"
       aria-controls="navMenu"
@@ -13,15 +13,19 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="6"
-        class="stroke-grey forced-colors:stroke-systemColors-CanvasText dark:stroke-white group-hover:stroke-green-highlight group-focus:stroke-green-highlight forced-colors:group-hover:stroke-systemColors-Highlight forced-colors:group-focus:stroke-systemColors-Highlight dark:group-hover:stroke-greenDarkMode-highlight dark:group-focus:stroke-greenDarkMode-highlight h-12 tablet:h-12"
+        class="h-8 tablet:h-12 stroke-grey forced-colors:stroke-systemColors-CanvasText dark:stroke-white group-hover:stroke-green-highlight group-focus:stroke-green-highlight forced-colors:group-hover:stroke-systemColors-Highlight forced-colors:group-focus:stroke-systemColors-Highlight dark:group-hover:stroke-greenDarkMode-highlight dark:group-focus:stroke-greenDarkMode-highlight"
         role="img"
       >
-        <title>Open Navigation Menu</title>
         <path d="m 10 25 h 80 m -80 25 h 80 m -80 25 h 80" />
       </svg>
+      <span
+        class="text-md tablet:text-xl font-bold tracking-wide group-hover:text-green-highlight group-focus:text-green-highlight forced-colors:group-hover:text-systemColors-Highlight forced-colors:group-focus:text-systemColors-Highlight dark:group-hover:text-greenDarkMode-highlight dark:group-focus:text-greenDarkMode-highlight"
+      >
+        Menu
+      </span>
     </button>
     <div
-      class="flex flex-col fixed inset-0 z-20 gap-12 px-8 pt-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-in-out forced-colors:border-r-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-r-2 dark:border-grey-400 bg-white dark:bg-zinc-800 shadow-card desktop:shadow-none h-screen w-1/2 min-w-80 desktop:static desktop:h-auto desktop:w-auto desktop:px-0 desktop:pt-0 desktop:dark:border-r-0 desktop:forced-colors:border-r-0 desktop:transition-none desktop:translate-x-0"
+      class="flex flex-col fixed inset-0 z-20 overflow-y-auto desktop:overflow-y-hidden gap-12 px-4 pt-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-in-out forced-colors:border-r-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-r-2 dark:border-grey-400 bg-white dark:bg-zinc-800 shadow-card desktop:shadow-none h-screen w-1/2 min-w-80 desktop:static desktop:h-auto desktop:w-auto desktop:px-0 desktop:pt-0 desktop:dark:border-r-0 desktop:forced-colors:border-r-0 desktop:transition-none desktop:translate-x-0"
       :class="{
         '-translate-x-full -z-10 dark:border-r-0 forced-colors:border-r-0 shadow-none':
           !isNavMenuExpanded,
@@ -32,7 +36,7 @@
       @keyup.escape="closeNavMenu"
     >
       <button
-        class="group visible self-start desktop:hidden"
+        class="group visible self-start shadow-card rounded-lg p-2 dark:shadow-none dark:border-2 dark:border-grey-400 hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600 desktop:hidden"
         :class="{ 'invisible desktop:visible': !isNavMenuExpanded }"
         @click="closeNavMenu"
         ref="closeNavMenuButton"
@@ -53,7 +57,7 @@
         </svg>
       </button>
       <ul
-        class="visible flex flex-col gap-6 tablet:gap-12 pl-12 desktop:flex-row desktop:justify-between desktop:pl-0 desktop:gap-7"
+        class="visible flex flex-col gap-6 tablet:gap-12 pl-12 desktop:flex-row desktop:justify-between desktop:px-1 desktop:gap-7"
         :class="{ 'invisible desktop:visible': !isNavMenuExpanded }"
       >
         <li>
@@ -102,7 +106,7 @@ export default {
         return;
       }
 
-      this.isNavMenuExpanded = false;
+      this.closeNavMenu();
     },
     handleTab(event) {
       if (!this.isNavMenuExpanded) return;

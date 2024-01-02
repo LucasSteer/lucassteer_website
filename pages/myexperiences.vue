@@ -1,5 +1,6 @@
 <template>
-  <main class="flex flex-col px-4 py-8">
+  <PageHeader text="My Experiences" />
+  <div class="flex flex-col px-4 py-8">
     <ExperienceCard
       company="Avanade"
       img-src="/logos/AvanadeLogo.png"
@@ -141,16 +142,18 @@
         audiences and use cases.
       </p>
     </ExperienceCard>
-  </main>
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'MyexperiencesPage',
-  head() {
-    return {
-      title: 'My Experiences | Lucas Steer',
-    };
-  },
-};
+<script setup>
+useHead({
+  title: 'My Experiences | Lucas Steer',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Read about my professional experiences as a Full-Stack Software Engineer!',
+    },
+  ],
+});
 </script>

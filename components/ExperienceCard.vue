@@ -26,7 +26,7 @@
             />
             <div class="ml-4 tablet:ml-8">
               <p
-                class="text-2xl tracking-widest font-bold text-green-baseLarge dark:text-greenDarkMode-baseLarge"
+                class="text-2xl tablet:text-3xl tracking-widest font-bold text-green-baseLarge dark:text-greenDarkMode-baseLarge"
               >
                 {{ company }}
                 <span
@@ -57,7 +57,7 @@
       </button>
     </h2>
     <AccordionWrapper :id="accordionId">
-      <div class="px-4" v-if="isExpanded">
+      <div class="px-4" v-show="isExpanded">
         <div
           class="mx-4 mt-4 flex flex-col gap-2 tablet:flex-row tablet:items-center tablet:justify-between"
         >
@@ -70,9 +70,7 @@
               stroke-linejoin="round"
               stroke-width="6"
               class="stroke-green-highlight forced-colors:stroke-systemColors-Highlight dark:stroke-greenDarkMode-base h-7 tablet:h-8"
-              role="img"
             >
-              <title>Location Icon</title>
               <path d="m 50 10 c -30 0 -40 40 0 80 c 40 -40 30 -80 0 -80" />
               <circle cx="50" cy="40" r="10" />
             </svg>

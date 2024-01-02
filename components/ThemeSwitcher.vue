@@ -5,23 +5,26 @@
       @click="toggleThemeSwitcher"
       aria-controls="themeSwitcher"
       :aria-expanded="isExpanded ? 'true' : 'false'"
-      class="group"
+      class="group flex flex-row items-center gap-1 tablet:gap-2 shadow-card rounded-lg p-2 dark:shadow-none dark:border-2 dark:border-grey-400 hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
     >
       <svg
         :viewBox="themeIconViewboxList[selectedTheme]"
-        class="h-12 stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white group-hover:fill-green-highlight group-focus:fill-green-highlight forced-colors:group-hover:fill-systemColors-Highlight forced-colors:group-focus:fill-systemColors-Highlight dark:group-hover:fill-greenDarkMode-highlight dark:group-focus:fill-greenDarkMode-highlight"
+        class="h-8 w-8 tablet:h-12 tablet:w-12 stroke-none fill-grey forced-colors:fill-systemColors-CanvasText dark:fill-white group-hover:fill-green-highlight group-focus:fill-green-highlight forced-colors:group-hover:fill-systemColors-Highlight forced-colors:group-focus:fill-systemColors-Highlight dark:group-hover:fill-greenDarkMode-highlight dark:group-focus:fill-greenDarkMode-highlight"
       >
-        <title>
-          Toggle theme switcher menu - {{ selectedTheme }} theme icon
-        </title>
         <use :xlink:href="`/icons/${selectedTheme}ThemeIcon.svg#svg5`"></use>
       </svg>
+      <span
+        class="text-md tablet:text-xl font-bold tracking-wide group-hover:text-green-highlight group-focus:text-green-highlight forced-colors:group-hover:text-systemColors-Highlight forced-colors:group-focus:text-systemColors-Highlight dark:group-hover:text-greenDarkMode-highlight dark:group-focus:text-greenDarkMode-highlight"
+      >
+        Set Theme
+        <span class="sr-only"> {{ selectedTheme }} theme active </span>
+      </span>
     </button>
     <fieldset
       ref="themeSwitcher"
       id="themeSwitcher"
       v-if="isExpanded"
-      class="absolute mt-4 z-10 right-5 flex flex-col shadow-card rounded-lg forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-grey-400 bg-white dark:bg-zinc-800"
+      class="absolute mt-8 z-10 right-4 desktop:right-8 flex flex-col shadow-card rounded-lg forced-colors:border-2 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-2 dark:border-grey-400 bg-white dark:bg-zinc-800"
     >
       <label
         for="system"
@@ -234,7 +237,7 @@ export default {
         ? localStorage.selectedTheme
         : 'system',
       themeIconViewboxList: {
-        system: '-50 -50 534.92682 534.9278',
+        system: '-20 -20 470 470',
         light: '0 0 561.66656 561.66669',
         dark: '-50 -50 388.37381 395.4344',
       },

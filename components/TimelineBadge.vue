@@ -8,9 +8,7 @@
       stroke-width="6"
       class="stroke-green-highlight forced-colors:stroke-systemColors-Highlight dark:stroke-greenDarkMode-base h-7 tablet:h-8"
       :class="{ 'h-6 tablet:h-7': compact }"
-      role="img"
     >
-      <title>Timeline Icon</title>
       <path
         d="m 20 20 l 60 0 l 0 60 l -60 0 l 0 -60 m 20 -10 l 0 20 m 20 -20 l 0 20 m -40 10 l 60 0"
       />
