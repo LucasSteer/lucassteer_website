@@ -8,13 +8,13 @@
   >
     <h2>
       <button
-        class="group w-full text-left cursor-pointer px-4 rounded-t-lg hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
+        class="group w-full text-left cursor-pointer px-6 tablet:px-4 rounded-t-lg hover:bg-grey-50 focus:bg-grey-50 active:bg-grey-100 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700 dark:active:bg-zinc-600"
         @click="isExpanded = !isExpanded"
         :aria-controls="accordionId"
         :aria-expanded="isExpanded ? 'true' : 'false'"
       >
         <div
-          class="flex flex-row items-center justify-between border-grey-400 px-2 py-4 tablet:px-8"
+          class="flex flex-row items-center justify-between border-grey-400 py-4 tablet:px-8"
         >
           <div class="flex flex-row items-center">
             <img
@@ -22,19 +22,17 @@
               alt=""
               height="64"
               width="64"
-              class="min-w-16 h-16 min-h-16 w-16 rounded-full border-2 border-grey-700 object-scale-down"
+              class="hidden tablet:block mr-4 tablet:mr-8 min-w-16 h-16 min-h-16 w-16 rounded-full border-2 border-grey-700 object-scale-down"
             />
-            <div class="ml-4 tablet:ml-8">
-              <p
-                class="text-2xl tablet:text-3xl tracking-widest font-bold text-green-baseLarge dark:text-greenDarkMode-baseLarge"
+            <p
+              class="text-2xl tablet:text-3xl tracking-widest font-bold text-green-baseLarge dark:text-greenDarkMode-baseLarge"
+            >
+              {{ company }}
+              <span
+                class="block text-base font-bold tracking-wider text-grey dark:text-white tablet:text-lg"
+                >{{ ecRole }}</span
               >
-                {{ company }}
-                <span
-                  class="block text-base font-bold tracking-wider text-green-base dark:text-greenDarkMode-base tablet:text-lg"
-                  >{{ ecRole }}</span
-                >
-              </p>
-            </div>
+            </p>
           </div>
           <svg
             viewBox="0 0 100 100"
@@ -42,8 +40,7 @@
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="8"
-            width="50"
-            class="stroke-grey-500 forced-colors:stroke-systemColors-ButtonText dark:stroke-grey-300 group-hover:stroke-green-highlight forced-colors:group-hover:stroke-systemColors-Highlight dark:group-hover:stroke-greenDarkMode-base group-focus:stroke-green-highlight forced-colors:group-focus:stroke-systemColors-Highlight dark:group-focus:stroke-greenDarkMode-base transition-all motion-reduce:transition-none duration-300 ease-in-out"
+            class="min-w-6 tablet:min-w-12 w-6 tablet:w-12 stroke-grey-500 forced-colors:stroke-systemColors-ButtonText dark:stroke-grey-300 group-hover:stroke-green-highlight forced-colors:group-hover:stroke-systemColors-Highlight dark:group-hover:stroke-greenDarkMode-base group-focus:stroke-green-highlight forced-colors:group-focus:stroke-systemColors-Highlight dark:group-focus:stroke-greenDarkMode-base transition-all motion-reduce:transition-none duration-300 ease-in-out"
             :class="{ 'rotate-180': isExpanded }"
             aria-hidden="true"
           >
@@ -77,7 +74,7 @@
             <p class="text-base tablet:text-lg">{{ location }}</p>
           </div>
         </div>
-        <div class="pt-4 tablet:px-4 tablet:pt-6 tablet:pb-4">
+        <div class="pt-4 px-2 tablet:px-4 tablet:pt-6 tablet:pb-4">
           <slot />
         </div>
       </div>
