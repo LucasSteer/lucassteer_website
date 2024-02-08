@@ -21,6 +21,11 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+import { useThemeStore } from '@/stores/theme';
+
+const themeStore = useThemeStore();
+
 useHead({
   title: 'My Projects | Lucas Steer',
   meta: [
@@ -32,7 +37,17 @@ useHead({
   ],
 });
 
-const projects = [
+const projects = computed(() => [
+  {
+    title: 'Personal Website',
+    subtitle: 'The GitHub repo for this website',
+    link: 'https://github.com/LucasSteer/lucassteer_website',
+    imgSrc: `/thumbnails/PersonalWebsite_${
+      themeStore.theme === 'light' ? 'dark' : 'light'
+    }Mode.png`,
+    imgAlt: '',
+    tags: ['Vue.js', 'JavaScript', 'Tailwind'],
+  },
   {
     title: 'GeocARching',
     subtitle: 'Geocaching implemented in AR for Android devices',
@@ -41,5 +56,5 @@ const projects = [
     imgAlt: '',
     tags: ['Android', 'Kotlin', 'Firebase', 'AR'],
   },
-];
+]);
 </script>
