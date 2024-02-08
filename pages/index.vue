@@ -33,7 +33,7 @@
         </h2>
         <p class="tablet:text-lg">
           ... who's always looking for unique and exciting challenges! I pride
-          myself in being able to solve problems across the stack and
+          myself on being able to solve problems across the stack and
           communicate solutions clearly for any audience.
         </p>
         <p class="pt-4 tablet:text-lg">
@@ -41,12 +41,11 @@
           <InlineLink url="myexperiences" class="tablet:text-lg"
             >my experiences</InlineLink
           >
-          and
+          to learn about what I've done and
           <InlineLink url="myprojects" class="tablet:text-lg"
             >my projects</InlineLink
           >
-          to learn more about what I've done and the new things that I'm
-          learning and working on!
+          to learn about what I'm working on.
         </p>
       </div>
       <div
@@ -58,13 +57,13 @@
           Passionate about web accessibility
         </h2>
         <p class="tablet:text-lg">
-          ... and its ability to bring more equitable access to everyone. I
-          strive to have accessibility best practices be a core part of both my
-          professional and personal work.
+          ... and how it makes online experiences more equitable. I strive to
+          make accessibility best practices a core part of all of my projects,
+          professional and personal.
         </p>
         <p class="pt-4 tablet:text-lg">
           If you notice any issues with this site, whether they're related to
-          accessibility or not, feel free to create an issue on this project's
+          accessibility or not, feel free to create an issue on this website's
           <InlineLink
             url="https://github.com/LucasSteer/lucassteer_website"
             class="tablet:text-lg"
