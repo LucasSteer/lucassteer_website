@@ -25,7 +25,7 @@
     <footer
       class="min-h-16 border-t-2 border-grey-900 dark:border-grey-400 px-4 pt-2 tablet:flex tablet:flex-row tablet:items-center tablet:justify-between tablet:pt-0"
     >
-      <p class="mb-1 text-sm">© 2023 Lucas Steer. All Rights Reserved.</p>
+      <p class="mb-1 text-sm">© 2024 Lucas Steer. All Rights Reserved.</p>
       <p class="relative text-sm">
         Contact:
         <InlineLink url="mailto:lucassteer@gmail.com" class="text-sm"
