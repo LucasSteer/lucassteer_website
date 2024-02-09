@@ -12,13 +12,16 @@
     >
       <PromotionCard ec-role="Consultant" start="December 2021">
         <p>
-          Near the end of my second year, I was promoted to the Consultant level
-          for my client work and my leadership roles in internal Avanade groups,
-          like our analyst community. These days I'm a technical architect for a
-          large public services client. I'm responsible for the deployment and
-          administration of a highly integrated system that uses Dynamics 365
-          for CRM and ERP alongside Azure objects for API management, cloud
-          storage, messaging, and serverless code.
+          In my role as a full-stack developer at the Consultant level, I've
+          worked on two projects as a front-end engineer and a third as a
+          technical architect. I used TypeScript and Angular or JavaScript and
+          Vue in my frontend projects depending on the client's existing tech
+          stack. As a technical architect, I was responsible for the deployment
+          and administration of a complex distributed system in Azure that made
+          use of serverless components, message queues, and NoSQL databases. I
+          was promoted to this level within my first two years at Avanade for my
+          achievement on client work and my leadership roles in internal Avanade
+          groups.
         </p>
       </PromotionCard>
       <ExperienceCardConnecter />
@@ -28,25 +31,27 @@
         end="December 2021"
       >
         <p>
-          I was promoted to Senior Analyst before the end of my first year for
-          being able to hit the ground running and deliver excellent work for
-          our client. While there, I was also given a role promotion and became
-          the development team lead for the project. My ability to define
-          technical priorities, delegate tasks, and advocate for my team in
-          business discussions resolved the project's timeline issues and
-          delivered the next five releases ahead of schedule.
+          As a Senior Analyst, I worked as the technical lead on a project where
+          we used Vue and Tailwind to develop a framework for building SPAs. I
+          was promoted to this role before the end of my first year for
+          delivering excellent work and having a deep understanding of the
+          product. My ability to define technical priorities, delegate tasks,
+          and advocate for my team in business discussions resolved the
+          project's timeline issues and delivered the next five releases ahead
+          of schedule.
         </p>
       </PromotionCard>
       <ExperienceCardConnecter />
       <PromotionCard ec-role="Analyst" start="January 2020" end="December 2020">
         <p>
-          When I was hired on by Avanade as an analyst-level full-stack
-          developer I was quickly placed on my first project with a large
-          banking client. There I worked as a front-end web developer and used
-          Vue and Tailwind to develop a framework for building SPAs. I also
-          implemented mobile-first, accessibility-focused, responsive web
-          designs that helped set the standard for the team that uses our
-          framework.
+          At the Analyst level, I worked as a front-end developer working with
+          Vue. I started on this role fresh out of the University of Guelph and
+          was excited to be able to apply what I'd learned and to learn from
+          talented and experienced developers. In addition to feature
+          implementation and bug fixes, I also prototyped scripts where
+          developers could select a target brand during builds, such that the
+          appropriate Tailwind theme and related stylings would be seen in
+          deployments.
         </p>
       </PromotionCard>
     </ExperienceCard>
@@ -63,7 +68,7 @@
       <p>
         At CAAT Pension Plan, myself and another summer student created the
         first phase of a refresh of the company's intranet using SharePoint. We
-        ensured that CAAT employees were a key part in the design process by
+        ensured that CAAT employees were a key part of the design process by
         creating and running ideation and requirements gathering sessions. We
         then refined these requirements with key stakeholders and implemented
         them according to industry best practices.
@@ -82,8 +87,11 @@
       <p>
         As a software engineer at CGI I performed technical analyses, code
         reviews, and onboarding of new team members. Using Angular 1.5 I
-        implemented tech and user stories as part of a large, cross-functional,
-        and cross-continental team.
+        implemented tech and user stories as the only dedicated front-end
+        developer on a large, cross-functional, and cross-continental team. I
+        also created a tailored migration plan from AngularJS 1.5 to 1.6 and a
+        proof of concept for unit testing our application (which, at the time,
+        was relying primarily on manual testing).
       </p>
     </ExperienceCard>
     <ExperienceCardConnecter />
@@ -116,9 +124,10 @@
       is-odd
     >
       <p>
-        Confederation Freezers employed me as an application developer to help
-        them digitize their existing paper forms to allow for the efficient
-        storage, search, and retrieval of key documents for regulatory and audit
+        Confederation Freezers allowed me to work as a developer for the first
+        time and solve real problems for people using software. I helped them
+        digitize their existing paper forms to allow for the efficient storage,
+        search, and retrieval of key documents for regulatory and audit
         purposes. I also developed a CRUD app using SQL, PHP, and vanilla
         front-end technologies as a proof of concept for a storage and search
         tool for WHMIS documentation.
@@ -136,10 +145,13 @@
     >
       <p>
         As a technical writer at eSentire I was responsible for translating the
-        work of technical resources, such as developers, into clear and tangible
+        work of developers and other technical resources into clear and tangible
         benefits for end users. I was responsible for constructing, refining,
         and maintaining internal and external documentation for a variety of
-        audiences and use cases.
+        audiences and use cases. This co-op position started my career in the
+        technology industry and I was grateful to have gained a broader
+        perspective on the software development lifecycle as a non-developer in
+        my time at eSentire.
       </p>
     </ExperienceCard>
   </div>
