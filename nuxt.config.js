@@ -67,6 +67,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
@@ -75,19 +76,25 @@ export default defineNuxtConfig({
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+
   modules: ['@pinia/nuxt'],
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   ssr: false,
   target: 'static',
+
   generate: {
     subFolders: false,
     dir: 'docs', // for GitHub pages
     fallback: '404.html',
   },
+
+  compatibilityDate: '2024-11-11',
 });
