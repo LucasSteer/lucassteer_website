@@ -2,7 +2,7 @@
   <div
     class="desktop:w-7/12 shadow-card rounded-lg forced-colors:border-4 forced-colors:border-systemColors-ButtonBorder dark:shadow-none dark:border-4 dark:border-grey-400"
     :class="{
-      'desktop:ml-auto': !isOdd,
+      'desktop:ml-auto': showOnRight,
       'pb-4': isExpanded,
     }"
   >
@@ -109,7 +109,7 @@ export default {
       type: String,
       default: '',
     },
-    isOdd: {
+    showOnRight: {
       type: Boolean,
       default: false,
     },
