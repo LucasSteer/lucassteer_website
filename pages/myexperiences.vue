@@ -51,25 +51,38 @@ useHead({
 
 const experiences = [
   {
+    company: 'Jobber',
+    imgSrc: '/logos/JobberLogo.png',
+    ecRole: 'Software Engineer II',
+    start: 'September 2024',
+    location: 'Toronto, Ontario, Canada',
+    body: `I'm working as a full-stack engineer with React+TypeScript in the frontend,
+        Ruby on Rails in the backend, and GraphQL in the API layer. More information
+        to come as I get settled and start to make an impact in my new role!`,
+  },
+  {
     company: 'Avanade',
     imgSrc: '/logos/AvanadeLogo.png',
     ecRole: 'Full-Stack Developer',
     start: 'January 2020',
+    end: 'September 2024',
     location: 'Toronto, Ontario, Canada',
     promotions: [
       {
         ecRole: 'Consultant',
         start: 'December 2021',
-        body: `In my role as a full-stack developer at the Consultant level, I've
-            worked on two projects as a front-end engineer and a third as a
-            technical architect. I used TypeScript and Angular or JavaScript and
-            Vue in my frontend projects depending on the client's existing tech
+        end: 'September 2024',
+        body: `In my role as a full-stack developer at the Consultant level, I
+            worked as a front-end engineer, a technical architect, a business systems
+            analyst, and a data engineer. I used TypeScript and Angular or JavaScript
+            and Vue in my frontend projects depending on the client's existing tech
             stack. As a technical architect, I was responsible for the deployment
             and administration of a complex distributed system in Azure that made
-            use of serverless components, message queues, and NoSQL databases. I
-            was promoted to this level within my first two years at Avanade for my
-            achievement on client work and my leadership roles in internal Avanade
-            groups.`,
+            use of serverless components, message queues, and NoSQL databases. On a
+            legacy modernization project I first worked as a business systems analyst
+            to reverse engineer the functionality of legacy systems and then as a data
+            engineer to implement that functionality in modernized systems using Python
+            and Databricks in Azure Data Factory pipelines.`,
       },
       {
         ecRole: 'Senior Analyst',
