@@ -22,7 +22,7 @@
               alt=""
               height="64"
               width="64"
-              class="hidden tablet:block mr-4 tablet:mr-8 min-w-16 h-16 min-h-16 w-16 rounded-full border-2 border-grey-700 object-scale-down"
+              class="hidden tablet:block mr-4 tablet:mr-8 min-w-16 h-16 min-h-16 w-16 rounded-full border-2 border-grey-700 object-cover"
             />
             <p
               class="text-2xl tablet:text-3xl tracking-widest font-bold text-green-baseLarge dark:text-greenDarkMode-baseLarge"
