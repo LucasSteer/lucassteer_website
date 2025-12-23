@@ -15,7 +15,7 @@
   "dependencies": {
     "@pinia/nuxt": "^0.4.6",
     "consola": "^3.2.3",
-    "nuxt": "3.13.2",
+    "nuxt": "3.15.3",
     "pinia": "^2.0.30",
     "vue": "^3.5.12"
   },
@@ -41,6 +41,6 @@
     "nitropack": "2.9.7"
   },
   "resolutions": {
-    "nuxt": "3.13.2"
+    "nuxt": "3.15.3"
   }
 }
