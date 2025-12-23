@@ -56,9 +56,12 @@ const experiences = [
     ecRole: 'Software Engineer II',
     start: 'September 2024',
     location: 'Toronto, Ontario, Canada',
-    body: `I'm working as a full-stack engineer with React+TypeScript in the frontend,
-        Ruby on Rails in the backend, and GraphQL in the API layer. More information
-        to come as I get settled and start to make an impact in my new role!`,
+    body: `I'm working as a full-stack engineer with React + TypeScript in the frontend,
+        Ruby on Rails in the backend, and GraphQL in the API layer. I've delivered
+        features like reviews automation triggers, AI-generated email campaigns, and
+        new filters for our customers to target their clients. Currently, I'm
+        architecting and leading the development of a new feature which will be used
+        by ALL of our customers!`,
   },
   {
     company: 'Avanade',
