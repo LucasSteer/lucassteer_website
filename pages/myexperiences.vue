@@ -51,17 +51,29 @@ useHead({
 
 const experiences = [
   {
+    company: 'Babylist',
+    imgSrc: '/logos/BabylistLogo.png',
+    ecRole: 'Software Engineer III',
+    start: 'March 2026',
+    location: 'Toronto, Ontario, Canada',
+    body: `I'm now working as a full-stack engineer with technologies like React, Ruby
+        on Rails, MySQL, and Redis over at Babylist. More information to come as I get
+        settled in and start to make an impact in my new role!`,
+  },
+  {
     company: 'Jobber',
     imgSrc: '/logos/JobberLogo.png',
     ecRole: 'Software Engineer II',
     start: 'September 2024',
+    end: 'March 2026',
     location: 'Toronto, Ontario, Canada',
-    body: `I'm working as a full-stack engineer with React + TypeScript in the frontend,
-        Ruby on Rails in the backend, and GraphQL in the API layer. I've delivered
-        features like reviews automation triggers, AI-generated email campaigns, and
-        new filters for our customers to target their clients. Currently, I'm
-        architecting and leading the development of a new feature which will be used
-        by ALL of our customers!`,
+    body: `While at Jobber, I worked as a full-stack engineer with React + TypeScript
+        in the frontend, Ruby on Rails in the backend, and GraphQL in the API layer.
+        I delivered features that helped Jobber's customers reach their clients, 
+        like automation triggers for reviews, campaign segmentation filters, and
+        generating email campaigns using AI. My final project with Jobber was to
+        architect and lead the development of a recommendation feature which helps ALL
+        of Jobber's customers know what to do next to improve their marketing.`,
   },
   {
     company: 'Avanade',
