@@ -88,6 +88,14 @@ export default defineNuxtConfig({
   },
 
   ssr: false,
+  experimental: {
+    viteEnvironmentApi: true,
+  },
+  vite: {
+    optimizeDeps: {
+      include: ['@vue/devtools-core', '@vue/devtools-kit', 'pinia'],
+    },
+  },
   target: 'static',
 
   generate: {
