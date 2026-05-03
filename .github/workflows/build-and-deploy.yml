@@ -20,6 +20,7 @@ jobs:
 
       - name: Generate build files using Nuxt.js
         run: |
+          npm install --package-lock-only
           npm ci
           npm run generate
 
