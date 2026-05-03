@@ -18,10 +18,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 24
+        run: npm ci
+
       - name: Generate build files using Nuxt.js
-        run: |
-          npm install --package-lock-only
-          npm ci
+        run:
           npm run generate
 
       - name: Upload artifact
